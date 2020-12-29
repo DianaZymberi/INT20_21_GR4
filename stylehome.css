@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: content-box; 
+}
+body{
+    background-color: rosybrown;
+
+}
+nav{
+    background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
+}
+nav::after{
+    content:'';
+    clear: both;
+    display:table;
+}
+nav ul{
+    float: right;
+    list-style-type: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li{
+    float: left;
+    background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
+    margin : 0 5px;
+} nav ul li a {
+    color:white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding:8px 15px
+}
+nav ul li a:hover{
+    border-radius: 5px;
+    color:#ae57ff ; 
+        
+}
+nav ul ul {
+    position:absolute;
+    top:90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+
+}
+nav ul li:hover>ul{
+    top:70px;
+    opacity:1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin:0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgb(41, 40, 40);
+}
+.logo a {
+    color:white;
+    text-decoration: none;
+}
+nav .logo{
+    float: left;
+    font-size: 27px;
+    font-weight: 650;
+    line-height: 70px;
+    padding-left:60px;
+    
+}
+
+.zodiacs{
+    width:100%;
+    color:white;
+    text-align:center;
+    clear: both;
+}
+.zodiacs li {
+    list-style-type: none;
+    display: inline-block;
+}
+.zodiacs a {
+    width:70%;
+    color:white;
+    text-align:center;
+
+}
+.zodiacs img{
+    width:150px;
+    height: 150px;
+    background-blend-mode: darken;
+    padding:3px;
+}
+
+.sagittarius img:hover{
+    background-color: #c1ddd885;
+}
+.gemini img:hover{
+    background-color: rgba(250, 129, 220, 0.493);
+   
+}
+.scorpio img:hover{
+    background-color: rgba(122, 252, 140, 0.493);
+
+}
+.cancer img:hover{
+    background-color: rgba(170, 164, 226, 0.493);
+}
+.pisces img:hover{
+    background-color: rgba(170, 231, 255, 0.452);
+}
+.aquarius img:hover{
+    background-color:#f2afaf79;
+}
+.virgo img:hover{
+    background-color: #f2c2c27a;
+}
+.libra img:hover{
+    background-color:#ec77a47a;
+}
+.leo img:hover{
+    background-color: #9ec4c57c;
+}
+.capricorn img:hover{
+    background-color: #c4f2b475;
+}
+.taurus img:hover{
+    background-color: #d9aff277;
+}
+.aries img:hover{
+    background-color: #aff2d477;
+}
+footer{
+    background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
+}
+i{
+    font-size:30px;
+   
+}
+footer{
+    width: 100%;
+    background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
+    position: absolute;
+    bottom:0px;
+}
