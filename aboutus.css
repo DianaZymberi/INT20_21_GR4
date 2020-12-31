@@ -1,0 +1,129 @@
+
+body{
+  
+    background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
+    height:500px;
+}
+nav{
+    background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
+}
+nav::after{
+    content:'';
+    clear: both;
+    display:table;
+}
+nav ul{
+    float: right;
+    list-style-type: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li{
+    float: left;
+    background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
+    margin : 0 5px;
+} nav ul li a {
+    color:white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding:8px 15px
+}
+nav ul li a:hover{
+    border-radius: 5px;
+    color:#ae57ff ; 
+        
+}
+nav ul ul {
+    position:absolute;
+    top:90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+
+}
+nav ul li:hover>ul{
+    top:70px;
+    opacity:1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin:0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgb(41, 40, 40);
+}
+.logo a {
+    color:white;
+    text-decoration: none;
+}
+nav .logo{
+    float: left;
+    font-size: 27px;
+    font-weight: 650;
+    line-height: 70px;
+    padding-left:60px;
+    
+}
+    .row{
+        background:linear-gradient(121deg, rgba(178, 168, 184, 0.726), rgba(19, 16, 61, 0.308) 70.71%);;
+        margin-top:80px;
+        padding: 30px 0;
+        color: white;
+        display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+
+    .row video{
+        width: 100%;
+    }
+   
+    .mtfig{
+        transition: all 2s ease-out;
+    }
+    
+    .mtfig:hover{
+        width: 45%;
+    }
+    
+    #visit{
+        padding-left: 41%;
+        margin: 2%;
+        transition-duration: 500ms;
+        transition-property: transform;
+        color: white;
+    }
+    
+    #visit:hover{
+        transform: scale(1);
+    }
+    
+    .map{
+        display: flex;
+        margin: 2%;
+        justify-content: space-between;
+        
+    }
+    
+    #cord{
+        padding-left: 23%;
+        color: white;
+    }
+    .coordinates{
+        margin: 5% 2%;
+    }
+    
+    #div-btn{
+        padding-left: 40% ;
+    }
+    
+    #map{
+        padding-left: 32%;
+    }
+   #adresa{
+       color: white;
+   }
