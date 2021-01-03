@@ -5,7 +5,7 @@ body{
 
 #container{
   text-align: center;
-  background-color: #000000;
+  background-image: url("stars-964022_1280.png");
   width: 80%;
   height: 100%;
   margin: 0 auto;
@@ -16,15 +16,16 @@ body{
 
 h1{
   font-family: 'Merienda', cursive;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 2.5rem;
 }
 
 #display{
   width: 40vw;
+  color: white;
   min-height: 70vh;
   margin: 0 auto;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255, 183, 183, 0.6);
   text-align: center;
   padding: 1rem;
 }
@@ -43,6 +44,7 @@ h1{
   font-size: 1.5rem;
   padding: 1rem 2rem;
   margin: 5vh auto;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255, 187, 187, 0.6);
   border-radius: 10px;
+  color:white;
 }
