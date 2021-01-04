@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: content-box; 
+}
+
+body{
+    height: 100%;
+    background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
+    color:white;
+}
+
 .moon{
     text-align:center;
     margin: 40px auto 12px auto;
@@ -22,7 +34,6 @@
 .section-headline h1 {
     text-transform: uppercase;
     margin-bottom: 1rem;
-    color:white;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
 }
