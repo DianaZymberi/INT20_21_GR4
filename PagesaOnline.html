@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="urf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online Payment</title>
+        <link rel="shortcut icon" type="image/png" href="astrologo.png">
+    <link rel="stylesheet" href="Pagesaonline.css">
+    <link href="link rel="preconnect href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
+    </head>
+ 
+        <body>
+            <div class="wrapper">
+                <div class="payment">
+                    <form method="GET" action="succesfuly.html">
+                   
+                    <h2>Payment Gateway</h2>
+                    <div class="forma" >
+                        <div id="particles-js">
+                        </div>
+                        <script src="particles.js"></script>
+                        <script src="app.js"></script>
+                        <div class="card space icon-relative">
+                            <label class="label">Card Holder:</label>
+                            <input type="text" class="input" name="card_holder" data-mask="0000 0000 0000" placeholder="Card Holder" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="card space icon-relative">
+                            <label class="label">Card Number:</label>
+                            <input type="text" class="input" name="card_number" placeholder="Card Number" required>
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="card-grp space">
+                            <div class="card-item icon-relative">
+                            <label class="label">Expiry Date</label>
+                            <input type="text" class="input" name="Expiry_date" placeholder="00/00" required>
+                            <i class="far fa-calendar-alt"></i>
+                        </div>
+                        <div class="card-item icon-relative">
+                            <label class="label">CVC</label>
+                            <input type="text" class="input" name="cvc" placeholder="000" required>
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <button type="submit" id="my-btn" >Pay</button>
+                    <button type="reset" id="reset" >Reset</button>
+                    </div>
+                   
+                </form>
+                </div>
+            </div>
+        </body>
+   
+</html>
