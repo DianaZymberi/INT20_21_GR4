@@ -1,147 +1,334 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: content-box; 
-}
-body{
-    background-color: rosybrown;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology</title>
+    <link rel="shortcut icon" type="image/png" href="images/astrolog.png">
+    <link rel="stylesheet" href="stylee.css">
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+         crossorigin="anonymous"></script>
 
-}
-nav{
-    background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
-}
-nav::after{
-    content:'';
-    clear: both;
-    display:table;
-}
-nav ul{
-    float: right;
-    list-style-type: none;
-    margin-right: 40px;
-    position: relative;
-}
-nav ul li{
-    float: left;
-    background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
-    margin : 0 5px;
-} nav ul li a {
-    color:white;
-    text-decoration: none;
-    line-height: 70px;
-    font-size: 18px;
-    padding:8px 15px
-}
-nav ul li a:hover{
-    border-radius: 5px;
-    color:#ae57ff ; 
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+    </style>
+
+</head>
+<body>
+    <header>
+  <nav>  
+    <div class="logo"><a href="Astrology.html">Astrology</a></div>
+    <ul>
+        <li><a href="Astrology.html">Home</a></li>
+        <li><a href="Horoscope.html">Horoscope</a>
+            <ul>
+                <li><a href="#">Daily </a></li>
+                <li><a href="#">Weekly</a></li>
+                <li><a href="#">Monthly </a></li>
+            </ul>
+         </li>
+        <li><a href="Astrology101.html">Astrology 101</a>
+            <ul>
+                <li><a href="#">Toka</a></li>
+                <li><a href="#">Uji</a></li>
+                <li><a href="#">Ajri</a></li>
+                <li><a href="#">Zjarri</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Tarot</a>
+            <ul>
+                <li><a href="#">Dropdown</a></li>
+                <li><a href="#">Dropdown</a></li>
+                <li><a href="#">Dropdown</a></li>
+                <li><a href="#">Dropdown</a></li>
+            </ul>
+        </li>
+        <li><a href="Store.html">Store</a>
+            <ul>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">Jewelry</a></li>
+                <li><a href="#">Art</a></li>
+            </ul>
+        </li>
+        <li><a href="AboutUs.html">About us</a></li>
+        <li><a href="login.html">Log in</a></li>
+        <li>
+            <div class="search-box">
+                <input  class="search-text" type="text" name="" placeholder="Type to search">
+                <a  class="search-button"href="#" >
+                    <i class="fas fa-search"></i>
+                </a>
+            </div> 
+        </li>
+    </ul>
+<section class='zodiacs'>
+    <h2 style="font-family: 'Cormorant Garamond', serif;">Choose your Zodiac Sign</h2>
+     <a href="#" class="sagittarius"><img src="images/SAGITTARIUS.png" alt="sagittarius" ></a>
+     <a href="#" class="scorpio"><img src="images/SCORPIO.png" alt="scorpio"></a>
+     <a href="#" class="gemini"><img src="images/GEMINI.png" alt="gemini"></a>
+     <a href="#" class="cancer"><img src="images/CANCER.png" alt="cancer" ></a>
+     <a href="#" class="pisces"><img src="images/PISCES.png" alt="pisces"></a>
+     <a href="#" class="aquarius"><img src="images/AQUARIUS.png" alt=""></a>
+     <br>
+     <a href="#" class="virgo"><img src="images/VIRGO.png" alt="virgo"></a>
+     <a href="#" class="libra"><img src="images/LIBRA.png" alt="libra" ></a>
+     <a href="#" class="leo"><img src="images/LEO.png" alt="leo"> </a>
+     <a href="#" class="capricorn"><img src="images/CAPRICORN.png" alt="capricorn" > </a>
+     <a href="#" class="taurus"><img src="images/TAURUS.png" alt="taurus" > </a>
+     <a href="#" class="aries"><img src="images/ARIES.png" alt="aries" > </a>
+</section>
+</nav> 
+<h2 style="padding-top:30px; text-align:center;font-size:30px;font-family:  'Cormorant Garamond', serif;">Types of astrologies studied around the globe</h2>
+<div class="slider"> 
+<div class="types">
+     <em>Astrocartography </em>
+        <p>Astrocartography  is a means of discovering where in the world you are affected and how. Not only can you understand what forces influence you in your present location but Astrocartography can show you the best places on Earth to pursue your dreams, find spiritual growth, improved health, love and romance, prosperity or adventure...
+        </p>
+        <img src="images/astrologicalmap.jpg" alt="Astrological map">
+</div>
+<div class="types">
+    <em>Chinese Astrology</em>
+        <p>Chinese Astrology is the divination of the future from the Chinese calendar, which is based on astronomy, and ancient Chinese philosophy. In particular, it is based on the sexagenary cycle of 60 years that has been documented since the time of the Shang Dynasty at the latest. This basic cycle has been constructed from two cycles: the 10 heavenly stems (the five elements in their yin and yang forms) and the 12 earthly branches, or the 12-year cycle of animals referred to as the Chinese zodiac. The Chinese animal zodiac also operates on a cycle of months or 'moons' and of hours of the day.
+        </p>
+        <img src="images/chinesecalendar.png" alt="Chinese Calendar">
+</div>
+<div class="types">
+    <em>Egyptian Astrology</em>
+        <p>Egyptian horoscope is one of the oldest calendars, reached us. It is based on the mythology of ancient Egypt gods and is built according to the birth date. Due to the fact that the ancient Egyptians carefully monitored its preservation and did not dare to change anything, it remained virtually untouched. Their horoscope consists of 12 signs, each of which embodies its deity, but unlike other horoscopes, each sign refers to several time intervals spaced by the months of the year.
+        </p>
+        <img src="images/egyptianastrology.jpg" alt="Egyptian Astrology">
+</div>
+<div class="types">
+    <em>Medical Astrology</em>
+        <p>Ancient astrologers claimed that each of the astrological signs rules certain areas of the body and influences organs in those born under that Zodiac sign. Certain parts of the body may hurt or create symptoms because there may be something wrong with it’s sympathetic part. They can also be a strong indicator of the characteristics of the individual born under that sign.
+        </p>
+        <img src="images/medical.jpg" alt="">
+</div>
+    <button class="prev" onclick="prevDiv();"><i class="fas fa-caret-left"></i></button>
+    <button class="next" onclick="nextDiv();"><i class="fas fa-caret-right"></i></button>
+</div>
+<script>
+    var visibleDiv=0;
+    function showDiv(){
+        $(".types").hide();
+        $(".types:eq("+visibleDiv +")").show();
+    }
+    showDiv();
+    function nextDiv(){
+        if(visibleDiv==$(".types").length-1){
+            visibleDiv=0;
+        }else {
+            visibleDiv++;
+        }
+        showDiv();
+    }
+    function prevDiv(){
+        if(visibleDiv==0){
+            visibleDiv=$(".types").length-1;
+        }else {
+            visibleDiv--;
+        }
+        showDiv();
+    }
+</script>
+<div class="birthchart">
+
+    <h2 style="font-family: 'Cormorant Garamond'" >Birth Chart Calculator</h2>
+    <p style="font-family: 'Cormorant Garamond', serif; font-size: 18px;">A natal chart or birth chart is a map of the sky including the positions of the planets for the time that you were born.
+         Where you are born has an impact on what is seen in the sky, e.g., if two people were born on the same day and at the same 
+         time but in a different city and country, what is seen overhead would be different. </p>
+    <form style="font-family: 'Baloo 2', cursive;">
+        <label for="yourname">Your Name: </label>
+        <input type="text" placeholder="Your Name" id="yourname" required><br>
+        <label for="date" >Date of Birth:</label>
+        <input type="date" id="date" required><br>
+        <label for="time">Time of Birth:</label>
+        <input type="time" id="time" required>
+<!--         <input type="radio" name="radio" id="am" required>
+        <label for="am">AM</label>
+        <input type="radio" name="radio" id="ppm" required>
+        <label for="pm">PM</label> --><br>
+        <label for="country">Place of Birth</label>
+        <input  type="text"  class="textfield" list="country" placeholder="Albania" required/> <br>
+        <datalist id="country">
+            <option>A</option>
+            <option>Albania</option>
+            <option>Afghanistan</option>
+            <option>Algeria</option>
+            <option>Andorra</option>
+            <option>Angola</option>
+            <option>Antigua and Barbuda</option>
+            <option>Argentina</option>
+            <option>Armenia</option>
+            <option>Australia</option>
+            <option>Austria</option>
+            <option>Azerbaijan</option>
+            <option>B</option>
+            <option>Bahrain</option>
+            <option>Bangladesh</option>
+            <option>Barbados</option>
+            <option>Belarus</option>
+            <option>Belgium</option>
+            <option>Belize</option>
+            <option>Benin</option>
+            <option>Bhutan</option>
+            <option>Bolivia</option>
+            <option>Bosnia and Herzegovina</option>
+            <option>Botswana</option>
+            <option>Brazil</option>
+            <option>Brunei</option>
+            <option>Bulgaria</option>
+            <option>Burkina Faso</option>
+            <option>Burundi</option>
+            <option>C</option>
+            <option>Cabo Verde</option>
+            <option>Cambodia</option>
+            <option>Cameroon</option>
+            <option>Canada</option>
+            <option>Central African Republic</option>
+            <option>Chile</option>
+            <option>Chad</option>
+            <option>D</option>
+            <option>Denmark</option>
+            <option>Djibouti</option>
+            <option>Dominica</option>
+            <option>Dominican Republic</option>
+            <option>E</option>
+            <option>East Timor (Timor-Leste)</option>
+            <option>Ecuador</option>
+            <option>Egypt</option>
+            <option>El Salvador</option>
+            <option>Equatorial Guinea</option>
+            <option>Eritrea</option>
+            <option>Estonia</option>
+            <option>F</option>
+            <option>Fiji</option>
+            <option>Finland</option>
+            <option>France</option>
+            <option>G</option>
+            <option>Gabon</option>
+            <option>The Gambia</option>
+            <option>Georgia</option>
+            <option>Germany</option>
+            <option>Ghana</option>
+            <option>Greece</option>
+            <option>Grenada</option>
+            <option>Guatemala</option>
+            <option>H</option>
+            <option>Haiti</option>
+            <option>Honduras</option>
+            <option>Hungary</option>
+            <option>I</option>
+            <option>Iceland</option>
+            <option>India</option>
+            <option>Indonesia</option>
+            <option>Iran</option>
+            <option>Iraq</option>
+            <option>Irelan</option>
+            <option>J</option>
+            <option>Jamaica</option>
+            <option>Japan</option>
+            <option>Jordan</option>
+            <option>K</option>
+            <option>Kazakhstan</option>
+            <option>Kenya</option>
+            <option>Kiribati</option>
+            <option>Korea, North</option>
+            <option>Korea, South</option>
+            <option>Kosovo</option>
+            <option>Kuwait</option>
+            <option>L</option>
+            <option>Laos</option>
+            <option>Latvia</option>
+            <option>Lebanon</option>
+            <option>Lesotho</option>
+            <option>Liberia</option>
+            <option>Libya</option>
+            <option>M</option>
+            <option>Madagascar</option>
+            <option>Malawi</option>
+            <option>Malaysia</option>
+            <option>Maldives</option>
+            <option>Mali</option>
+            <option>Malta</option>
+            <option>Marshall Islands</option>
+            <option>N</option>
+            <option>Namibia</option>
+            <option>Nauru</option>
+            <option>Nepal</option>
+            <option>Netherlands</option>
+            <option>New Zealand</option>
+            <option>Nicaragua</option>
+            <option>P</option>
+            <option>Pakistan</option>
+            <option>Palau</option>
+            <option>Panama</option>
+            <option>Papua New Guinea</option>
+            <option>Paraguay</option>
+            <option>Peru</option>
+            <option>Q</option>
+            <option>Qatar</option>
+            <option>R</option>
+            <option>Romania</option>
+            <option>Russia</option>
+            <option>Rwanda</option>
+            <option>S</option>
+            <option>Saint Kitts and Nevis</option>
+            <option>Saint Lucia</option>
+            <option>Saint Vincent and the Grenadines</option>
+            <option>Samoa</option>
+            <option>San Marino</option>
+            <option>Sao Tome and Principe</option>
+            <option>Saudi Arabia</option>
+            <option>Senegal</option>
+            <option>T</option>
+            <option>Taiwan</option>
+            <option>Tajikistan</option>
+            <option>Tanzania</option>
+            <option>Thailand</option>
+            <option>Togo</option>
+            <option>U</option>
+            <option>Uganda</option>
+            <option>Ukraine</option>
+            <option>United Arab Emirates</option>
+            <option>United Kingdom</option>
+            <option>V</option>
+            <option>Vanuatu</option>
+            <option>Vatican City</option>
+            <option>Venezuela</option>
+            <option>Vietnam</option>
+            <option>Y</option>
+            <option>Yemen</option>
+            <option>Z</option>
+            <option>Zambia</option>
+            <option>Zimbabwe</option>
         
-}
-nav ul ul {
-    position:absolute;
-    top:90px;
-    opacity: 0;
-    visibility: hidden;
-    transition: top .3s;
+        </datalist><br>
+        <input type="submit" value="Create your Birthchart" style="width:100%;margin-top:20px;font-size:15px;border:none;background:rgb(185, 178, 178);cursor: pointer;">
+    </form>
+</div>
+<img id="astrowall" src="images/astrowall5.jpg" alt="birthchart">
+<!-- <aside>
+    <div class="search-box">
+        <input  class="search-text" type="text" name="" placeholder="Type to search">
+        <a href="#" class="search-button">
+            <i class="fas fa-search"></i>
+        </a>
+    </div> <br><br>
+    <h3 style="padding-left: 10px;">Quick links</h3>
+    <ol>
+        <li><a href="#">linkuuuuuuuuuuuuuuu1</a></li>
+        <li><a href="#">linkuuuuuuuuuuuuuuu2</a></li>
+        <li><a href="#">linkuuuuuuuuuuuuuuu3</a></li>
+        <li><a href="#">linkuuuuuuuuuuuuuuu4</a></li>
+        <li><a href="#">linkuuuuuuuuuuuuuuu5</a></li>
+    </ol>
+</aside> -->
 
-}
-nav ul li:hover>ul{
-    top:70px;
-    opacity:1;
-    visibility: visible;
-}
-nav ul ul li{
-    position: relative;
-    margin:0px;
-    width: 150px;
-    float: none;
-    display: list-item;
-    border-bottom: 1px solid rgb(41, 40, 40);
-}
-.logo a {
-    color:white;
-    text-decoration: none;
-}
-nav .logo{
-    float: left;
-    font-size: 27px;
-    font-weight: 650;
-    line-height: 70px;
-    padding-left:60px;
-    
-}
 
-.zodiacs{
-    width:100%;
-    color:white;
-    text-align:center;
-    clear: both;
-}
-.zodiacs li {
-    list-style-type: none;
-    display: inline-block;
-}
-.zodiacs a {
-    width:70%;
-    color:white;
-    text-align:center;
-
-}
-.zodiacs img{
-    width:150px;
-    height: 150px;
-    background-blend-mode: darken;
-    padding:3px;
-}
-
-.sagittarius img:hover{
-    background-color: #c1ddd885;
-}
-.gemini img:hover{
-    background-color: rgba(250, 129, 220, 0.493);
-   
-}
-.scorpio img:hover{
-    background-color: rgba(122, 252, 140, 0.493);
-
-}
-.cancer img:hover{
-    background-color: rgba(170, 164, 226, 0.493);
-}
-.pisces img:hover{
-    background-color: rgba(170, 231, 255, 0.452);
-}
-.aquarius img:hover{
-    background-color:#f2afaf79;
-}
-.virgo img:hover{
-    background-color: #f2c2c27a;
-}
-.libra img:hover{
-    background-color:#ec77a47a;
-}
-.leo img:hover{
-    background-color: #9ec4c57c;
-}
-.capricorn img:hover{
-    background-color: #c4f2b475;
-}
-.taurus img:hover{
-    background-color: #d9aff277;
-}
-.aries img:hover{
-    background-color: #aff2d477;
-}
-footer{
-    background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
-}
-i{
-    font-size:30px;
-   
-}
-footer{
-    width: 100%;
-    background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
-    position: absolute;
-    bottom:0px;
-}
+</body> 
+</html>
