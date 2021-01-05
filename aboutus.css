@@ -1,12 +1,18 @@
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing: content-box; 
+}
 body{
   
     background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
-    height:500px;
+    height:100px;
 }
 nav{
     background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
+    font-family: 'Baloo 2', cursive;
 }
+
 nav::after{
     content:'';
     clear: both;
@@ -25,19 +31,19 @@ nav ul li{
 } nav ul li a {
     color:white;
     text-decoration: none;
+    text-transform: uppercase;
     line-height: 70px;
-    font-size: 18px;
-    padding:8px 15px
+    font-size: 15px;
+    padding:8px 12px;
 }
 nav ul li a:hover{
     border-radius: 5px;
-    color:#ae57ff ; 
+    color:#b4afb8 ; 
         
 }
 nav ul ul {
     position:absolute;
     top:90px;
-    opacity: 0;
     visibility: hidden;
     transition: top .3s;
 
@@ -49,24 +55,61 @@ nav ul li:hover>ul{
 }
 nav ul ul li{
     position: relative;
+    background:#e7d5d5;
     margin:0px;
-    width: 150px;
+    width: 100px;
+    height:40px;
     float: none;
     display: list-item;
-    border-bottom: 1px solid rgb(41, 40, 40);
+    border-bottom: 1px solid rgb(119, 119, 119);
 }
 .logo a {
     color:white;
     text-decoration: none;
+    text-transform: uppercase;
 }
 nav .logo{
     float: left;
     font-size: 27px;
-    font-weight: 650;
     line-height: 70px;
     padding-left:60px;
     
 }
+.search-box{
+    background-color: #e7d5d5;
+    height: 20px;
+    border-radius: 30px;
+    padding: 10px; 
+    margin-top: 20px;
+}
+.search-box:hover>.search-text{
+    width:120px;
+    padding:0 6px;
+}
+.search-button{
+    
+    color:#016464;
+    float :right;
+    width: 10px;
+    padding-top: 0;
+    border-radius: 50%;
+    background:#e7d5d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-text{
+    border:none;
+    background:none;
+    outline:none;
+    float: left;
+    padding: 0;
+    color:black;
+    font-size: 15px;
+    transition: 0.4s;
+    line-height: 20px;
+    width:0px;
+} 
     .row{
         background:linear-gradient(121deg, rgba(178, 168, 184, 0.726), rgba(19, 16, 61, 0.308) 70.71%);;
         margin-top:80px;
