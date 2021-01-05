@@ -378,6 +378,9 @@ height: 35px;
 .right form .btn button:hover{
    background: #cccaca;
 }
+textarea{
+    resize: vertical;
+}
 .bottom{
    text-align: center;
    padding:10px;
