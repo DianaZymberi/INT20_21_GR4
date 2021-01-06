@@ -5,6 +5,7 @@
 }
 body{
     background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
+    background-attachment: fixed;
 }
 nav{
     background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
@@ -107,6 +108,13 @@ nav .logo{
     transition: 0.4s;
     line-height: 20px;
     width:0px;
+}
+
+.hello{
+    background-image:  url(https://mdn.mozillademos.org/files/12005/starsolid.gif);
+    background-repeat: repeat-x;
+    background-position: top;
+    height: 50px;
 }
 section{
     font-family:tahoma;
