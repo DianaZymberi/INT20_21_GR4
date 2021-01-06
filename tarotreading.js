@@ -34,7 +34,7 @@ function getRandom(num){
 }
 
 document.getElementById("draw").onclick = function(){
-    var index = getRandom(8);
+    var index = getRandom(21);
     var currentCard = deck[index];
 
     document.getElementById("display").innerHTML = '<img src="images/' + currentCard.image + '.jpg"><h3>' + currentCard.name + '</h3><p>' + currentCard.description + '</p>';
