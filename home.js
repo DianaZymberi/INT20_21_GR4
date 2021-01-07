@@ -72,7 +72,7 @@ function dragDrop() {
 }
 //alert on submit
 const btn=document.getElementById("btn");
-btn,addEventListener("submit",(e)=>{
+btn.addEventListener("submit",(e)=>{
   e.preventDefault();
   alert("Message sent ! Thank you . ");
 })
