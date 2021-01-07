@@ -112,11 +112,19 @@
     <button class="next" onclick="nextDiv();"><i class="fas fa-caret-right"></i></button>
 </div>
 <div class="moveaside">
-<div id="controler">Quick links</div>
-<div id="aside">
-    <div class="fill" draggable="true"></div>
+    <div id="controler">Quick links</div>
+       <div id="aside">
+            <ul style="list-style-type: none;">
+            <li><a href="#">Discounts</a></li>
+            <li><a href="#">Tarot</a></li>
+            <li><a href="#">Horoscope</a></li>
+            <li><a href="#">Astrology101</a></li>
+           </ul>
+            <div class="fill" draggable="true" ></div> 
+       </div>
+    </div>
 </div>
-</div>
+</header>
 <section class="section1">
     <h2>Find the missing card and bring it back to its deck .</h2>
     <div class="box1"></div>
@@ -124,6 +132,7 @@
     <div class="box3"></div>
     <div class="box4"></div>
     <div class="box5"></div>
+    <div class="empty"></div>
     <div class="empty"></div>
     <h3>Hint:Quick links</h3>   
 </section>
@@ -137,11 +146,7 @@
         <label for="date" >Date of Birth:</label>
         <input type="date" id="date" required><br>
         <label for="time">Time of Birth:</label>
-        <input type="time" id="time" required>
-<!--         <input type="radio" name="radio" id="am" required>
-        <label for="am">AM</label>
-        <input type="radio" name="radio" id="ppm" required>
-        <label for="pm">PM</label> --><br>
+        <input type="time" id="time" required><br>
         <label for="country">Place of Birth</label>
         <input  type="text"  class="textfield" list="country" placeholder="Albania" required/> <br>
         <datalist id="country">
