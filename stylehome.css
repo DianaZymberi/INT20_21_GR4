@@ -216,6 +216,10 @@ i{
   font-size: 22px;
   padding:2px;
 }
+.types a {
+    font-size: 18px;
+}
+
 .prev{
     position: relative;
     bottom: 150px;
@@ -249,6 +253,9 @@ i{
 .moveaside{
     float:right;
     width:20%;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+
 }
 #controler{
     text-align: center;
@@ -269,6 +276,89 @@ i{
     display: none;
     margin:5px;
  }
+ .section1{
+    position: relative;
+    top:90px;
+    clear: both;
+ }
+ .section1 h2{
+     margin: 10px;
+     text-align: center;
+     font-family: 'Cormorant Garamond', serif;
+     font-style: normal;
+ }
+ .box1,.box2,.box3,.box4,.box5{
+    margin: 5px;
+    float:left;
+    width: 200px;
+    height:350px;
+    border:1px rgb(0, 0, 0) solid;
+    border-radius:10px;
+ }
+.box1{
+    margin-left: 50px;
+     background:url(https://i.pinimg.com/564x/23/00/85/230085b530bb4560f81552ec03a94b82.jpg) no-repeat center;
+     background-size: contain;
+ }
+ .box2{
+    background:url(https://i.pinimg.com/236x/b6/d4/fc/b6d4fce4dd465b9a29cc1453da8f7a01.jpg) no-repeat center;
+    background-size: contain;
+}
+.box3{
+    background:url(https://i.pinimg.com/564x/a8/c0/69/a8c0690556f8b8eb05c6ece2bf6225ff.jpg) no-repeat center;
+    background-size: contain;
+}
+.box4{
+    background:url(https://i.pinimg.com/564x/d2/91/bd/d291bd481f864c1b96cf699e90c0f477.jpg) no-repeat center;
+    background-size: contain;
+}
+.box5{
+    background:url(https://i.pinimg.com/564x/50/1b/ef/501bef33435482b48611bd3de74bc1ab.jpg) no-repeat center;
+    background-size: contain;
+}
+ .fill{
+    background:url(https://i.pinimg.com/236x/9d/28/54/9d28543e9e91cecfcb58c627f67b1cd2.jpg) no-repeat center;
+    background-size: contain;
+    width: 200px;
+    height: 350px;
+    cursor: pointer;
+
+}
+.empty{
+    display:inline-block;
+    width: 200px;
+    height: 350px;
+    margin:5px;
+    border:1px rgb(0, 0, 0) solid;
+    border-radius:10px;
+    background-color:rgb(214, 209, 209);
+    cursor: pointer;
+}
+.section1 h3{
+     position: relative;
+     top:-190px;
+     right:70px;
+     float: right;
+     color:rgb(134, 134, 134);
+     opacity: 0;
+}
+.section1 h3:hover{
+    opacity: 1;
+}
+
+.empty:hover{
+   opacity: 1;
+}
+.hold{
+    border:solid #ccc 4px;
+}
+.hovered{
+    background:#f4f4f4;
+    border-style: dashed;
+}
+.invisible{
+    display: none;
+}
 .birthchart{
     clear: both;
     width:50%;
