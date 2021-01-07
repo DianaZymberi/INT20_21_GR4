@@ -251,6 +251,8 @@ i{
     font-size: 30px;
 }
 .moveaside{
+    position: relative;
+    right:20px;
     float:right;
     width:20%;
     font-family: 'Baloo 2', cursive;
@@ -263,21 +265,28 @@ i{
     margin:5px;
     width:100%;
     line-height: 40px;
-    background-color:#cfb6b6;
+    background-color:#585656;
+    border:1px solid black;
     border-radius: 5px;
-
+    color:white;
     cursor: pointer;
  }   
 #aside{
+    color:white;
     position: relative;
     width: 100%;
     height: 530px;
     border-radius: 5px;
-    background-color:#cfb6b6;
+    background-color:#585656;
+    border:1px solid black;
     display: none;
     margin:5px;
  }
+ #aside a{
+     color:white;
+ }
  .section1{
+    margin-bottom: 50px;
     position: relative;
     top:90px;
     clear: both;
@@ -379,13 +388,24 @@ i{
     margin-bottom:100px;
     margin-top: 100px;
 }
-#astrowall{
+.svg{
+    margin-top: 50px;
     position: relative;
-    right: 150px;
-    top:100px;
+    top:30px;
     float:right;
-    width:300px;
-
+}
+#planet{
+    animation:wheel 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
 }
 input{
    padding:10px;
