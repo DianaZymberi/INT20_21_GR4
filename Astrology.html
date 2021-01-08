@@ -80,77 +80,73 @@
      <a href="#" class="aries"><img src="images/ARIES.png" alt="aries" > </a>
 </section>
 </nav> 
-<h2 style="padding-top:30px; text-align:center;font-size:30px;font-family:  'Cormorant Garamond', serif;">Types of astrologies studied around the globe</h2>
-<div class="slider"> 
-    <div class="types">
-        <em>Astrocartography </em>
-        <p>Astrocartography  is a means of discovering where in the world you are affected and how. Not only can you understand what forces influence you in your present location but Astrocartography can show you the best places on Earth to pursue your dreams, find spiritual growth, improved health, love and romance, prosperity or adventure...
-        </p>
-        <img src="images/astrologicalmap.jpg" alt="Astrological map">
-    </div>
-    <div class="types">
-        <em>Chinese Astrology</em>
-        <p>Chinese Astrology is the divination of the future from the Chinese calendar, which is based on astronomy, and ancient Chinese philosophy. In particular, it is based on the sexagenary cycle of 60 years that has been documented since the time of the Shang Dynasty at the latest. This basic cycle has been constructed from two cycles: the 10 heavenly stems (the five elements in their yin and yang forms) and the 12 earthly branches, or the 12-year cycle of animals referred to as the Chinese zodiac. The Chinese animal zodiac also operates on a cycle of months or 'moons' and of hours of the day.
-        </p>
-        <img src="images/chinesecalendar.png" alt="Chinese Calendar">
-    </div>
-    <div class="types">
-        <em>Egyptian Astrology</em>
-        <p>Egyptian horoscope is one of the oldest calendars, reached us. It is based on the mythology of ancient Egypt gods and is built according to the birth date. Due to the fact that the ancient Egyptians carefully monitored its preservation and did not dare to change anything, it remained virtually untouched. Their horoscope consists of 12 signs, each of which embodies its deity, but unlike other horoscopes, each sign refers to several time intervals spaced by the months of the year.
-        </p>
-        <img src="images/egyptianastrology.jpg" alt="Egyptian Astrology">
-    </div>
-    <div class="types">
-        <em>Medical Astrology</em>
-        <p>Ancient astrologers claimed that each of the astrological signs rules certain areas of the body and influences organs in those born under that Zodiac sign. Certain parts of the body may hurt or create symptoms because there may be something wrong with it’s sympathetic part. They can also be a strong indicator of the characteristics of the individual born under that sign.
-        </p>
-        <img src="images/medical.jpg" alt="Medial Astrology">
-    </div>
-</div>
+<div class="withbtn">
+    <h2 id="h2types">Types of astrologies studied around the globe</h2>
+    <div class="slider"> 
+        <div class="types">
+            <em>Astrocartography <a href="https://www.cosmopolitan.com/lifestyle/a34373231/astrocartography-where-should-i-live/" target="_blank">(Click for more)</a></em>
+            <p>Astrocartography  is a means of discovering where in the world you are affected and how. Not only can you understand what forces influence you in your present location but Astrocartography can show you the best places on Earth to pursue your dreams, find spiritual growth, improved health, love and romance, prosperity or adventure...
+            </p>
+             <img src="images/astrologicalmap.jpg" alt="Astrological map">
+        </div>
+        <div class="types">
+            <em>Chinese Astrology <a href="https://www.astrology.com/chinese-zodiac" target="_blank">(Click for more)</a></em>
+            <p>Chinese Astrology is the divination of the future from the Chinese calendar, which is based on astronomy, and ancient Chinese philosophy. In particular, it is based on the sexagenary cycle of 60 years that has been documented since the time of the Shang Dynasty at the latest. This basic cycle has been constructed from two cycles: the 10 heavenly stems  and the 12 earthly branches, or the 12-year cycle of animals referred to as the Chinese zodiac.
+            </p>
+            <img src="images/chinesecalendar.png" alt="Chinese Calendar">
+        </div>
+        <div class="types">
+            <em>Egyptian Astrology <a href="https://www.astrologyoftheancients.com/egyptian-astrology/" target="_blank">(Click for more)</a></em>
+            <p>Egyptian horoscope is one of the oldest calendars. It is based on the mythology of ancient Egypt gods and is built according to the birth date. Their horoscope consists of 12 signs, each of which embodies its deity, but unlike other horoscopes, each sign refers to several time intervals spaced by the months of the year.
+            </p>
+            <img src="images/egyptianastrology.jpg" alt="Egyptian Astrology">
+        </div>
+        <div class="types">
+             <em>Medical Astrology <a href="https://www.askastrologer.com/Medicalastrology.html" target="_blank">(Click for more)</a></em>
+             <p>Ancient astrologers claimed that each of the astrological signs rules certain areas of the body and influences organs in those born under that Zodiac sign. Certain parts of the body may hurt or create symptoms because there may be something wrong with it’s sympathetic part. They can also be a strong indicator of the characteristics of the individual born under that sign.
+            </p>
+            <img src="images/medical.jpg" alt="Medial Astrology">
+        </div>
+        </div>
     <button class="prev" onclick="prevDiv();"><i class="fas fa-caret-left"></i></button>
     <button class="next" onclick="nextDiv();"><i class="fas fa-caret-right"></i></button>
-
-<script>
-    var visibleDiv=0;
-    function showDiv(){
-        $(".types").hide();
-        $(".types:eq("+visibleDiv +")").show();
-    }
-    showDiv();
-    function nextDiv(){
-        if(visibleDiv==$(".types").length-1){
-            visibleDiv=0;
-        }else {
-            visibleDiv++;
-        }
-        showDiv();
-    }
-    function prevDiv(){
-        if(visibleDiv==0){
-            visibleDiv=$(".types").length-1;
-        }else {
-            visibleDiv--;
-        }
-        showDiv();
-    }
-</script>
+</div>
+<div class="moveaside">
+    <div id="controler">Quick links</div>
+       <div id="aside">
+            <ul style="list-style-type: none;">
+            <li><a href="#">Discounts</a></li>
+            <li><a href="#">Tarot</a></li>
+            <li><a href="#">Horoscope</a></li>
+            <li><a href="#">Astrology101</a></li>
+           </ul>
+            <div class="fill" draggable="true" ></div> 
+       </div>
+    </div>
+</div>
+</header>
+<section class="section1">
+    <h2>Find the missing card and bring it back to its deck .</h2>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <h3>Hint:Quick links</h3>   
+</section>
 <div class="birthchart">
 
     <h2 style="font-family: 'Cormorant Garamond'" >Birth Chart Calculator</h2>
-    <p style="font-family: 'Cormorant Garamond', serif; font-size: 18px;">A natal chart or birth chart is a map of the sky including the positions of the planets for the time that you were born.
-         Where you are born has an impact on what is seen in the sky, e.g., if two people were born on the same day and at the same 
-         time but in a different city and country, what is seen overhead would be different. </p>
+    <p style="font-family: 'Cormorant Garamond', serif; font-size: 18px;">A natal chart or birth chart is a map of the sky including the positions of the planets for the time that you were born.Where you are born has an impact on what is seen in the sky, e.g., if two people were born on the same day and at the same time but in a different city and country, what is seen overhead would be different. </p>
     <form style="font-family: 'Baloo 2', cursive;">
         <label for="yourname">Your Name: </label>
         <input type="text" placeholder="Your Name" id="yourname" required><br>
         <label for="date" >Date of Birth:</label>
         <input type="date" id="date" required><br>
         <label for="time">Time of Birth:</label>
-        <input type="time" id="time" required>
-<!--         <input type="radio" name="radio" id="am" required>
-        <label for="am">AM</label>
-        <input type="radio" name="radio" id="ppm" required>
-        <label for="pm">PM</label> --><br>
+        <input type="time" id="time" required><br>
         <label for="country">Place of Birth</label>
         <input  type="text"  class="textfield" list="country" placeholder="Albania" required/> <br>
         <datalist id="country">
@@ -347,7 +343,7 @@
                 </div>
                 <div class="email">
                     <span class="fas fa-envelope"></span>
-                    <span class="text">abc@example.com</span>
+                    <span class="text"><a href="mailto:toaddress@email.com">abc@example.com</a></span>
                 </div>
             </div>
         </div>
@@ -378,5 +374,6 @@
 
     </div>
 </footer>
+<script src="home.js"></script>
 </body> 
 </html>
