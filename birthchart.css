@@ -117,10 +117,9 @@ nav .logo{
     width:0px;
 }
 #changethis{
-    height:40px;
-    width: 90%;
+    height:10px;
+    width: 100%;
     margin: auto;
-    border:3px outset rgb(223, 221, 221);
 }
 .svg1{
     position: relative;
