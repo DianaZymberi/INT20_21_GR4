@@ -1,18 +1,12 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: content-box; 
-}
 body{
-  
+    margin: 0;
+    padding: 0;
     background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
-    height:100px;
 }
 nav{
     background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
     font-family: 'Baloo 2', cursive;
 }
-
 nav::after{
     content:'';
     clear: both;
@@ -21,6 +15,7 @@ nav::after{
 nav ul{
     float: right;
     list-style-type: none;
+    margin-top: 0;
     margin-right: 40px;
     position: relative;
 }
@@ -28,7 +23,8 @@ nav ul li{
     float: left;
     background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
     margin : 0 5px;
-} nav ul li a {
+}
+ nav ul li a {
     color:white;
     text-decoration: none;
     text-transform: uppercase;
@@ -52,6 +48,7 @@ nav ul li:hover>ul{
     top:70px;
     opacity:1;
     visibility: visible;
+    
 }
 nav ul ul li{
     position: relative;
@@ -67,6 +64,7 @@ nav ul ul li{
     color:white;
     text-decoration: none;
     text-transform: uppercase;
+
 }
 nav .logo{
     float: left;
@@ -109,76 +107,24 @@ nav .logo{
     transition: 0.4s;
     line-height: 20px;
     width:0px;
-} 
-    .row{
-        background:rosybrown;
-        margin-top:80px;
-        padding: 30px 0;
-        color: white;
-        display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    }
+}
 
-    .row video{
-        width: 100%;
-    }
-   
-    .mtfig{
-        transition: all 2s ease-out;
-    }
-    
-    .mtfig:hover{
-        width: 45%;
-    }
-    
-    #visit{
-        padding-left: 41%;
-        margin: 2%;
-        transition-duration: 500ms;
-        transition-property: transform;
-        color: white;
-    }
-    
-    #visit:hover{
-        transform: scale(1);
-    }
-    
-    .map{
-        display: flex;
-        margin: 2%;
-        justify-content: space-between;
-        
-    }
-    
-    #cord{
-        padding-left: 23%;
-        color: white;
-    }
-    .coordinates{
-        margin: 5% 2%;
-    }
-    
-    #div-btn{
-        padding-left: 40% ;
-    }
-    
-    #map{
-        padding-left: 32%;
-    }
-   #adresa{
-       color: white;
-   }
-   footer{
+
+
+
+
+footer{
     clear: both;
     color: black;
-    position: relative;;
+    position: relative;
     bottom: 0px;
     width: 100%;
     background: #A37B7B;
     font-family:  'Cormorant Garamond', serif;
 }
+
+
+
 
 .main-content{
    display: flex;
@@ -273,7 +219,6 @@ height: 35px;
 .right form .btn{
    margin-top: 10px;
 }
-.textarea{resize:vertical;}
 .right form .btn button{
    height: 40px;
    width: 100%;
@@ -286,6 +231,9 @@ height: 35px;
    cursor: pointer;
    transition: .3s;
 }
+
+textarea{resize:vertical;}
+
 .right form .btn button:hover{
    background: #cccaca;
 }
@@ -318,3 +266,64 @@ height: 35px;
        margin: 5px 0 ;
    }
 }
+.elementet img{
+    width: 400px;
+    height:400px;
+    margin:auto;
+    position: relative;
+    left:400px;
+    right:400px;
+    }
+
+
+.par{
+    color:white;
+    text-align: center;
+}
+.docu {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+'Open Sans', 'Helvetica Neue', sans-serif;
+    top: 0px;
+    margin-left: 180px;
+    margin-right: 180px;
+    color:white;
+    font-size: 17px;
+  }
+  
+  .body-tip {
+    font-family: Futura W05,Helvetica,Arial,Sans-serif;
+    font-size: .75rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.8;
+    color: #a30303;
+    text-align: center;
+    letter-spacing: .15rem;
+    max-width: 70%;
+    background-color: #eed7d7;
+    padding: .9375rem 1.25rem;
+    margin: 3.5rem auto 2rem;
+    display: flow-root;
+    margin-top: 0%;
+    
+}
+
+  .kuti{
+   
+    
+    
+    background: url(https://assets.hearstapps.com/sites/cosmopolitan/assets/images/svgs/eyelash.de26dda.svg);
+    filter: invert(34%) sepia(94%) saturate(3986%) hue-rotate(352deg) brightness(106%) contrast(87%);
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 4rem;
+    height: 15px;
+    width: 90px;
+    margin: auto;
+    margin-top:100px;
+    margin-bottom: 15px;
+}
+
+ 
+  
