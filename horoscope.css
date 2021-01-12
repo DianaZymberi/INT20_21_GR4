@@ -104,7 +104,7 @@ h3{
     margin-left: 1020px;
 
 }
-h2{
+#detjona{
 
     
     color: rgb(95, 96, 139);
@@ -230,6 +230,239 @@ h2{
       
     background-color: rgb(218, 164, 164);
   }
+
+
+
+
+
+  
+
+
+
+/* highlight */
+.arrow-highlight{
+    position:relative;
+    margin:0 0.5em;
+    padding:0 0.2em;
+  }
+  .arrow-highlight:before{
+    content:"";
+    z-index:-1;
+    left:-0.5em;
+    top:0.1em;
+    border-width:0.5em;
+    border-style:solid;
+    border-color:rgb(105, 64, 85);
+    position:absolute;
+    width:calc(100% - 0.5em);
+    border-left-color:transparent;
+  }
+  .arrow-highlight:after{
+    content:"";
+    z-index:-1;
+    right:0;
+    top:0.1em;
+    border-width:0.5em;
+    border-style:solid;
+    border-color:rgb(105, 64, 85);
+    position:absolute;
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+    transform:rotate(180deg);
+    transform-origin:center right;
+  }
+  
+
+
+
+
+
+
+  /* footer */
+    footer{
+      clear: both;
+      color: black;
+      position: relative;
+      bottom: -130px;
+      width: 100%;
+      background: #A37B7B;
+      font-family:  'Cormorant Garamond', serif;
+  }
+  .main-content{
+      display: flex;
+   }
+  
+   .main-content .box{
+      flex-basis: 50%;
+      padding:10px 20px;
+      width: 20%;
+  }
+  
+  .box h2{
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      position: relative;
+      
+      color: black;
+      
+  
+  }
+  
+  .box .content{
+      margin: 20px 0 0 0 ;
+      position: relative;
+      
+   }
+  
+   .box .content::before{
+      content: '';
+      position: absolute;
+      top: -10px;
+      height: 2px;
+      width: 100%;
+      background:#1a1a1a;
+  }
+  
+  .left .content .social{
+      margin:20px 0 0 0 ;
+      
+   }
+  
+   .left .content .social a{
+      margin:0 2px;
+   }
+   
+   .left .content .social a i{
+      color:white;
+      height: 40px;
+      width: 40px;
+      background: #1a1a1a;
+      line-height: 40px;
+      text-align: center; 
+      border-radius: 5px;
+      transition: .3s;
+      cursor: pointer;
+   }
+  
+   .left .content .social a i:hover{
+      background: #cccaca;
+  }
+  
+  .center .content .fas{
+      font-size: 23px;
+      background:1a1a1a;
+      height: 45px;
+      width: 45px;
+      line-height: 45px;
+      text-align:center;
+      border-radius: 50%;
+      transition: .3s;
+      cursor: pointer;
+  }
+  
+  .center .content .fas:hover{
+      background: #FFF7F7;
+   }
+  
+   .center .center .text{
+      font-size: 17px;
+      font-weight: 500;
+      padding-left: 10px;
+  }
+  .right form .text{
+      font-size: 17px;
+      margin-bottom: 2px;
+      color:#0e0e0e;
+  }
+  
+  .right form .msg{
+      margin-top: 10px;
+  }
+  
+  .right form .email input{
+      width: 97%;
+      height:20px;
+  }
+  
+  .right form input , .right form textarea{
+      width: 100%;
+      font-size: 17px;
+      background: white;
+      padding-left: 10px;
+      border:1px solid #222222;
+  }
+  
+  .right form input{
+      height: 35px;
+      }
+  
+      .right form .btn{
+          margin-top: 10px;
+       }
+  
+       .right form .btn button{
+          height: 40px;
+          width: 100%;
+          border:none;
+          outline: none;
+          background: #111111;
+          font-size:17px;
+          color: white;
+          font-weight: 600;
+          cursor: pointer;
+          transition: .3s;
+       }
+  
+       .right form .btn button:hover{
+          background: #cccaca;
+       }
+  
+  
+       textarea{resize:vertical;}
+  
+  
+  
+  
+       .bottom{
+          text-align: center;
+          padding:10px;
+          background: #e7d5d5;
+          bottom: 0px;
+       }
+  
+       .bottom span{
+          color:#252121;
+       }
+  
+       .bottom a{
+          color:#080808;
+          text-decoration: none;
+       }
+  
+       .bottom a:hover{
+          text-decoration: underline;
+       }
+  
+       @media screen and (max-width:900px){
+          footer{
+              position: relative;
+              bottom: 0px;
+          } 
+  
+          .main-content{
+              flex-wrap: wrap;
+              flex-direction: column;
+          }
+  
+          .main-content .box{
+              margin: 5px 0 ;
+          }
+       
+  
+  
+      }
 
   
 
