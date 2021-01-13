@@ -179,6 +179,16 @@ td:first-child{
 .planets ul li{
     padding:10px;
 }
+#english{
+    position: relative;
+    left:43%;
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+    background-color:  rgba(255, 255, 255, 0.74);
+    padding:5px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
 footer{
     clear: both;
     color: black;
