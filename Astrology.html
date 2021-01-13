@@ -152,8 +152,8 @@
         <label for="time">Time of Birth:</label>
         <input type="time" id="time" required><br>
         <label for="country">Place of Birth</label>
-        <input  type="text"  class="textfield" list="country" placeholder="Albania" required/> <br>
-        <datalist id="country">
+        <input  type="text" id="country" list="country" placeholder="Albania" required/> <br>
+        <datalist>
             <option>A</option>
             <option>Albania</option>
             <option>Afghanistan</option>
@@ -307,9 +307,21 @@
             <option>Zimbabwe</option>
         
         </datalist><br>
-        <input type="submit" value="Create your Birthchart" style="width:100%;margin-top:20px;font-size:15px;color:white;border:none; background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);cursor: pointer;">
+        <input type="submit" value="Create your Birthchart" onclick="store()" style="width:100%;margin-top:20px;font-size:15px;color:white;border:none; background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);cursor: pointer;">
     </form>
 </div>
+<script>
+    function store(){
+        var inputName=document.getElementById("yourname");
+        localStorage.setItem("name",inputName.value);
+        var inputDate=document.getElementById("date");
+        localStorage.setItem("date",inputDate.value);
+        var inputTime=document.getElementById("time");
+        localStorage.setItem("time",inputTime.value);
+        var inputCountry=document.getElementById("country");
+        localStorage.setItem("country",inputCountry.value);
+    }
+</script>
 <svg class="svg" width="550" height="450" viewBox="0 0 782 608" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="undraw_My_universe_re_txot (4) 1">
     <g id="girl">
@@ -413,15 +425,15 @@
                 <form action="#">
                     <div class="email">
                         <div class="text">Email *</div>
-                        <input type="email" required>
+                        <input type="email" id="email" required>
                     </div>
                    <div class="msg">
-                       <div class="text">Message *</div>
-                        <textarea  id="" cols="25" rows="2" required></textarea>
+                       <div class="text" >Message *</div>
+                        <textarea  id="message" cols="25" rows="2" required></textarea>
                     </div>
                 
                 <div class="btn">
-                    <button type="submit">Send</button>
+                    <button type="button" onclick="storedata()">Send</button>
                 </div>
                 </form>
             </div>
@@ -433,6 +445,14 @@
             </span>
     </div>
 </footer>
+<script>
+    function storedata(){
+        var inputEmail=document.getElementById("email");
+        sessionStorage.setItem("email",inputEmail.value);
+        var inputMessage=document.getElementById("message");
+        sessionStorage.setItem("message",inputMessage.value);
+    }
+</script>
 <script src="home.js"></script>
 </body> 
 </html>
