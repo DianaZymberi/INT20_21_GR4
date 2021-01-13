@@ -119,19 +119,12 @@ function validateEmail(){
   }
   return true;
 }
-
 //search
 let str = "heyy asTroLoGY.coM";
 let regex = /[A-Z]/g;
 let regdot = /[.]/g;
 console.log(str.search(regex));
 console.log(str.search(regdot));
-//exec
-let myRe = /ab*/g;
-let str = 'abbcdefabh';
-let myArray;
-while ((myArray = myRe.exec(str)) !== null) {
-  let msg = 'Found ' + myArray[0] + '. ';
-  msg += 'Next match starts at ' + myRe.lastIndex;
-  console.log(msg);
-}
+
+
+
