@@ -1,4 +1,4 @@
-//slider(types of astroloy)
+//slider
 var visibleDiv=0;
 function showDiv(){
     $(".types").hide();
@@ -70,14 +70,52 @@ function dragDrop() {
   this.className = 'empty';
   this.append(fill);
 }
-//alert on submit
-const btn=document.getElementById("btn");
-btn.addEventListener("submit",(e)=>{
-  e.preventDefault();
-  alert("Message sent ! Thank you . ");
-})
+//sessionStorage
+function storedata(){
+  var inputEmail=document.getElementById("email");
+  sessionStorage.setItem("email",inputEmail.value);
+  var inputMessage=document.getElementById("message");
+  sessionStorage.setItem("message",inputMessage.value);
+}
+//localStorage
+function store(){
+  var inputName=document.getElementById("yourname");
+  localStorage.setItem("name",inputName.value);
+  var inputDate=document.getElementById("date");
+  localStorage.setItem("date",inputDate.value);
+  var inputTime=document.getElementById("time");
+  localStorage.setItem("time",inputTime.value);
+  var inputCountry=document.getElementById("country");
+  localStorage.setItem("country",inputCountry.value);
+}
 
+function validate(){
+  var yourname = document.getElementById('yourname').value;
+  var country = document.getElementById('country').value;
+  var nameRGEX = /^[a-z]+(([',. -][a-z ])?[a-z]*)*$/ig;
+  var countryRGEX = /^[a-z]+(([',. -][a-z ])?[a-z]*)*$/ig;
+  var nameResult = nameRGEX.test(yourname);
+  if(nameResult == false)
+  {
+    alert('Please enter a valid Name');
+    return false;
+  }
+  var countryResult=countryRGEX.test(country);
+  if(countryResult == false)
+  {
+    alert('Please enter a valid Country');
+    return false;
+  }
+  return true;
+}
 
- 
-
- 
+function validateEmail(){
+  var useremail=document.getElementById('useremail').value;
+  var emailRGEX=/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i;
+  var emailResult=emailRGEX.test(useremail);
+  if(emailResult==false){
+    alert('Please enter a valid Email');
+    return false;
+  }
+  return true;
+}
