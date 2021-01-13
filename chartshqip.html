@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="iso-8859-2">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Astrologjia shqip</title>
+        <link rel="shortcut icon" type="image/png" href="images/astrolog.png">
+        <link rel="stylesheet" href="chartshqip.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+             crossorigin="anonymous"></script>
+       <style>
+          @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+        </style>
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="Astrology.html">Astrologjia</a></div>
+            <ul>
+                <li><a href="Astrology.html">Faqja kryesore</a></li>
+                <li><a href="Horoscope.html">Horoskopi</a>
+                    <ul>
+                        <li><a href="#">Ditore </a></li>
+                        <li><a href="#">Javore</a></li>
+                        <li><a href="#">Mujore </a></li>
+                    </ul>
+                 </li>
+                <li><a href="Astrology101.html">Astrologjia 101</a>
+                    <ul>
+                        <li><a href="earth.html">Toka</a></li>
+                        <li><a href="water.html">Uji</a></li>
+                        <li><a href="air.html">Ajri</a></li>
+                        <li><a href="fire.html">Zjarri</a></li>
+                    </ul>
+                </li>
+                <li><a href="tarot.html">Tarot</a>
+                    <ul>
+                        <li><a href="tarotreading.html">Tarot Leximi</a></li>
+                        <li><a href="game.html">Luaj!</a></li>
+                    </ul>
+                </li>
+                <li><a href="Store.html">Dyçani</a>
+                    <ul>
+                        <li><a href="books.html">Librat</a></li>
+                        <li><a href="clothes.html">Rrobat</a></li>
+                        <li><a href="jewelry.html">Bizhuteri</a></li>
+                        <li><a href="art.html">Art</a></li>
+                    </ul>
+                </li>
+                <li><a href="AboutUs.html">Për Ne</a></li>
+                <li><a href="login.html">Kyçu</a></li>
+                <li>
+                    <div class="search-box">
+                        <input  class="search-text" type="text" name="" placeholder="Kërko më shumë">
+                        <a  class="search-button"href="#" >
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="changethis"></div> 
+    <script>
+        setInterval(
+              function (){
+              var randomColor = Math.floor(Math.random()*16777215).toString(16);
+              document.getElementById("changethis").style.backgroundColor = "#"+randomColor;
+              },2000);
+    </script>  
+    <svg class="svg1" width="550" height="530" viewBox="0 0 648 633" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="undraw_No_data_re_kwbl (1) 1" clip-path="url(#clip0)">
+        <g id="paper">
+        <path id="Vector" d="M411.146 142.174H236.636C232.659 142.179 228.847 143.761 226.035 146.573C223.223 149.385 221.641 153.197 221.636 157.174V545.024L219.636 545.634L176.826 558.744C174.797 559.362 172.606 559.151 170.733 558.155C168.86 557.16 167.459 555.462 166.836 553.434L39.4961 137.484C38.8764 135.455 39.0876 133.263 40.0833 131.39C41.079 129.516 42.7778 128.115 44.8062 127.494L110.776 107.294L302.026 48.7538L367.996 28.5538C369 28.2448 370.055 28.1368 371.101 28.2361C372.147 28.3353 373.162 28.6398 374.09 29.132C375.018 29.6243 375.84 30.2947 376.509 31.105C377.177 31.9152 377.679 32.8493 377.986 33.8538L410.536 140.174L411.146 142.174Z" fill="#FBFBFB"/>
+        <path id="Vector_2" d="M449.226 140.174L409.996 12.0338C409.343 9.89876 408.276 7.91324 406.856 6.19071C405.436 4.46819 403.69 3.04242 401.718 1.99488C399.747 0.94734 397.588 0.298544 395.366 0.0855958C393.143 -0.127353 390.901 0.0997176 388.766 0.753809L296.016 29.1438L104.776 87.6938L12.0264 116.094C7.71773 117.417 4.11001 120.395 1.99515 124.376C-0.119709 128.356 -0.568935 133.013 0.746098 137.324L134.826 575.254C135.894 578.734 138.05 581.78 140.976 583.945C143.903 586.11 147.446 587.28 151.086 587.284C152.771 587.285 154.447 587.032 156.056 586.534L219.636 567.074L221.636 566.454V564.364L219.636 564.974L155.466 584.624C151.663 585.783 147.555 585.387 144.044 583.521C140.533 581.656 137.905 578.474 136.736 574.674L2.66651 136.734C2.0876 134.851 1.88583 132.872 2.07276 130.911C2.25968 128.95 2.83161 127.045 3.75583 125.305C4.68005 123.565 5.93841 122.025 7.45881 120.772C8.9792 119.519 10.7318 118.578 12.6162 118.004L105.366 89.6038L296.606 31.0638L389.356 2.66383C390.786 2.22763 392.272 2.00522 393.766 2.00382C396.973 2.01103 400.094 3.04498 402.671 4.95425C405.248 6.86351 407.146 9.54776 408.086 12.6138L447.136 140.174L447.756 142.174H449.836L449.226 140.174Z" fill="white"/>
+        <path id="Vector_3" d="M605.428 608H264.572C262.299 607.997 260.12 607.046 258.513 605.354C256.907 603.662 256.003 601.369 256 598.976V169.024C256.003 166.631 256.906 164.338 258.513 162.646C260.12 160.954 262.299 160.003 264.572 160H605.428C607.701 160.003 609.879 160.954 611.486 162.646C613.093 164.338 613.997 166.631 614 169.024V598.976C613.997 601.369 613.093 603.662 611.486 605.354C609.879 607.046 607.701 607.997 605.428 608V608Z" fill="#FBFBFB"/>
+        <path id="Vector_4" d="M447.136 140.174H236.636C232.13 140.18 227.809 141.973 224.622 145.16C221.436 148.347 219.643 152.667 219.636 157.174V564.974L221.636 564.364V157.174C221.641 153.197 223.223 149.385 226.035 146.573C228.847 143.761 232.659 142.179 236.636 142.174H447.756L447.136 140.174ZM630.636 140.174H236.636C232.13 140.18 227.809 141.973 224.622 145.16C221.436 148.347 219.643 152.667 219.636 157.174V615.174C219.643 619.681 221.436 624.001 224.622 627.188C227.809 630.374 232.13 632.167 236.636 632.174H630.636C635.143 632.167 639.463 630.374 642.65 627.188C645.837 624.001 647.63 619.681 647.636 615.174V157.174C647.63 152.667 645.837 148.347 642.65 145.16C639.463 141.973 635.143 140.18 630.636 140.174V140.174ZM645.636 615.174C645.631 619.151 644.05 622.963 641.238 625.775C638.426 628.587 634.613 630.169 630.636 630.174H236.636C232.659 630.169 228.847 628.587 226.035 625.775C223.223 622.963 221.641 619.151 221.636 615.174V157.174C221.641 153.197 223.223 149.385 226.035 146.573C228.847 143.761 232.659 142.179 236.636 142.174H630.636C634.613 142.179 638.426 143.761 641.238 146.573C644.05 149.385 645.631 153.197 645.636 157.174V615.174Z" fill="white"/>
+        </g>
+        <g id="clips">
+        <path id="Vector_5" d="M128.886 125.866C126.959 125.865 125.083 125.246 123.533 124.1C121.983 122.954 120.841 121.342 120.275 119.499L107.395 77.4277C107.048 76.2975 106.928 75.1103 107.041 73.9338C107.154 72.7572 107.497 71.6144 108.052 70.5706C108.606 69.5269 109.361 68.6025 110.273 67.8504C111.185 67.0984 112.236 66.5333 113.366 66.1874L289.305 12.3237C291.587 11.6272 294.053 11.8647 296.16 12.9841C298.267 14.1035 299.845 16.0133 300.545 18.2944L313.426 60.3666C314.122 62.649 313.884 65.1143 312.765 67.2216C311.645 69.3289 309.736 70.9062 307.455 71.6073L131.516 125.471C130.664 125.733 129.777 125.866 128.886 125.866V125.866Z" fill="#6C63FF"/>
+        <path id="Vector_6" d="M196.359 43C207.404 43 216.359 34.0457 216.359 23C216.359 11.9543 207.404 3 196.359 3C185.313 3 176.359 11.9543 176.359 23C176.359 34.0457 185.313 43 196.359 43Z" fill="#6C63FF"/>
+        <path id="Vector_7" d="M531.842 182.219H347.842C345.456 182.216 343.168 181.267 341.481 179.58C339.793 177.893 338.844 175.605 338.842 173.219V129.219C338.844 126.833 339.794 124.545 341.481 122.858C343.168 121.171 345.456 120.222 347.842 120.219H531.842C534.228 120.222 536.515 121.171 538.203 122.858C539.89 124.545 540.839 126.833 540.842 129.219V173.219C540.839 175.605 539.89 177.893 538.203 179.58C536.516 181.267 534.228 182.216 531.842 182.219V182.219Z" fill="#6C63FF"/>
+        <path id="Vector_8" d="M439.842 123.219C450.887 123.219 459.842 114.265 459.842 103.219C459.842 92.1735 450.887 83.2192 439.842 83.2192C428.796 83.2192 419.842 92.1735 419.842 103.219C419.842 114.265 428.796 123.219 439.842 123.219Z" fill="#6C63FF"/>
+        </g>
+        <g id="circles">
+        <path id="Vector_9" d="M196.182 36.3637C202.91 36.3637 208.364 30.9097 208.364 24.1819C208.364 17.454 202.91 12 196.182 12C189.454 12 184 17.454 184 24.1819C184 30.9097 189.454 36.3637 196.182 36.3637Z" fill="white"/>
+        <path id="Vector_10" d="M439.665 115.329C446.659 115.329 452.329 109.659 452.329 102.665C452.329 95.6701 446.659 90 439.665 90C432.67 90 427 95.6701 427 102.665C427 109.659 432.67 115.329 439.665 115.329Z" fill="white"/>
+        </g>
+        </g>
+        <defs>
+        <clipPath id="clip0">
+        <rect width="647.636" height="632.174" fill="white"/>
+        </clipPath>
+        </defs>
+        </svg>
+        <div class="planets">
+            <ul>
+              <li><i class="fas fa-sun" style="color:red;font-size:20px;"></i>Dielli 27°00′ në Binjakë</li>
+              <li><i class="fas fa-moon" style="color:blue;font-size:20px;"></i>Hëna 02°16′ në Peshore</li>
+              <li><i class="fas fa-mars" style="color:rgb(145, 219, 116);font-size:20px;"></i>Marsi 13°41′ në Gaforre</li>
+              <li><i class="fas fa-mercury" style="color:rgb(187, 68, 187);font-size:20px;"></i>Mërkuri 04°55′ në Binjakë</li>
+              <li><img src="https://img.icons8.com/fluent/20/000000/jupiter-symbol.png"/>Jupiteri 20°12′ në Gaforre</li>
+              <li><i class="fas fa-venus" style="color:rgb(235, 70, 70);font-size:20px;"></i>Venusi 04°10′ në Luan</li>
+              <li><img src="https://img.icons8.com/fluent/20/26e07f/saturn-symbol.png">Saturni 19°36′ në Binjakë</li>
+            </ul>
+        </div>
+        <img src="images/birthchart.svg" alt="Birthchart" id="imgsvg">
+        <div class="tablebirthchart">
+            <h2 id="keyfeatures">Karakteristikat e juaja kryesore</h2>
+            <table class="features">
+                <tbody>
+                <tr>
+                    <td><img src="images/first_quarter.png " alt="" ></td>
+                    <td>Ju keni lindur nën një Hënë të Tremujorit të Parë. Ju do të duhet ta sfidoni veten tuaj për të folur me dhe përmes krizave që shpesh shoqërojnë rritjen. Jeta juaj është e mbushur me veprim dhe zakonisht do të përfshiheni në shumë aktivitete të përditshme.</td>
+                </tr>
+                <tr>
+                    <td><img src="images/air-quarter.png" alt="features"></td>
+                    <td>Ju keni mbizotërimin e elementit të ajrit në tabelën tuaj të lindjes. Ai tregon një theks të fortë në mendim, ide dhe kërkime intelektuale të një lloji njëri-tjetrit. Interesantët tuaj janë të ndryshëm dhe jeni të prirur të jeni një student gjatë gjithë jetës.</td>
+                </tr>
+                <tr>
+                    <td><img src="images/mutable-quarter.png" alt="features"></td>
+                    <td>Ju keni mbizotërim të mënyrës së ndryshueshme në tabelën tuaj të lindjes. Kjo tregon përshtatshmëri, dhe ju mund të jeni aq të ndryshueshëm saqë është pothuajse e pamundur të ju ngurtësohet.</td>
+                </tr>
+                <tr>
+                    <td><img src="images/west-quarter.png" alt="features"></td>
+                    <td>Hemisfera Lindore theksohet në tabelën tuaj të lindjes. Jeni të motivuar nga vetja, i ngarkuar nga veprimi dhe vetë-pohues. Ju prireni të besoni fuqimisht në vullnetin e lirë.</td>
+                </tr>
+                <tr>
+                    <td><img src="images/north-quarter.png" alt="features"></td>
+                    <td>Hemisferia jugore theksohet në tabelën tuaj të lindjes, e cila është pjesa sociale, objektive dhe kolektive e tabelës. Prandaj, ju prireni të jeni objektiv, i shoqërueshëm dhe i shqetësuar për ngjarjet e jashtme</td>
+                </tr>
+            </tbody>
+            </table>
+            <div>
+                <form action="chartshqip.html">
+                    <button id="english">Translate to English</button>
+                </form>
+            </div>
+            <footer>
+                <div class="main-content">
+                    <div class="left box">
+                        <h2>Për Ne</h2>
+                        <div class="content">
+                            <p> Astrologjia është një pseudoshkencë që pretendon për informacion hyjnor në lidhje me çështjet njerëzore dhe ngjarjet tokësore duke studiuar lëvizjet dhe pozicionet relative të objekteve qiellore. Kjo faqe në internet mbulon disa nga konceptet e rëndësishme të Astrologjisë. </p>
+                            <div class="social">
+                                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" ></i></a>
+                                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center box">
+                        <h2>Adresa</h2>
+                        <div class="content">
+                            <div class="place">
+                                <span class="fas fa-map-marker-alt"></span>
+                                <span class="text">New York | New York City </span>
+                            </div>
+                            <div class="place">
+                                <span class="fas fa-map-marker-alt"></span>
+                                <span class="text">Nevada | Las Vegas</span>
+                            </div>
+                            <div class="place">
+                                <span class="fas fa-map-marker-alt"></span>
+                                
+                                <span class="text">Germany | Stuttgart</span>
+                            </div>
+                            <div class="phone">
+                                <span class="fas fa-phone-alt"></span>
+                                <span class="text">+(383)4XXXYYYY</span>
+                            </div>
+                            <div class="email">
+                                <span class="fas fa-envelope"></span>
+                                <span class="text"><a href="mailto:toaddress@email.com">filan@fisteku.com</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right box">
+                        <h2>Kontaktoni</h2>
+                        <div class="content">
+                            <form action="#">
+                                <div class="email">
+                                    <div class="text">Email *</div>
+                                    <input type="email" required>
+                                </div>
+                               <div class="msg">
+                                   <div class="text">Mesazh *</div>
+                                    <textarea  id="" cols="25" rows="2" required></textarea>
+                                </div>
+                            
+                            <div class="btn">
+                                <button type="submit">Dërgo</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                        <span class="credit">Krijuar nga <a href="#">Grupi4</a>
+                            <span class="far fa-copyright"></span><span> 2021 Të gjitha të drejtat e rezervuara.</span>
+                        </span>
+                </div>
+            </footer>
+</body>
+</html>
