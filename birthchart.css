@@ -121,6 +121,14 @@ nav .logo{
     width: 100%;
     margin: auto;
 }
+#now{ 
+    color:white;
+    font-family:'Cormorant Garamond', serif;
+    font-size:20px;
+    text-align: center;
+    
+
+}
 .svg1{
     position: relative;
     top:30px;
