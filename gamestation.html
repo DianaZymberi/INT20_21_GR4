@@ -63,7 +63,6 @@
         </nav>
     </header>
     <script>
-        
         function calculate(){
             var n1 = parseFloat(document.getElementById('n1').value);
             var n2 = parseFloat(document.getElementById('n2').value);
@@ -81,36 +80,102 @@
             if(oper === 'x'){
                 document.getElementById('result').value = n1*n2;
             }
-        }
-    </script>
-        <script>
-            function myFunction() {
+        };
+        function match() {
               var str = "A horoscope is an astrological chart or diagram representing the positions of the Sun, Moon, planets, astrological aspects and sensitive angles at the time of an event, such as the moment of a person's birth. The word horoscope is derived from the Greek words ōra and scopos meaning \"time\" and \"observer\" (horoskopos, pl. horoskopoi, or \"marker(s) of the hour\"). Other commonly used names for the horoscope in English include natal chart, astrological chart, astro-chart, celestial map, sky-map, star-chart, cosmogram, "; 
               var res = str.match(/chart/g);
               document.getElementById("demo").innerHTML = res;
+            };
+        function execute() {
+        var str = "Because many of us are asleep, our dreams may be filled with visions of the future, and how we would like to use our voices to inspire positive change, inclusivity, and progress.";
+        var patt = /Sleep/ig;
+        var result = patt.exec(str);
+        var patt2 = /Astrology/ig;
+        result2 = patt2.exec(str);
+        document.getElementById("exec").innerHTML = result + "," + result2;
+        };
+        function zoomin(){
+            var myImg = document.getElementById("math");
+            var currWidth = myImg.clientWidth;
+            if(currWidth == 600){
+                alert("You’re fully zoomed in!");
+            } else{
+            myImg.style.width = (currWidth + 10) + "px";
+            } 
+        };
+        function zoomout(){
+            var myImg = document.getElementById("math");
+            var currWidth = myImg.clientWidth;
+            if(currWidth == 400){
+                alert("That is as small as it gets.");
+            } else{
+            myImg.style.width = (currWidth - 10) + "px";
             }
-            </script>    
-    <div style="float: left;" >
-<p class="kalk"> Four Operator-Calculator :</p>
-<form class="form1" onclick="return false" >
-    <input type="text" id="n1"/>
-    <select id="operators">
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="/">/</option>
-        <option value="x">x</option>
-    </select>
-    <input type="text" id="n2"/>
-    <button onclick="calculate();" id="operbtn">=</button>
-    <input type="text" id="result"/>
+        };
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+            $(".shto").append(" Dardan.");
+        });
 
-</form>
-        <p class="tekst" >Click the button to search for the letters "chart" in a string</p>
+            $("#btn2").click(function(){
+            $("ol").append("<li>Hellooo</li>");
+         });
+});
+    </script>
+<div class="left">
+    <p class="tekst"> Four Operator-Calculator :</p>
+    <form class="form1" onclick="return false" >
+        <input type="text" id="n1"/>
+        <select id="operators">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="x">x</option>
+        </select>
+        <input type="text" id="n2"/>
+        <button onclick="calculate();" id="operbtn">=</button>
+        <input type="text" id="result"/>
+    </form>
+    <p class="tekst" >Click the button to search for the letters "chart" in a string</p>
 
-        <button type="submit" onclick="myFunction()" class="myfbtn" >Find some charts</button>
+        <button type="submit" onclick="match()" class="myfbtn" >Find some charts</button>
         <p id="demo" ></p>
-    </div>
+        
+    <p class="tekst">Search for Sleep and Astrology</p>
+
+        <button type="submit" id="execute" onclick="execute()">Find us</button>
+        <p id="exec"></p>
+
+</div>
 <img src="images/mathjpg.jpg" alt="Math" id="math">
+<div class="right">
+    <button type="button" onclick="zoomin()"><img src="https://img.icons8.com/cute-clipart/22/000000/zoom-in.png"/> Zoom In</button>
+    <button type="button" onclick="zoomout()"><img src="https://img.icons8.com/cute-clipart/22/000000/zoom-out.png"/> Zoom Out</button>
+</div>
+
+
+<div class="middle">
+    <br><br><br>
+    <p class="shto">Say HELLO</div>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+<button id="btn1" >Append text</button>
+<button id="btn2">Append list items</button>
+
+</div>
+
+
+
+
+
+
+
+
+
 <!--             <footer>
                 <div class="main-content">
                     <div class="left box">
