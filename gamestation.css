@@ -116,24 +116,39 @@ nav .logo{
     line-height: 20px;
     width:0px;
 }
-.kalk{
+.left{
     position: relative;
-    top:130px;
-    left:250px;
-    font-size:20px;
-    font-family:'Baloo 2', cursive;
-    color:white;
+    left:200px;
+    float: left;
+    width: 50%;
+}
+.right{
+    position: relative;
+    float: right;
+    top:55px;
+    right:150px;
+
+} 
+#math{
+    float: right;
+    position: relative;
+    top:50px;
+    right:100px;
+    width:450px;
+    height:450px;
+    border-radius:15px;
 }
 .tekst{
-    position: relative;
-    top:130px;
-    left:160px;
     font-size:20px;
     font-family:'Baloo 2', cursive;
     margin-top:50px;
     color:white;
 }
-
+.shto, ol li{
+    font-size:20px;
+    font-family:'Baloo 2', cursive;
+    color:white;
+}
 #n1 , #n2 , #operators ,#operbtn ,#result{
     font-size: 25px;
     text-align: center;
@@ -142,35 +157,13 @@ nav .logo{
     height: 50px;
 }
 .form1{
-    position: relative;
-    left:130px;
-    top:150px;
     display: inline;
-
 }
-.myfbtn{
-    position:relative;
-    top:125px;
-    left:250px;
-    margin:10px;
-}
-#demo{
-    position: relative;
-    top:80px;
-    left:250px;
+#exec ,#demo{
+    display:inline;
     font-size:20px;
     font-family:'Baloo 2', cursive;
-    margin-top:50px;
     color:white;
-}
-#math{
-    position: relative;
-    top:50px;
-    right:100px;
-    float:right;
-    width:450px;
-    height:450px;
-    border-radius:15px;
 }
 button[type="submit"]{
     width: 200px;
@@ -187,6 +180,26 @@ button[type="submit"]{
 button[type="submit"]:hover{
     background-color: rosybrown;
 }
+button[type="button"] ,#btn1,#btn2{
+    width: 150px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 15px;
+    color: black;
+    border: none;
+    font-weight: 600;
+    background-color: rosybrown;
+    cursor: pointer;
+}
+ol li ,#btn1,.shto{
+
+    margin-left:220px;
+}
+
+.middle{
+    clear: both;
+}
+
 footer{
     clear: both;
     color: black;

@@ -118,12 +118,14 @@ nav .logo{
 	overflow: hidden;
 	width: 400px;
 	max-width: 100%;
-	margin: auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .first{
 	border-bottom: 1px solid #f0f0f0;
-	background-color: #f7f7f7;
+	background-color: rosybrown;
 	padding: 20px 40px;
 }
 
@@ -132,7 +134,8 @@ nav .logo{
 }
 
 .form {
-	padding: 30px 40px;	
+    padding: 30px 40px;	
+    background: #e7d5d5;
 }
 
 .second {
@@ -199,8 +202,8 @@ nav .logo{
 }
 
 .form button {
-	background-color:royalblue;
-	border: 2px solid royalblue;
+	background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
+	border: 2px solid black;
 	border-radius: 4px;
 	color: #fff;
 	display: block;
