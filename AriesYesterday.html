@@ -26,15 +26,38 @@
   padding: 10px;
   margin-left:45px;
   margin-top: -30px;
+
+
   font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #ca929e;
   border: none;
-  
+  border-radius: 15px;
+  box-shadow: 0 5px rgb(80, 57, 70);
 }
+
+.dropbtn:hover {background-color: #ca929e}
+
+.dropbtn:active {
+  background-color:#ca929e;
+  box-shadow: 0 5px rgb(56, 33, 40);
+  transform: translateY(4px);
+}
+
+
+
+
+
 
 .dropdown {
   position: relative;
   color: #A37B7B;
   display: inline-block;
+  
+  
   
 }
 
@@ -46,6 +69,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   
   
+  border-radius: 15px;
   margin-left:45px;
 }
 
@@ -56,7 +80,8 @@
   display: block;
 }
 
-.dropdown-content a:hover {background-color: rgb(104, 58, 73);}
+.dropdown-content a:hover {background-color: rgb(104, 58, 73);
+  border-radius: 15px;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
@@ -68,15 +93,16 @@
 
 
 
+
 .vequara{
 
 position:absolute;
 text-size-adjust: 30px;
-margin-top: -761px;
+margin-top: -811px;
 margin-left: 340px;
 border: 3px solid #A37B7B;
    border-radius: 10px;
-    background:linear-gradient(121deg, rgba(178, 168, 184, 0.726), rgba(19, 16, 61, 0.308) 70.71%);
+    background:radial-gradient( rgba(178, 168, 184, 0.726), rgba(19, 16, 61, 0.308) 70.71%);
 }
 
 
@@ -135,6 +161,30 @@ border: 3px solid #A37B7B;
 }
 
  
+ 
+ 
+
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #ca929e;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px rgb(80, 57, 70);
+}
+
+.button:hover {background-color: #ca929e}
+
+.button:active {
+  background-color:#ca929e;
+  box-shadow: 0 5px rgb(56, 33, 40);
+  transform: translateY(4px);
+}
 
 
 
@@ -167,7 +217,7 @@ border: 3px solid #A37B7B;
       position:absolute; top:70px; left:20px;">
 
    <p><span class="arrow-highlight"> <a href="AriesYesterday.html">Yesterday</a></span> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-    <a href="aries.html">Today</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a href="ariestomorrow.html"></a>Tomorrow</a>
+    <a href="aries.html">Today</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a href="ariestomorrow.html">Tomorrow</a>
     &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a href="yesterday.html">Weekly</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
      <a href="yesterday.html">Monthly</a>
     
@@ -203,7 +253,7 @@ border: 3px solid #A37B7B;
               <a href="PiscesToday.html">Pisces</a></div>
           </div>
 
-<h2 id="detjona">Card of yesterday</h2>
+<h2 id="cardoftheday">Card of yesterday</h2>
     <img src="images/TheTower.jpg" style="width:200px;height:300px;
           position:absolute; top:316px; left:980px;">
 
@@ -237,7 +287,7 @@ border: 3px solid #A37B7B;
 
 
 
-<h2 id="quote" style="margin-top: -795px;"  >QUOTE OF TOMORROW</h2>
+<h2 id="quote" style="margin-top: -855px;"  >QUOTE OF YESTERDAY</h2>
       
 <p class = "vequara" style = "text-align: center;position:absolute; color: rgb(255, 255, 255);"> <br><br>
 
@@ -253,9 +303,9 @@ border: 3px solid #A37B7B;
 
   
 
-    <h1 style="color: #ddd;position: absolute;top: 560px;left: 240px;">Interesting facts about Aries</h1>
+    <h1 style="color: #ddd;position: absolute;top: 540px;left: 240px;">Interesting facts about Aries</h1>
 
-    <button style="position: absolute;top: 636px;left: 200px;background-color:#A37B7B;font-size: 20px;">Click to fade in boxes</button><br><br>
+    <button  class="button" style="position: absolute;top: 606px;left: 200px;background-color:#A37B7B;font-size: 20px;">Click to see the facts</button><br><br>
     <div id="div1" style="width:500px;height:150px;display:none;background-color:#e7d5d5;
     position: absolute;top: 670px;left: 200px;">
           <dt>ARIES MAY COME OFF BOSSY</dt>
