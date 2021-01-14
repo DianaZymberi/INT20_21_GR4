@@ -13,11 +13,53 @@
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
    
     </head>
- 
+    <script>
+     
+        function validateForm(form) {
+            var re = /^[\w ]+$/;
+    if (form.card_holder.value == "") {
+        alert("Error: Card holder's name is missing!");
+        form.card_holder.focus();
+        return false;
+    }
+    if (!re.test(form.card_holder.value)) {
+            alert("Error: Card holder contains invalid characters!");
+            form.card_holder.focus();
+            return false;
+        }
+        if (isNaN(form.card_holder.value) == false) {
+            alert("Error: Card holder is number!");
+            form.card_holder.focus();
+            return false;
+        }
+    
+    if (form.card_number.value == "") {
+        alert("Error: Card number is missing!");
+        form.card_number.focus();
+        return false;
+    }
+    
+    if (form.Expiry_date.value == "") {
+        alert("Error: Expiry date is missing!");
+        form.Expiry_date.focus();
+        return false;
+    }
+    
+    
+    if (form.cvc.value == "") {
+        alert("Error: CVC is missing!");
+        form.cvc.focus();
+        return false;
+    }
+    
+    return true;
+    }
+    
+     </script>
         <body>
             <div class="wrapper">
                 <div class="payment">
-                    <form method="GET" action="succesfuly.html">
+                    <form method="GET" action="succesfuly.html" onsubmit="return validateForm(this);">
                    
                     <h2>Payment Gateway</h2>
                     <div class="forma" >
@@ -27,30 +69,35 @@
                         <script src="app.js"></script>
                         <div class="card space icon-relative">
                             <label class="label">Card Holder:</label>
-                            <input type="text" class="input" name="card_holder" data-mask="0000 0000 0000" placeholder="Card Holder" required>
+                            <input type="text" class="input" name="card_holder"  placeholder="Card Holder" >
                             <i class="fas fa-user"></i>
                         </div>
                         <div class="card space icon-relative">
                             <label class="label">Card Number:</label>
-                            <input type="text" class="input" name="card_number" placeholder="Card Number" required>
+                            <input type="text" class="input" name="card_number" placeholder="0000 0000 0000 0000" maxlength="16" minlength="16" >
                             <i class="fas fa-credit-card"></i>
                         </div>
                         <div class="card-grp space">
                             <div class="card-item icon-relative">
                             <label class="label">Expiry Date</label>
-                            <input type="text" class="input" name="Expiry_date" placeholder="00/00" required>
+                            <input type="text" class="input" name="Expiry_date" placeholder="00/00" maxlength="5" minlength="5" >
                             <i class="far fa-calendar-alt"></i>
                         </div>
                         <div class="card-item icon-relative">
                             <label class="label">CVC</label>
-                            <input type="text" class="input" name="cvc" placeholder="000" required>
+                            <input type="text" class="input" name="cvc" placeholder="000" minlength="3" maxlength="3">
                             <i class="fas fa-lock"></i>
                         </div>
                     </div>
                     <button type="submit" id="my-btn" >Pay</button>
-                    <button type="reset" id="reset" >Reset</button>
+                    <button type="reset" id="reset"  onclick="Sure()">Reset</button>
                     </div>
-                   
+                    <script>
+                        function Sure(){
+                          confirm("Are you sure you want to reset?")
+                          Sure;
+                        }
+                      </script>
                 </form>
                 </div>
             </div>
