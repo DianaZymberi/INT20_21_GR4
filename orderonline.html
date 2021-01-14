@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <script src="validimi.js"></script>
   
 </head>
 <body>
@@ -18,18 +19,18 @@
     <div class="container">
       <h1 style="text-align: center;">YOUR ORDER</h1>
       <div class="checkout-1">
-        <form method="GET" action="PagesaOnline.html">
+        <form method="GET" action="PagesaOnline.html"  onsubmit="return validate(this)">
           <div class="hapat-epageses">
             <h2>Personal Details</h2>
-            <input type="text" class="textfield" placeholder="Your Name" required>
+            <input type="text" class="textfield" placeholder="Your Name" name="name">
           
-            <input type="email" class="textfield"  placeholder="E-mail" required>
-            <input type="text" class="textfield"  placeholder="Phone number" required>
+            <input type="email" class="textfield"  placeholder="E-mail" name="email">
+            <input type="text" class="textfield"  placeholder="Phone number" name="phone">
           </div>
           <div class="hapat-epageses">
             <h2>Shipping address</h2>
             <input  type="text"  class="textfield" list="country"
-            placeholder="Albania" required/> <br>
+            placeholder="Albania"name="country"/> <br>
         <datalist id="country">
             <label for="">
             <option>A</option>
@@ -185,59 +186,42 @@
             <option>Zimbabwe</option>
         
         </datalist></label>
-        <input type="text"  class="textfield" placeholder="City" required>
-          <input type="text"  class="textfield" placeholder="Address" required>
+        <input type="text"  class="textfield" placeholder="City" name="city">
+          <input type="text"  class="textfield" placeholder="Address" name="address">
           </div>
           <div class="hapat-epageses">
             <h2>Shipping option </h2>
             <label for="radio1">
-              <input type="radio" name="options" id="radio1" required>
+              <input type="radio" name="options" id="radio1" >
               Delivery by courier-during the week!
             </label>
             <label for="radio2">
-              <input type="radio" name="options" id="radio2" required>
+              <input type="radio" name="options" id="radio2" >
              Urgent delivery-During 36 hours
             </label>
             <label for="radio3">
-              <input type="radio" name="options" id="radio3" required>
+              <input type="radio" name="options" id="radio3">
              Pick up! You can pick up form 9AM-8PM
             </label>
           </div>
-          <div class="hapat-epageses">
-<h2>Billing options </h2>
-<label for="radio5">
-  <input type="radio" name="billingoptions" id="radio5" required>
-  Visa
-</label>
-<label for="radio6">
-  <input type="radio" name="billingoptions" id="radio6" required>
-  Mobile banking
-</label>
-          </div>
+   
          
       
         
        <button type="submit" >SUBMIT</button>
-        <!--<button >
-          <a href="PagesaOnline.html"> <input type="submit" class="submitorder"  value="SUBMIT ORDER" ></a></button>
-            <input type="reset" class="ClearForm" value="RESET">
-         
-       <script>
-         function valueSender()
-         {
-           var a=101;
-           localStorage.setItem("myvalue",a);
-           window.location.href="PagesaOnline.html";
-
-         }
+        
        </script>-->
-       <button type="reset">RESET</button>
-       
+       <button type="reset" onclick="Sure()">RESET</button>
+       <script>
+        function Sure(){
+          confirm("Are you sure you want to reset?")
+          Sure;
+        }
+      </script>
       </div>
     </form>
     </div>
   </div>
- <script src="orderonline.js"></script>
   </body>
 </html>
    
