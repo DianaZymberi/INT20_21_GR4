@@ -409,9 +409,33 @@ table, th, td {
 </table>
 
 
-<img src="thesunandmoon.jpg" style="width:320px;height:320px;
+<img src="images/thesunandmoon.jpg" style="width:320px;height:320px;
       position:absolute; top:670px; left:820px;">
 
+
+
+
+<p id="demo" style="position: absolute;left: 700px;top: 1060px;font-size: 30px;">What Is the Difference Between Your Sun, Moon?</p>
+<p style="position: absolute;left: 665px;top: 1150px;">Your sun, moon, and rising signs are considered “the big three” in astrology.<br>
+     They represent the three most important parts of your identity: your core self (sun),<br>
+      your inner-self (moon) and how others perceive you (rising). These three signs can fall <br>
+      in the same sign or be completely different—but the three of them together have a major <br>
+      influence on you. <br><br>
+
+    Your sun sign is the sign most people are familiar with, as it’s derived from our birthdays.<br>
+     The sun remains in a sign for about 30 days, so the day you were born determines this sign.<br>
+      Because the sun represents identity, self, and life purpose, this sign suggests how you <br>
+      feel about yourself, your values, and the way you look at the world. Basically, your sun <br>
+      sign captures your essence and radiates out into the world.<br></p>
+<button onclick="myFunction()" style="position: absolute;left: 1065px;top: 1103px;">Change your moon</button>
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var res = str.replace("Moon", "Rising signs");
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
 
 
 
