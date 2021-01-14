@@ -9,7 +9,52 @@
    
 </head>
 <body bgcolor="rosybrown">
+    <div id="particles-js">
+        <h2 style="text-align: center;">It was successfuly ordered<br> <button ><a href="store.html">Return back!</a></button></h2>
+       
+    </div>
+    <style>
+        #coments{  
+text-align: center;  
+border: 7px solid white;  
+width: 300px;  
+height: 200px;  
+padding-top: 100px;  
+margin: auto;
+box-shadow: 5px 10px #888888;
+}  
+    </style>
+    <div id="coments">
+    <p >How happy were you with our help?</p>
+  
+<input id="demo" type="text">
+<button   onclick="myFunction()">Test Input</button>
+<p id="p01"></p>
+</div>
+
+<script>
+function myFunction() {
+  var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+  try { 
+    if(x == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 1)  throw "too low";
+    if(x > 10)   throw "too high";
+    if(x<5) throw "Nice";
+    if(x>=5) throw "Speechless";
    
-    <h2 style="text-align: center;">It was successfuly ordered</h2>
-    </body>
-    </html>
+  }
+  catch(err) {
+    message.innerHTML = err;
+  }
+  
+}
+</script>
+
+</body>
+</html>
+        
