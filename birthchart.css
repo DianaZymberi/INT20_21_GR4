@@ -200,7 +200,7 @@ td:first-child{
 footer{
     clear: both;
     color: black;
-    position: absolute;
+    position: relative;
     bottom: 0px;
     width: 100%;
     background: #A37B7B;
