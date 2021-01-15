@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <style>
     @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
@@ -21,13 +22,7 @@
 <div class="logo"><a href="Astrology.html">Astrology</a></div>
 <ul>
     <li><a href="Astrology.html">Home</a></li>
-    <li><a href="Horoscope.html">Horoscope</a>
-        <ul>
-            <li><a href="#">Daily </a></li>
-            <li><a href="#">Weekly</a></li>
-            <li><a href="#">Monthly </a></li>
-        </ul>
-     </li>
+    <li><a href="Daily.html">Horoscope</a> </li>
     <li><a href="Astrology101.html">Astrology 101</a>
         <ul>
             <li><a href="earth.html">Toka</a></li>
@@ -39,8 +34,8 @@
     <li><a href="tarot.html">Tarot</a>
         <ul>
             
-            <li><a href="tarotreading.html">Tarot Reading</a></li>
-            <li><a href="game.html">Just for fun!</a></li>
+            <li><a href="tarotreading.html">Read</a></li>
+            <li><a href="game.html">Play</a></li>
         </ul>
     </li>
     <li><a href="store.html">Store</a>
@@ -144,7 +139,36 @@
             <h2 style="text-align: center;">Christmas gifts for all!</h2>
             <p style="text-align: center;">Astrological Themes <br>50% off  just on <b>ZODIAC STORE</b></p>
             <p style="text-align: center;">From $45 to $30</p>
-            <p style="text-align: center;"><a href="orderonline.html" >Buy now &#8594;</a></p>
+            <p style="text-align: center;"><a href="orderonline.html" >Buy now &#8594;</a></p><br><br>
+            <script>
+                $(document).ready(function(){
+                  $("button").click(function(){
+                    $("h4").hide("slow", function(){
+                      alert("The quote is now hidden");
+                    });
+                  });
+                });
+                </script>
+                <style>
+                    button{
+                        width: 90px;
+                        height: 20px;
+                        margin: 15px;
+                        border-radius: 4px;
+                        float: right;
+                        font-size: 10px;
+                        color: black;
+                        border: none;
+                        font-weight: 600;
+                        background-color: rosybrown;
+                        cursor: pointer;
+                    }</style>
+                <h4 style="text-align: center;">“Anyone can be a millionaire, but to become a billionaire you need an astrologer.”<br>
+                    —J. P. Morgan</h4>
+           <p style="text-align: center;"> <button >Hide the quote</button></p><br>
+            
+    
+                
         </div>
         </div>
     </div>
