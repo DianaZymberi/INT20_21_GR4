@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astrology</title>
-    <link rel="shortcut icon" type="image/png" href="astrologo.png">
+    <link rel="shortcut icon" type="image/png" href="images/astrolog.png">
     <link rel="stylesheet" href="horoscope.css">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-   
-   <link rel="shortcut icon" type="image/png" href="images/astrolog.png">
-   
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+         crossorigin="anonymous"></script>
 
+         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+   
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script>
+         $(document).ready(function(){
+           $("button").click(function(){
+             $("#div1").fadeIn();
+             $("#div2").fadeIn("slow");
+             $("#div3").fadeIn(3000);
+           });
+         });
+         </script>
    <style>
-<<<<<<< HEAD
-=======
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
        
-
-       @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
-          @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
-
-
 .dropbtn {
-  background-color: #A37B7B;
+  background-color: rgb(173, 117, 117) ;
   color: white;
   padding: 10px;
   margin-left:45px;
-  margin-top: 45px;
-
-
+  margin-top: 60px;
+  font-size: 16px;
+  
   font-size: 16px;
   text-align: center;
   cursor: pointer;
@@ -37,7 +47,9 @@
   border: none;
   border-radius: 15px;
   box-shadow: 0 5px rgb(80, 57, 70);
+  
 }
+
 
 .dropbtn:hover {background-color: #ca929e}
 
@@ -49,22 +61,17 @@
 
 
 
-
-
-
 .dropdown {
   position: relative;
   color: #A37B7B;
   display: inline-block;
-  
-  
   
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #c09696;
+  background-color: #a0546d;
   min-width: 144px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   
@@ -80,8 +87,7 @@
   display: block;
 }
 
-.dropdown-content a:hover {background-color: rgb(104, 58, 73);
-  border-radius: 15px;}
+.dropdown-content a:hover {background-color: rgb(104, 58, 73);}
 
 .dropdown:hover .dropdown-content {display: block;}
 
@@ -93,12 +99,11 @@
 
 
 
-
 .vequara{
 
 position:absolute;
 text-size-adjust: 30px;
-margin-top: -619px;
+margin-top: -581px;
 margin-left: 340px;
 border: 3px solid rgba(145, 93, 87, 0.747);
    border-radius: 10px;
@@ -131,244 +136,41 @@ border: 3px solid rgba(145, 93, 87, 0.747);
 }
 
 .tabela{
->>>>>>> parent of e5e6d20... Update aries.html
-
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
-          @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
-           
-    .dropbtn {
-      background-color: rgb(173, 117, 117) ;
-      color: white;
-      padding: 10px;
-      margin-left:45px;
-      margin-top: 45px;
-      font-size: 16px;
-      border: none;
-      
-    }
-    
-    .dropdown {
-      position: relative;
-      color: rgb(173, 117, 117);
-      display: inline-block;
-      
-    }
-    
-<<<<<<< HEAD
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #a0546d;
-      min-width: 144px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      
-      
-      margin-left:45px;
-    }
-    
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-    
-    .dropdown-content a:hover {background-color: rgb(148, 70, 96);}
-    
-    .dropdown:hover .dropdown-content {display: block;}
-    
-    .dropdown:hover .dropbtn {background-color:rgb(173, 117, 117);}
-    
-    
-    
-    
-    
-    
-    
-    .vequara{
-    
-    position:absolute;
-    text-size-adjust: 30px;
-    margin-top: -445px;
-    margin-left: 340px;
-    border: 3px solid rgba(145, 93, 87, 0.747);
-       border-radius: 10px;
-        background:radial-gradient(rgba(178, 168, 184, 0.726), rgba(19, 16, 61, 0.308) 70.71%);
-    }
-    
-    
-    
-    
-    
-    
-    
-    #match , .tabela, #todays{  
-      border: 1px solid #ddd;
-      text-align: left;
-    }
-    
-    #match {
-      border-collapse: collapse;
-      width: 50%;
-      color: rgb(0, 0, 0);
-      margin-left: 570px;
-      margin-top: 340px;
-    }
-    
-    #todays, .tabela {
-      padding: 5px;
-      color: rgb(0, 0, 0);
-    }
-    
-    .tabela{
-    
-        
-      background-color:#A37B7B;
-    }
-    
-    #todays{
-        
-      background-color: #e7d5d5;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    #cardTable {
-      width: 30%;
-      border-collapse: collapse;
-      border: 1px solid black;
-      margin-top: -247px;
-      margin-left: 50px;
-      color: rgb(26, 22, 22);
-      background-color: #A37B7B;
-      
-      padding-left: 10px;
-      padding-top: 20px;
-    }
-    
-     
-     
 
     
-    
-    /* The Modal (background) */
-    .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
-      padding-top: 100px; /* Location of the box */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(16,9,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-    
-    /* Modal Content */
-    .modal-content {
-      background-color: #533131;
-      margin: auto;
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%;
-      height: 10%;
-      color: #ddd;
-    }
-    
-    /* The Close Button */
-    .close {
-      color: #fff9f9;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
-    
-    .close:hover,
-    .close:focus {
-      color: #000;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    
-    
-    
-        </style>
-    </head>
-    <body>
-        <header>
-    
-          <nav>  
-            <div class="logo"><a href="Astrology.html">Astrology</a></div>
-            <ul>
-                <li><a href="Astrology.html">Home</a></li>
-                <li><a href="Daily.html">Horoscope</a>
-                   
-                 </li>
-                <li><a href="Astrology101.html">Astrology 101</a>
-                    <ul>
-                        <li><a href="earth.html">Earth</a></li>
-                        <li><a href="water.html">Water</a></li>
-                        <li><a href="air.html">Air</a></li>
-                        <li><a href="fire.html">Fire</a></li>
-                    </ul>
-                </li>
-                <li><a href="tarot.html">Tarot</a>
-                    <ul>
-                        <li><a href="tarotreading.html">Tarot Reading</a></li>
-                        <li><a href="game.html">Play for fun!</a></li>
-                    </ul>
-                </li>
-                <li><a href="Store.html">Store</a>
-                    <ul>
-                        <li><a href="books.html">Books</a></li>
-                        <li><a href="clothes.html">Clothes</a></li>
-                        <li><a href="jewelry.html">Jewelry</a></li>
-                        <li><a href="art.html">Art</a></li>
-                    </ul>
-                </li>
-                <li><a href="AboutUs.html">About us</a></li>
-                <li><a href="login.html">Log in</a></li>
-                <li>
-                    <div class="search-box">
-                        <input  class="search-text" type="text" name="" placeholder="Type to search">
-                        <a  class="search-button"href="#" >
-                            <i class="fas fa-search"></i>
-                        </a>
-                    </div> 
-                </li>
-            </ul>
-    </header>
+  background-color:#A37B7B;
+}
 
-<main>
-  
-   <h1 style="position: relative;top: 20px;left: 0px;" id="h1">Aries</h1>
-      <img src="images/ARIES.png" style="width:220px;height:220px;
-      position:absolute; top:70px; left:20px;">
-
-<p style="margin-top:40px;margin-left: 470px;"> <a style="color: #ddd;"  href="AriesYesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-  <span class="arrow-highlight"> <a style="color: #ddd;"  href="aries.html">Today</a></span>
-  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a style="color: #ddd;"  href="ariestomorrow.html">Tomorrow</a>
-  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+#todays{
     
-    
-    </p>>
-
-  <article style="text-align: center; color: #ddd;position: relative;top: 65px;">
-=======
   background-color: #e7d5d5;
 }
 
 
 
 
+
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #ca929e;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px rgb(80, 57, 70);
+}
+
+.button:hover {background-color: #ca929e}
+
+.button:active {
+  background-color:#ca929e;
+  box-shadow: 0 5px rgb(56, 33, 40);
+  transform: translateY(4px);
+}
 
 
 
@@ -388,11 +190,6 @@ border: 3px solid rgba(145, 93, 87, 0.747);
 }
 
  
-
-
-
-
-
 
 
 
@@ -429,7 +226,7 @@ border: 3px solid rgba(145, 93, 87, 0.747);
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  height: 10%;
+  height: 13%;
   color: #ddd;
 }
 
@@ -449,6 +246,7 @@ border: 3px solid rgba(145, 93, 87, 0.747);
 }
 
 
+
 p,article{
 
 
@@ -456,17 +254,17 @@ z-index: -1
 
 }
 
+
     </style>
 </head>
 <body>
     <header>
-
       <nav>  
         <div class="logo"><a href="Astrology.html">Astrology</a></div>
         <ul>
             <li><a href="Astrology.html">Home</a></li>
             <li><a href="Daily.html">Horoscope</a>
-              
+               
              </li>
             <li><a href="Astrology101.html">Astrology 101</a>
                 <ul>
@@ -504,32 +302,36 @@ z-index: -1
 </header>
 
 <main>
-  
+
     <h1 style="position: relative;top: 40px;left: 0px;" id="h1">Aries</h1>
-      <img src="images/ARIES.png" style="width:220px;height:220px;
+      <img src="images/Aries.png" style="width:220px;height:220px;
       position:absolute; top:70px; left:20px;">
 
-   <p style="margin-left:470px;"><br><br><br> <a style="color: #ddd;" href="AriesYesterday.html">Yesterday</a> 
-    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-    <span class="arrow-highlight"> <a style="color: #ddd;" href="aries.html">Today</a></span>
-    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a style="color: #ddd;" href="ariestomorrow.html">Tomorrow</a>
+   <p style="margin-left:470px;"><br><br><br><a style="color: #ddd;" href="AriesYesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+    <span class="arrow-highlight"> <a style="color: #ddd;" href="AriesToday.html">Today</a></span>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a style="color: #ddd;" href="AriesTomorrow.html">Tomorrow</a>
     &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
     
-    </p>>
+    </p>
 
-     <article style="text-align: center; color: #ddd;position: relative;top: 50px;">
-<<<<<<< HEAD
->>>>>>> parent of e5e6d20... Update aries.html
-=======
->>>>>>> parent of e5e6d20... Update aries.html
-         You can't do it all today, which is a fact that will become all too apparent as soon as <br>
-         you get started this morning. But instead of feeling frustrated, start paring off a few<br>
-          tasks and adjust your expectations. Despite the current rumors, you are not a superhero!<br>
-           It's much better to do less and succeed often than it is to always aim for the stars <br>
-           and continually fall short. Climbing a smaller mountain is still climbing a mountain.<br>
-     </article>
+    <article style="text-align: center; color: #ddd;position: relative;top: 60px;">
+         
+        This could be a very creative and inventive kind of day. Original and effective ideas may seem to  <br>
+        come to you effortlessly. You could be intrigued by technology and gadgets that can help make life easier <br>
+         and free you from too much drudgery. Plus, if there’s a creative component, you’ll be very eager to get  <br>
+         involved and discover more. An encounter today could be like a breath of fresh air for you, enabling you  <br>
+         to indulge in certain interests that you don’t necessarily share with your close friends. <br>
+         
+
+
+
+
+
+
+
+
+    </article>
           <div class="dropdown">
-            </article>
             <button class="dropbtn">Choose your sign</button>
             <div class="dropdown-content">
               <a href="aries.html">Aries</a>
@@ -546,29 +348,29 @@ z-index: -1
               <a href="PiscesToday.html">Pisces</a></div>
           </div>
 
-<h2 id="cardoftheday" >Card of the day</h2>
-    <img src="images/thefool.png" style="width:200px;height:300px;
+<h2 id="cardoftheday">Card of the day</h2>
+    <img src="images/TheLovers.jpg" style="width:200px;height:300px;
           position:absolute; top:316px; left:980px;">
 
-<h3><strong>The Fool</strong></h3>
+<h3><strong>The Lovers
+</strong></h3>
 
 <p id="card">
-    The Fool marks the beginning of a journey. He is ready, willing,
-     and excited for a new adventure. Whether this is his first time
-      out in the world or just the latest of a series of adventures,
-       he greets each new experience with a childlike sense of wonder
-        and enthusiasm. There may be obstacles along the way, but you know what?
-        He's got this.<br><br>
 
-    With arms open wide and feet abounding in nature, the Fool has a 
-    vibrant enthusiasm for what's to come. The Fool's hope,
-     represented by the colorful backdrop, combines with the need to
-      seek something new, symbolized by the butterflies about the sky.
-       Ready for anything, we see her arms outstretched toward the glyph of Uranus,
-        the planet of change and rebellion. With eyes closed the Fool dances,
-         suggesting that she is not afraid of falling or making mistakes.<br>
-    
-    
+
+    The Lovers card represents a major choice that you'll soon have to make. 
+    But don't be fooled: That choice isn't always about romantic love. 
+    Truthfully, it's a choice regarding where to direct your energy so you're
+    able to create deeper and more meaningful connections. Feeling like you've
+    just been floating? The Lovers card is a clear sign that it's time to dive
+    into the depth below—whether that's in your relationships with others or yourself.<br><br>
+
+    Two wolves are pictured here, mirroring one another. Their duality, and similarity,
+    suggest the nigh impossible choice that we're faced with. The wolves circle around 
+    the Gemini glyph, representing their devotion to the mutable zodiac sign. Though, 
+    if you're able to reconsider your question or intent, the choice might become clearer.<br>
+
+
 
 
 
@@ -576,21 +378,21 @@ z-index: -1
 
 
 
-<h2 id="quote" style = "position: absolute;top: 328px;">QUOTE OF THE DAY</h2>
+<h2 id="quote" style="margin-top: -630px;"  >QUOTE IF THE DAY</h2>
       
 <p class = "vequara" style = "text-align: center;position:absolute; color: rgb(255, 255, 255);"> <br><br>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-     
-    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Decide what you want, decide what you are willing to exchange for it. &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
 
-    Knowing is not enough; we must apply.<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     Willing is not enough; we must do.
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    
-    
+
+    Establish your priorities and go to work.
+    &nbsp;&nbsp;&nbsp;&nbsp;
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br></p>
 
@@ -610,7 +412,7 @@ z-index: -1
                 
     <table style="position:absolute;top:700px;left:360px;text-decoration:none;color: rgb(173, 117, 117);font-size: 17px;">
 
-      
+       
       <tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp; <input id="myBtn" type = "radio" name = "rate" id = "rate" value = "1"> </td>
         <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "radio" name = "rate" id = "two" value = "2"> </td>
@@ -626,8 +428,9 @@ z-index: -1
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
-            <p style="text-align: center;">HOPE YOU HAVE THE BEST DAY TODAY<img src="https://img.icons8.com/emoji/48/000000/four-leaf-clover.png"/></p>
-          </p> </div>
+            <p style="text-align: center;">HOPE YOU HAVE THE BEST DAY TODAY <img src="https://img.icons8.com/emoji/48/000000/four-leaf-clover.png"/><br></p>
+          </p>
+          </div>
         
         </div>
         
@@ -824,14 +627,15 @@ z-index: -1
 
     <tr> 
         <td class="tabela" height="150">
-            <img src="images/CAPRICORN.png" style="width:130px;height:130px;margin-left: 40px;"></td> 
+            <img src="images/AQUARIUS.png" style="width:130px;height:130px;margin-left: 40px;"></td> 
 
         <td class="tabela" height="150">
-            <img src="images/LIBRA.png" style="width:130px;height:130px;margin-left: 40px;"></td> 
+            <img src="images/GEMINI.png" style="width:130px;height:130px;margin-left: 40px;"></td> 
         <td class="tabela" height="150">
-            <img src="images/LEO.png" style="width:130px;height:130px;margin-left: 40px;"></td> 
+            <img src="images/PISCES.png" style="width:130px;height:130px;margin-left: 40px;"></td> 
     </tr> 
 </table> 
+
 
 
 
@@ -839,38 +643,36 @@ z-index: -1
 
   <tr>
     <td><strong>Keywords</strong></td>
-    <td>Providing aid, healing,
-        <br> concentration, moderation</td>
+    <td>	Awakening, enlightening, <br>
+        the "key" to a situation, crisis, isolation</td>
   </tr>
   <tr>
     <td><strong>Astrological Correspondence</strong></td>
-    <td><br><a href ="#" style="color: rgb(117, 64, 86);">Sagittarius</a></td>
+    <td><br><a href ="VirgoToday.html" style="color: rgb(151, 78, 106);">Virgo</a></td>
   </tr>
   
   <tr>
     <td><strong>Planet</strong></td>
-    <td><br><a href ="#" style="color: rgb(117, 64, 86);">Jupiter</a></td>
+    <td><br><a href ="mercury.html" style="color: rgb(151, 78, 106);">Mercury</a></td>
     </tr>
     
   <tr>
     <td><strong>Crystals</strong></td>
-    <td><br>Amethyst</td>
+    <td><br>	Sapphire, bloodstone, peridot</td>
     </tr>
     
   <tr>
     <td><strong>
 Element</strong></td>
-    <td><br><a href ="fire.html" style="color: rgb(117, 64, 86);">Fire</a></td>
+    <td><br><a href ="earth.html" style="color: rgb(151, 78, 106);">Earth</a></td>
     </tr>
     
   <tr>
     <td><strong>
 Numerology</strong></td>
-    <td><br>5</td>
+    <td><br>9</td>
     </tr>
 </table>
-
-
 
 </main>
 <footer><div class="main-content">
@@ -925,15 +727,7 @@ Numerology</strong></td>
               </div>
           
           <div class="btn">
-<<<<<<< HEAD
-<<<<<<< HEAD
-              <button type="submit" style="color: white;">Send</button>
-=======
               <button type="submit" style="color: white;" >Send</button>
->>>>>>> parent of e5e6d20... Update aries.html
-=======
-              <button type="submit" style="color: white;" >Send</button>
->>>>>>> parent of e5e6d20... Update aries.html
           </div>
           </form>
       </div>
@@ -944,13 +738,6 @@ Numerology</strong></td>
           <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
       </span>
 </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-</footer>
-=======
-=======
->>>>>>> parent of e5e6d20... Update aries.html
 </footer>
 </body>
 </html>
->>>>>>> parent of e5e6d20... Update aries.html
