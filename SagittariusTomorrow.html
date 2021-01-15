@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astrology</title>
-    <link rel="shortcut icon" type="image/png" href="images/astrolog.png">
+    <link rel="shortcut icon" type="image/png" href="astrologo.png">
     <link rel="stylesheet" href="horoscope.css">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
@@ -21,19 +21,13 @@ $(document).ready(function(){
 </script>
 
    <style>
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
-          @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
-
-
+       
 .dropbtn {
   background-color: #A37B7B;
   color: white;
   padding: 10px;
   margin-left:45px;
-  margin-top: 60px;
+  margin-top: -30px;
 
 
   font-size: 16px;
@@ -106,7 +100,7 @@ $(document).ready(function(){
 
 position:absolute;
 text-size-adjust: 30px;
-margin-top: -540px;
+margin-top: -550px;
 margin-left: 340px;
 border: 3px solid #A37B7B;
    border-radius: 10px;
@@ -128,7 +122,7 @@ border: 3px solid #A37B7B;
   width: 50%;
   color: rgb(0, 0, 0);
   margin-left: 570px;
-  margin-top: 340px;
+  margin-top: 100px;
 }
 
 #todays, .tabela {
@@ -159,7 +153,7 @@ border: 3px solid #A37B7B;
   width: 30%;
   border-collapse: collapse;
   border: 1px solid black;
-  margin-top: -245px;
+  margin-top: -247px;
   margin-left: 50px;
   color: rgb(26, 22, 22);
   background-color: #A37B7B;
@@ -192,13 +186,6 @@ border: 3px solid #A37B7B;
 
 
 
-p,article{
-
-
-z-index: -1
-
-}
-
 
 
     </style>
@@ -206,65 +193,41 @@ z-index: -1
 <body>
     <header>
 
-      <nav>  
-        <div class="logo"><a href="Astrology.html">Astrology</a></div>
-        <ul>
-            <li><a href="Astrology.html">Home</a></li>
-            <li><a href="Daily.html">Horoscope</a>
-                
-             </li>
-            <li><a href="Astrology101.html">Astrology 101</a>
-                <ul>
-                    <li><a href="earth.html">Earth</a></li>
-                    <li><a href="water.html">Water</a></li>
-                    <li><a href="air.html">Air</a></li>
-                    <li><a href="fire.html">Fire</a></li>
-                </ul>
-            </li>
-            <li><a href="tarot.html">Tarot</a>
-                <ul>
-                    <li><a href="tarotreading.html">Tarot Reading</a></li>
-                    <li><a href="game.html">Play for fun!</a></li>
-                </ul>
-            </li>
-            <li><a href="Store.html">Store</a>
-                <ul>
-                    <li><a href="books.html">Books</a></li>
-                    <li><a href="clothes.html">Clothes</a></li>
-                    <li><a href="jewelry.html">Jewelry</a></li>
-                    <li><a href="art.html">Art</a></li>
-                </ul>
-            </li>
-            <li><a href="AboutUs.html">About us</a></li>
-            <li><a href="login.html">Log in</a></li>
-            <li>
-                <div class="search-box">
-                    <input  class="search-text" type="text" name="" placeholder="Type to search">
-                    <a  class="search-button"href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwi0udum457uAhXC-yoKHaoGDcQQPAgI" >
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div> 
-            </li>
-        </ul>
+        <div class="navbar">
+        <img src="images/sun.png" alt="Astrologylogo" class="logo"><span id="astro"><a href ="final.html">Astrology</a></span>
+        </div>
+  <nav>  
+
+    <ul>
+        <li><a href ="Astrology.html">Home</a></li>
+        <li><a href="Horoscope.html">Horoscope</a></li>
+        <li><a href="Astrology101.html">Astrology 101</a></li>
+        <li><a href="ChineseHoroscope.html">Chinese Horoscope</a></li>
+        <li><a href="Store.html">Store</a></li>
+        <li><a href="AboutUs.html">About us</a></li>
+        <li><a href="login.html">Log in</a></li>
+    </ul>
+</nav>
 </header>
 
 <main>
 
-    <h1 style="position: relative;top: 40px;left: 0px;" id="h1">Sagittarius</h1>
+    <h1 id="h1">Sagittarius</h1>
       <img src="images/SAGITTARIUS.png" style="width:220px;height:220px;
       position:absolute; top:70px; left:20px;">
 
 
-   <p style="margin-left:470px;"><br><br><br><a style="color: #ddd;" href="SagittariusYesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-    <a style="color: #ddd;" href="SagittariusToday.html">Today</a>
-    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
-     <span class="arrow-highlight"> <a style="color: #ddd;" href="SagittariusTomorrow.html">Tomorrow</a></span>
+   <p> <a href="SagittariusYesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+    <a href="SagittariusToday.html">Today</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+     <span class="arrow-highlight"> <a href="SagittariusTomorrow.html">Tomorrow</a></span>
     &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+     <a href="yesterday.html">Weekly</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+     <a href="yesterday.html">Monthly</a>
     
     
-    </p>
+    </p>>
 
-    <article style="text-align: center; color: #ddd;position: relative;top: 65px;">
+    <article style="text-align: center; color: #ddd;">
         A talent for a new field that you might never have tried before could come to <br>
         light, Sagittarius. This might involvemodern technology in some way or writing, <br>
         drawing, or both.Communication with others should be warm, congenial, open,and honest.<br>
@@ -294,17 +257,17 @@ z-index: -1
 <h3><strong>The High Priestess</strong></h3>
 
 <p id="card">
-    The High Priestess is the wisest woman you've ever met. 
-    And like all the smartest people in your life, she guards
-    her secrets closely. She's a reminder that to know yourself,
-    you must cut out the noise and look inwards. You possess 
+    The High Priestess is the wisest woman you've ever met. <br>
+    And like all the smartest people in your life, she guards <br>
+    her secrets closely. She's a reminder that to know yourself, <br>
+    you must cut out the noise and look inwards. You possess <br>
     all the intuition you need to make life's biggest decisions.<br><br>
 
-The High Priestess faces us head on, challenging us to seek 
-truth to our deepest desires from what we know already. The 
-scroll she holds (representing knowledge) and the lunar crescent
-above her (representing inner emotions) are testaments to her 
-pursuit for knowledge from within. Let her calm presence guide
+The High Priestess faces us head on, challenging us to seek <br>
+truth to our deepest desires from what we know already. The <br>
+scroll she holds (representing knowledge) and the lunar crescent <br>
+above her (representing inner emotions) are testaments to her <br>
+pursuit for knowledge from within. Let her calm presence guide <br>
 you to the knowledge you already possess.<br>
 
 </p>
@@ -328,11 +291,11 @@ you to the knowledge you already possess.<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br></p>
 
   
-    <h1 style="color: #ddd;position: absolute;top: 640px;left: 240px;">Interesting facts about Sagittarius</h1>
+    <h1 style="color: #ddd;position: absolute;top: 540px;left: 240px;">Interesting facts about Sagittarius</h1>
 
-    <button class="button" style="position: absolute;top: 686px;left: 250px;background-color:#A37B7B;font-size: 20px;">Click to fade in boxes</button><br><br>
+    <button class="button" style="position: absolute;top: 606px;left: 200px;background-color:#A37B7B;font-size: 20px;">Click to fade in boxes</button><br><br>
     <div id="div1" style="width:500px;height:150px;display:none;background-color:#e7d5d5;
-    position: absolute;top: 750px;left: 200px;">
+    position: absolute;top: 670px;left: 200px;">
           <dt>SAGITTARIUS CAN READ YOU LIKE A BOOK</dt>
           <dd>The Sagittarius is crazy intuitive and is often able to 
               read your character and intentions like a book.They can 
@@ -341,7 +304,7 @@ you to the knowledge you already possess.<br>
               that everyone else in the room misses.
                  <br></dd></div><br>
     <div id="div2" style="width:500px;height:150px;display:none;background-color:#e7d5d5;
-     position: absolute;top: 905px;left: 200px;">
+     position: absolute;top: 825px;left: 200px;">
      <dt>SAGITTARIUS ARE CANDID AND HONEST</dt>
           <dd>The Sagittarius is one of the most direct and straight forward 
               personalities in all of the zodiac. Some may find them a bit 
@@ -352,7 +315,7 @@ you to the knowledge you already possess.<br>
               up truth
  <br></dd></div><br>
     <div id="div3" style="width:500px;height:160px;display:none;background-color:#e7d5d5;
-     position: absolute;top: 1060px;left: 200px;">
+     position: absolute;top: 980px;left: 200px;">
      <dt>SAGITTARIUS ARE WITTY AND HAVE A WICKED SENSE OF HUMOR</dt>
           <dd>
             The Sagittarius has a natural talent for seeing the ridiculous 
@@ -465,7 +428,7 @@ you to the knowledge you already possess.<br>
     
     <tr>
       <td><strong>Planet</strong></td>
-      <td><br><a href ="neptune.html" style="color: rgb(117, 64, 86);">Neptune</a></td>
+      <td><br><a href ="#" style="color: rgb(117, 64, 86);">Neptune</a></td>
       </tr>
       
     <tr>
@@ -476,7 +439,7 @@ you to the knowledge you already possess.<br>
     <tr>
       <td><strong>
   Element</strong></td>
-      <td><br><a href ="water.html" style="color: rgb(117, 64, 86);">Water</a></td>
+      <td><br><a href ="#" style="color: rgb(117, 64, 86);">Water</a></td>
       </tr>
       
     <tr>
@@ -554,7 +517,7 @@ you to the knowledge you already possess.<br>
               </div>
           
           <div class="btn">
-              <button type="submit" style="color: white;" >Send</button>
+              <button type="submit">Send</button>
           </div>
           </form>
       </div>

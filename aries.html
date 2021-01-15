@@ -7,23 +7,14 @@
     <link rel="shortcut icon" type="image/png" href="astrologo.png">
     <link rel="stylesheet" href="horoscope.css">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-   
-   <link rel="shortcut icon" type="image/png" href="images/astrolog.png">
-   
-
    <style>
        
-
-       @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
-          @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
-
-
 .dropbtn {
   background-color: #A37B7B;
   color: white;
   padding: 10px;
   margin-left:45px;
-  margin-top: 45px;
+  margin-top: -30px;
 
 
   font-size: 16px;
@@ -96,7 +87,7 @@
 
 position:absolute;
 text-size-adjust: 30px;
-margin-top: -619px;
+margin-top: -845px;
 margin-left: 340px;
 border: 3px solid rgba(145, 93, 87, 0.747);
    border-radius: 10px;
@@ -222,81 +213,51 @@ border: 3px solid rgba(145, 93, 87, 0.747);
 }
 
 
-p,article{
 
-
-z-index: -1
-
-}
 
     </style>
 </head>
 <body>
     <header>
 
-      <nav>  
-        <div class="logo"><a href="Astrology.html">Astrology</a></div>
-        <ul>
-            <li><a href="Astrology.html">Home</a></li>
-            <li><a href="Daily.html">Horoscope</a>
-              
-             </li>
-            <li><a href="Astrology101.html">Astrology 101</a>
-                <ul>
-                    <li><a href="earth.html">Earth</a></li>
-                    <li><a href="water.html">Water</a></li>
-                    <li><a href="air.html">Air</a></li>
-                    <li><a href="fire.html">Fire</a></li>
-                </ul>
-            </li>
-            <li><a href="tarot.html">Tarot</a>
-                <ul>
-                    <li><a href="tarotreading.html">Tarot Reading</a></li>
-                    <li><a href="game.html">Play for fun!</a></li>
-                </ul>
-            </li>
-            <li><a href="Store.html">Store</a>
-                <ul>
-                    <li><a href="books.html">Books</a></li>
-                    <li><a href="clothes.html">Clothes</a></li>
-                    <li><a href="jewelry.html">Jewelry</a></li>
-                    <li><a href="art.html">Art</a></li>
-                </ul>
-            </li>
-            <li><a href="AboutUs.html">About us</a></li>
-            <li><a href="login.html">Log in</a></li>
-            <li>
-                <div class="search-box">
-                    <input  class="search-text" type="text" name="" placeholder="Type to search">
-                    <a  class="search-button"href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwi0udum457uAhXC-yoKHaoGDcQQPAgI" >
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div> 
-            </li>
-        </ul>
+        <div class="navbar">
+        <img src="sun.png" alt="Astrologylogo" class="logo"><span id="astro"><a href ="final.html">Astrology</a></span>
+        </div>
+  <nav>  
+
+    <ul>
+        <li><a href ="Astrology.html">Home</a></li>
+        <li><a href="Horoscope.html">Horoscope</a></li>
+        <li><a href="Astrology101.html">Astrology 101</a></li>
+        <li><a href="ChineseHoroscope.html">Chinese Horoscope</a></li>
+        <li><a href="Store.html">Store</a></li>
+        <li><a href="AboutUs.html">About us</a></li>
+        <li><a href="login.html">Log in</a></li>
+    </ul>
+</nav>
 </header>
 
 <main>
   
-    <h1 style="position: relative;top: 40px;left: 0px;" id="h1">Aries</h1>
+    <h1 id="h1">Aries</h1>
       <img src="images/ARIES.png" style="width:220px;height:220px;
       position:absolute; top:70px; left:20px;">
 
-   <p style="margin-left:470px;"><br><br><br> <a style="color: #ddd;" href="AriesYesterday.html">Yesterday</a> 
-    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-    <span class="arrow-highlight"> <a style="color: #ddd;" href="aries.html">Today</a></span>
-    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a style="color: #ddd;" href="ariestomorrow.html">Tomorrow</a>
-    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+   <p> <a href="AriesYesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+    <span class="arrow-highlight"> <a href="aries.html">Today</a></span>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a href="ariestomorrow.html">Tomorrow</a>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a href="yesterday.html">Weekly</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+     <a href="yesterday.html">Monthly</a>
+    
     
     </p>>
 
-     <article style="text-align: center; color: #ddd;position: relative;top: 50px;">
+     <p id="h1">
          You can't do it all today, which is a fact that will become all too apparent as soon as <br>
          you get started this morning. But instead of feeling frustrated, start paring off a few<br>
           tasks and adjust your expectations. Despite the current rumors, you are not a superhero!<br>
            It's much better to do less and succeed often than it is to always aim for the stars <br>
            and continually fall short. Climbing a smaller mountain is still climbing a mountain.<br>
-     </article>
+        </p>
           <div class="dropdown">
             <button class="dropbtn">Choose your sign</button>
             <div class="dropdown-content">
@@ -321,19 +282,19 @@ z-index: -1
 <h3><strong>The Fool</strong></h3>
 
 <p id="card">
-    The Fool marks the beginning of a journey. He is ready, willing,
-     and excited for a new adventure. Whether this is his first time
-      out in the world or just the latest of a series of adventures,
-       he greets each new experience with a childlike sense of wonder
-        and enthusiasm. There may be obstacles along the way, but you know what?
+    The Fool marks the beginning of a journey. He is ready, willing,<br>
+     and excited for a new adventure. Whether this is his first time<br>
+      out in the world or just the latest of a series of adventures,<br>
+       he greets each new experience with a childlike sense of wonder<br>
+        and enthusiasm. There may be obstacles along the way, but you know what? <br>
         He's got this.<br><br>
 
-    With arms open wide and feet abounding in nature, the Fool has a 
-    vibrant enthusiasm for what's to come. The Fool's hope,
-     represented by the colorful backdrop, combines with the need to
-      seek something new, symbolized by the butterflies about the sky.
-       Ready for anything, we see her arms outstretched toward the glyph of Uranus,
-        the planet of change and rebellion. With eyes closed the Fool dances,
+    With arms open wide and feet abounding in nature, the Fool has a <br>
+    vibrant enthusiasm for what's to come. The Fool's hope,<br>
+     represented by the colorful backdrop, combines with the need to<br>
+      seek something new, symbolized by the butterflies about the sky.<br>
+       Ready for anything, we see her arms outstretched toward the glyph of Uranus,<br>
+        the planet of change and rebellion. With eyes closed the Fool dances,<br>
          suggesting that she is not afraid of falling or making mistakes.<br>
     
     
@@ -344,7 +305,7 @@ z-index: -1
 
 
 
-<h2 id="quote" style = "position: absolute;top: 328px;">QUOTE OF THE DAY</h2>
+<h2 id="quote" style = "position: absolute;top: 318px;">QUOTE OF THE DAY</h2>
       
 <p class = "vequara" style = "text-align: center;position:absolute; color: rgb(255, 255, 255);"> <br><br>
 
@@ -394,8 +355,8 @@ z-index: -1
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
-            <p style="text-align: center;">HOPE YOU HAVE THE BEST DAY TODAY<img src="https://img.icons8.com/emoji/48/000000/four-leaf-clover.png"/></p>
-          </p> </div>
+            <p><br>HOPE YOU HAVE THE BEST DAY TODAY </p>
+          </div>
         
         </div>
         
@@ -628,7 +589,7 @@ z-index: -1
   <tr>
     <td><strong>
 Element</strong></td>
-    <td><br><a href ="fire.html" style="color: rgb(117, 64, 86);">Fire</a></td>
+    <td><br><a href ="#" style="color: rgb(117, 64, 86);">Fire</a></td>
     </tr>
     
   <tr>
@@ -641,69 +602,9 @@ Numerology</strong></td>
 
 
 </main>
-<footer><div class="main-content">
-  <div class="left box">
-      <h2>About us</h2>
-      <div class="content">
-          <p style="text-align: left;color: black;"> Astrology is a pseudoscience that claims to divine information about human affairs and terrestrial events by studying the movements and relative positions of celestial objects . This website covers some of the important concepts of Astrology. </p>
-          <div class="social">
-              <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" ></i></a>
-              <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-          </div>
-      </div>
-  </div>
-  <div class="center box">
-      <h2>Address</h2>
-      <div class="content">
-          <div class="place">
-              <span class="fas fa-map-marker-alt"></span>
-              <span class="text">New York City | New York</span>
-          </div>
-          <div class="place">
-              <span class="fas fa-map-marker-alt"></span>
-              <span class="text">Nevada | Las Vegas</span>
-          </div>
-          <div class="place">
-              <span class="fas fa-map-marker-alt"></span>
-              <span class="text">Germany | Stuttgart</span>
-          </div>
-          <div class="phone">
-              <span class="fas fa-phone-alt"></span>
-              <span class="text">+(383)4XXXYYYY</span>
-          </div>
-          <div class="email">
-              <span class="fas fa-envelope"></span>
-              <span class="text">abc@example.com</span>
-          </div>
-      </div>
-  </div>
-  <div class="right box">
-      <h2>Contact us</h2>
-      <div class="content">
-          <form action="#">
-              <div class="email">
-                  <div class="text">Email *</div>
-                  <input type="email" required>
-              </div>
-             <div class="msg">
-                 <div class="text">Message *</div>
-                  <textarea  id="" cols="25" rows="2" required></textarea>
-              </div>
-          
-          <div class="btn">
-              <button type="submit" style="color: white;" >Send</button>
-          </div>
-          </form>
-      </div>
-  </div>
-</div>
-<div class="bottom">
-      <span class="credit">Created By <a href="#">Grupi4</a>
-          <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
-      </span>
-</div>
+<footer>
+<br>
+<br><br><br><br><br><br><br><br>
 </footer>
 </body>
 </html>

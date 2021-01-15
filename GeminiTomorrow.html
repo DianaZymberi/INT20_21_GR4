@@ -6,8 +6,6 @@
     <title>Astrology</title>
     <link rel="shortcut icon" type="image/png" href="astrologo.png">
     <link rel="stylesheet" href="horoscope.css">
-    
-    <link rel="shortcut icon" type="image/png" href="images/astrolog.png">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
    
@@ -23,17 +21,13 @@ $(document).ready(function(){
 </script>
 
    <style>
-
-     
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
-          @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
        
 .dropbtn {
   background-color: #A37B7B;
   color: white;
   padding: 10px;
   margin-left:45px;
-  margin-top: 63px;
+  margin-top: -30px;
 
 
   font-size: 16px;
@@ -106,7 +100,7 @@ $(document).ready(function(){
 
 position:absolute;
 text-size-adjust: 30px;
-margin-top: -533px;
+margin-top: -750px;
 margin-left: 340px;
 border: 3px solid #A37B7B;
    border-radius: 10px;
@@ -128,7 +122,7 @@ border: 3px solid #A37B7B;
   width: 50%;
   color: rgb(0, 0, 0);
   margin-left: 570px;
-  margin-top: 340px;
+  margin-top: 100px;
 }
 
 #todays, .tabela {
@@ -159,7 +153,7 @@ border: 3px solid #A37B7B;
   width: 30%;
   border-collapse: collapse;
   border: 1px solid black;
-  margin-top: -235px;
+  margin-top: -247px;
   margin-left: 50px;
   color: rgb(26, 22, 22);
   background-color: #A37B7B;
@@ -170,35 +164,24 @@ border: 3px solid #A37B7B;
 
 
 
-.button {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #ca929e;
+
+button[type="submit"]{
+  width: 300px;
+  height: 50px;
+  margin: 15px;
+  border-radius: 4px;
+  float: right;
+  font-size: 22px;
+  color: black;
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 5px rgb(80, 57, 70);
+  font-weight: 600;
+  background-color: rosybrown;
+  cursor: pointer;
+}
+button[type="submit"]:hover{
+  background-color: rosybrown;
 }
 
-.button:hover {background-color: #ca929e}
-
-.button:active {
-  background-color:#ca929e;
-  box-shadow: 0 5px rgb(56, 33, 40);
-  transform: translateY(4px);
-}
-
-
-
-p,article{
-
-
-z-index: -1
-
-}
 
 
 
@@ -208,71 +191,48 @@ z-index: -1
 <body>
     <header>
 
-      <nav>  
-        <div class="logo"><a href="Astrology.html">Astrology</a></div>
-        <ul>
-            <li><a href="Astrology.html">Home</a></li>
-            <li><a href="Daily.html">Horoscope</a>
-               
-             </li>
-            <li><a href="Astrology101.html">Astrology 101</a>
-                <ul>
-                    <li><a href="earth.html">Earth</a></li>
-                    <li><a href="water.html">Water</a></li>
-                    <li><a href="air.html">Air</a></li>
-                    <li><a href="fire.html">Fire</a></li>
-                </ul>
-            </li>
-            <li><a href="tarot.html">Tarot</a>
-                <ul>
-                    <li><a href="tarotreading.html">Tarot Reading</a></li>
-                    <li><a href="game.html">Play for fun!</a></li>
-                </ul>
-            </li>
-            <li><a href="Store.html">Store</a>
-                <ul>
-                    <li><a href="books.html">Books</a></li>
-                    <li><a href="clothes.html">Clothes</a></li>
-                    <li><a href="jewelry.html">Jewelry</a></li>
-                    <li><a href="art.html">Art</a></li>
-                </ul>
-            </li>
-            <li><a href="AboutUs.html">About us</a></li>
-            <li><a href="login.html">Log in</a></li>
-            <li>
-                <div class="search-box">
-                    <input  class="search-text" type="text" name="" placeholder="Type to search">
-                    <a  class="search-button"href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwi0udum457uAhXC-yoKHaoGDcQQPAgI" >
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div> 
-            </li>
-        </ul>
+        <div class="navbar">
+        <img src="images/sun.png" alt="Astrologylogo" class="logo"><span id="astro"><a href ="final.html">Astrology</a></span>
+        </div>
+  <nav>  
+
+    <ul>
+        <li><a href ="Astrology.html">Home</a></li>
+        <li><a href="Horoscope.html">Horoscope</a></li>
+        <li><a href="Astrology101.html">Astrology 101</a></li>
+        <li><a href="ChineseHoroscope.html">Chinese Horoscope</a></li>
+        <li><a href="Store.html">Store</a></li>
+        <li><a href="AboutUs.html">About us</a></li>
+        <li><a href="login.html">Log in</a></li>
+    </ul>
+</nav>
 </header>
 
 <main>
 
-    <h1 style="position: relative;top: 40px;left: 0px;" id="h1">Gemini</h1>
-      <img src="images/GEMINI.png" style="width:220px;height:220px;
+    <h1 id="h1">Gemini</h1>
+      <img src="images/CAPRICORN.png" style="width:220px;height:220px;
       position:absolute; top:70px; left:20px;">
 
 
-   <p style="margin-left:470px;"><br><br><br> <a style="color: #ddd;" href="GeminiYesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-    <a style="color: #ddd;" href="GeminiToday.html">Today</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
-     <span class="arrow-highlight"> <a style="color: #ddd;" href="GeminiTomorrow.html">Tomorrow</a></span>
+   <p> <a href="GeminiYesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+    <a href="GeminiToday.html">Today</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+     <span class="arrow-highlight"> <a href="GeminiTomorrow.html">Tomorrow</a></span>
     &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+     <a href="yesterday.html">Weekly</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+     <a href="yesterday.html">Monthly</a>
     
     
-    </p>
+    </p>>
 
-    <article style="text-align: center; color: #ddd;position: relative;top: 65px;">
+     <p id="h1">
         You might toy with the idea of getting some kind of project or enterprise <br>
         going with a close friend or love partner. If you're serious about it, Gemini,<br>
          this is definitely the day to start. Any partnership formed at this time is <br>
          likely to be successful and beneficial for all involved. This is even a good <br>
          day to work out the terms of a legal agreement. Go for it.<br>
 
-    </article>
+        </p>
           <div class="dropdown">
             <button class="dropbtn">Choose your sign</button>
             <div class="dropdown-content">
@@ -291,27 +251,27 @@ z-index: -1
           </div>
 
 <h2 id="cardoftheday">Card of tomorrow</h2>
-    <img src="images/TheChariot.jpg" style="width:200px;height:300px;
+    <img src="images/TheChariot.png" style="width:200px;height:300px;
           position:absolute; top:316px; left:980px;">
 
 <h3><strong>The Chariot</strong></h3>
 
 <p id="card">
-    Are you ready to move forward? If the Chariot shows up in your reading, 
-    it's no time to start slacking. Congratulate yourself for your hard work,
+    Are you ready to move forward? If the Chariot shows up in your reading, <br>
+    it's no time to start slacking. Congratulate yourself for your hard work, <br>
     but also continue riding the wave of victory to the finish line.<br><br>
 
-Take a close look at the card. The three horses come at us with steadfast 
-persistence and bravery; together they are a force. They mirror the three 
-moon phases that float above them, symbolic of keeping strong full cycle—from
-start to finish. Glistening above it all, the glyph of Cancer shines. It 
-suggests that if you can balance conflicting emotions with life's daily 
+Take a close look at the card. The three horses come at us with steadfast <br>
+persistence and bravery; together they are a force. They mirror the three <br>
+moon phases that float above them, symbolic of keeping strong full cycle—from <br>
+start to finish. Glistening above it all, the glyph of Cancer shines. It <br>
+suggests that if you can balance conflicting emotions with life's daily <br>
 obstacles, there's no limit to what you can achieve.<br>
 </p>
 
 
 
-<h2 id="quote" style="margin-top: -590px;"  >QUOTE OF TOMORROW</h2>
+<h2 id="quote" style="margin-top: -747px;"  >QUOTE OF TOMORROW</h2>
       
 <p class = "vequara" style = "text-align: center;position:absolute; color: rgb(255, 255, 255);"> <br><br>
 
@@ -326,18 +286,18 @@ obstacles, there's no limit to what you can achieve.<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br></p>
 
   
-    <h1 style="color: #ddd;position: absolute;top: 640px;left: 240px;">Interesting facts about Gemini</h1>
+    <h1 style="color: #ddd;position: absolute;top: 540px;left: 240px;">Interesting facts about Gemini</h1>
 
-    <button class="button" style="position: absolute;top: 686px;left: 250px;background-color:#A37B7B;font-size: 20px;">Click to fade in boxes</button><br><br>
+    <button class="button" style="position: absolute;top: 606px;left: 200px;background-color:#A37B7B;font-size: 20px;">Click to fade in boxes</button><br><br>
     <div id="div1" style="width:500px;height:150px;display:none;background-color:#e7d5d5;
-    position: absolute;top: 750px;left: 200px;">
+    position: absolute;top: 670px;left: 200px;">
           <dt>GEMINI ARE STRONG FIGHTING SPIRITS</dt>
           <dd>A Gemini is a very caring person and will always find the necessary
                strength to stand up and support their loved ones. If you have 
                a Gemini in your life, know that they will be the ones you can count on.
                  <br></dd></div><br>
     <div id="div2" style="width:500px;height:150px;display:none;background-color:#e7d5d5;
-     position: absolute;top: 905px;left: 200px;">
+     position: absolute;top: 825px;left: 200px;">
      <dt>GEMINI HAVE NO TIME FOR FLINGS</dt>
           <dd>It's not that Geminis don't have time for flings but 
               more like they don't want to indulge in anything that
@@ -347,7 +307,7 @@ obstacles, there's no limit to what you can achieve.<br>
                 their way of rolling. 
  <br></dd></div><br>
     <div id="div3" style="width:500px;height:160px;display:none;background-color:#e7d5d5;
-     position: absolute;top: 1060px;left: 200px;">
+     position: absolute;top: 980px;left: 200px;">
      <dt>GEMINI HAVE TRUST ISSUES</dt>
           <dd>This sun sign has a tough time being in a relationship. Not because they enjoy flings.
                As mentioned above, a Gemini prefers long term relationships with a possible future. 
@@ -440,7 +400,7 @@ obstacles, there's no limit to what you can achieve.<br>
             <img src="images/LIBRA.png" style="width:130px;height:130px;margin-left: 40px;"></td> 
 
         <td class="tabela" height="150">
-            <img src="images/TAURUS.png" style="width:130px;height:130px;margin-left: 40px;"></td> 
+            <img src="images/TAURUSS.png" style="width:130px;height:130px;margin-left: 40px;"></td> 
         <td class="tabela" height="150">
             <img src="images/SCORPIO.png" style="width:130px;height:130px;margin-left: 40px;"></td> 
     </tr> 
@@ -462,7 +422,7 @@ obstacles, there's no limit to what you can achieve.<br>
     
     <tr>
       <td><strong>Planet</strong></td>
-      <td><br><a href ="pluto.html" style="color: rgb(117, 64, 86);">Pluto</a></td>
+      <td><br><a href ="#" style="color: rgb(117, 64, 86);">Pluto</a></td>
       </tr>
       
     <tr>
@@ -473,7 +433,7 @@ obstacles, there's no limit to what you can achieve.<br>
     <tr>
       <td><strong>
   Element</strong></td>
-      <td><br><a href ="earth.html" style="color: rgb(117, 64, 86);">Earth</a></td>
+      <td><br><a href ="#" style="color: rgb(117, 64, 86);">Moon</a></td>
       </tr>
       
     <tr>
@@ -538,7 +498,7 @@ obstacles, there's no limit to what you can achieve.<br>
               </div>
           
           <div class="btn">
-              <button type="submit" style="color: white;" >Send</button>
+              <button type="submit">Send</button>
           </div>
           </form>
       </div>

@@ -6,8 +6,6 @@
     <title>Astrology</title>
     <link rel="shortcut icon" type="image/png" href="astrologo.png">
     <link rel="stylesheet" href="horoscope.css">
-    
-    <link rel="shortcut icon" type="image/png" href="images/astrolog.png">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
    
@@ -24,16 +22,12 @@ $(document).ready(function(){
 
    <style>
        
-
-       @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
-          @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
-
 .dropbtn {
   background-color: #A37B7B;
   color: white;
   padding: 10px;
   margin-left:45px;
-  margin-top: 63px;
+  margin-top: -30px;
 
 
   font-size: 16px;
@@ -106,7 +100,7 @@ $(document).ready(function(){
 
 position:absolute;
 text-size-adjust: 30px;
-margin-top: -640px;
+margin-top: -783px;
 margin-left: 340px;
 border: 3px solid #A37B7B;
    border-radius: 10px;
@@ -128,7 +122,7 @@ border: 3px solid #A37B7B;
   width: 50%;
   color: rgb(0, 0, 0);
   margin-left: 570px;
-  margin-top: 340px;
+  margin-top: 100px;
 }
 
 #todays, .tabela {
@@ -159,7 +153,7 @@ border: 3px solid #A37B7B;
   width: 30%;
   border-collapse: collapse;
   border: 1px solid black;
-  margin-top: -235px;
+  margin-top: -247px;
   margin-left: 50px;
   color: rgb(26, 22, 22);
   background-color: #A37B7B;
@@ -191,12 +185,7 @@ border: 3px solid #A37B7B;
 }
 
 
-p,article{
 
-
-z-index: -1
-
-}
 
 
     </style>
@@ -204,64 +193,41 @@ z-index: -1
 <body>
     <header>
 
-      <nav>  
-        <div class="logo"><a href="Astrology.html">Astrology</a></div>
-        <ul>
-            <li><a href="Astrology.html">Home</a></li>
-            <li><a href="Daily.html">Horoscope</a>
-               
-             </li>
-            <li><a href="Astrology101.html">Astrology 101</a>
-                <ul>
-                    <li><a href="earth.html">Earth</a></li>
-                    <li><a href="water.html">Water</a></li>
-                    <li><a href="air.html">Air</a></li>
-                    <li><a href="fire.html">Fire</a></li>
-                </ul>
-            </li>
-            <li><a href="tarot.html">Tarot</a>
-                <ul>
-                    <li><a href="tarotreading.html">Tarot Reading</a></li>
-                    <li><a href="game.html">Play for fun!</a></li>
-                </ul>
-            </li>
-            <li><a href="Store.html">Store</a>
-                <ul>
-                    <li><a href="books.html">Books</a></li>
-                    <li><a href="clothes.html">Clothes</a></li>
-                    <li><a href="jewelry.html">Jewelry</a></li>
-                    <li><a href="art.html">Art</a></li>
-                </ul>
-            </li>
-            <li><a href="AboutUs.html">About us</a></li>
-            <li><a href="login.html">Log in</a></li>
-            <li>
-                <div class="search-box">
-                    <input  class="search-text" type="text" name="" placeholder="Type to search">
-                    <a  class="search-button"href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwi0udum457uAhXC-yoKHaoGDcQQPAgI" >
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div> 
-            </li>
-        </ul>
+        <div class="navbar">
+        <img src="images/sun.png" alt="Astrologylogo" class="logo"><span id="astro"><a href ="final.html">Astrology</a></span>
+        </div>
+  <nav>  
+
+    <ul>
+        <li><a href ="Astrology.html">Home</a></li>
+        <li><a href="Horoscope.html">Horoscope</a></li>
+        <li><a href="Astrology101.html">Astrology 101</a></li>
+        <li><a href="ChineseHoroscope.html">Chinese Horoscope</a></li>
+        <li><a href="Store.html">Store</a></li>
+        <li><a href="AboutUs.html">About us</a></li>
+        <li><a href="login.html">Log in</a></li>
+    </ul>
+</nav>
 </header>
 
 <main>
 
-    <h1 style="position: relative;top: 40px;left: 0px;" id="h1">Cancer</h1>
+    <h1 id="h1">Cancer</h1>
       <img src="images/CANCER.png" style="width:220px;height:220px;
       position:absolute; top:70px; left:20px;">
 
 
-   <p style="margin-left:470px;"><br><br><br> <a style="color: #ddd;" href="CancerYesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-    <a style="color: #ddd;" href="CancerToday.html">Today</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
-     <span class="arrow-highlight"> <a style="color: #ddd;" href="CancerTomorrow.html">Tomorrow</a></span>
+   <p> <a href="CancerYesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+    <a href="CancerToday.html">Today</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+     <span class="arrow-highlight"> <a href="CancerTomorrow.html">Tomorrow</a></span>
     &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+     <a href="yesterday.html">Weekly</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+     <a href="yesterday.html">Monthly</a>
     
     
-    </p>
+    </p>>
 
-   <article style="text-align: center; color: #ddd;position: relative;top: 65px;">
+     <p id="h1">
 
         Work that you're doing either at home or on your home is likely to go well today <br>
         and bring you the results you're hoping for, Cancer. Members of your household <br>
@@ -269,7 +235,7 @@ z-index: -1
         but you may also have to spend some time out gathering supplies and materials that <br>
         you may need.<br>
 
-   </article>
+        </p>
           <div class="dropdown">
             <button class="dropbtn">Choose your sign</button>
             <div class="dropdown-content">
@@ -294,19 +260,19 @@ z-index: -1
 <h3><strong>Judgment</strong></h3>
 
 <p id="card">
-    Everyone wants to be seen in their best light, right? Seeing the 
-    Judgment card in your reading is a sign that you're looking for the
-    recognition you and your loved ones deserve. Good news: If you've 
-    been kind and fair, then this is how the world will see you. 
-    And you'll have no fear in being seen. As one of the last cards in 
-    the Major Arcana journey, Judgement signifies that you've succeeded
-    in growing and progressing the way you've needed. It could be a signal 
-    that now's the time to be seen or heard, or that one more step to 
+    Everyone wants to be seen in their best light, right? Seeing the <br>
+    Judgment card in your reading is a sign that you're looking for the <br>
+    recognition you and your loved ones deserve. Good news: If you've <br>
+    been kind and fair, then this is how the world will see you. <br>
+    And you'll have no fear in being seen. As one of the last cards in<br> 
+    the Major Arcana journey, Judgement signifies that you've succeeded <br>
+    in growing and progressing the way you've needed. It could be a signal <br>
+    that now's the time to be seen or heard, or that one more step to <br>
     success is on the horizon.<br><br>
 
-    This card shows an eclipse. The sun's disappearance behind the moon 
-    presents a moment of pure darkness, symbolic of the revelation taking
-    place. But once that moment of acceptance has passed, healing begins.
+    This card shows an eclipse. The sun's disappearance behind the moon <br>
+    presents a moment of pure darkness, symbolic of the revelation taking <br>
+    place. But once that moment of acceptance has passed, healing begins. <br>
     The sun makes its way from behind the moon, lighting up a new path.<br>
  
     
@@ -316,30 +282,25 @@ z-index: -1
 
 
 
-<h2 id="quote" style="margin-top: -696px;"  >QUOTE OF TOMORROW</h2>
+<h2 id="quote" style="margin-top: -820px;"  >QUOTE OF TOMORROW</h2>
       
 <p class = "vequara" style = "text-align: center;position:absolute; color: rgb(255, 255, 255);"> <br><br>
 
     &nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
     When you reach the end of your rope, tie a knot in it and hang on.
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br></p>
 
   
-    <h1 style="color: #ddd;position: absolute;top: 640px;left: 240px;">Interesting facts about Cancer</h1>
+    <h1 style="color: #ddd;position: absolute;top: 540px;left: 240px;">Interesting facts about Cancer</h1>
 
-    <button class="button" style="position: absolute;top: 686px;left: 250px;background-color:#A37B7B;font-size: 20px;">Click to fade in boxes</button><br><br>
+    <button class="button" style="position: absolute;top: 606px;left: 200px;background-color:#A37B7B;font-size: 20px;">Click to fade in boxes</button><br><br>
     <div id="div1" style="width:500px;height:150px;display:none;background-color:#e7d5d5;
-    position: absolute;top: 750px;left: 200px;">
+    position: absolute;top: 670px;left: 200px;">
           <dt>CANCER ARE GENEROUS</dt>
           <dd>Let’s just say there’s a reason Cancers are the secret-keepers of your friend group.<br>
               They’re generous, loyal, and empathetic. No matter how busy they may be, they will <br>
@@ -348,7 +309,7 @@ z-index: -1
               without hesitation.<br>
                  <br></dd></div><br>
     <div id="div2" style="width:500px;height:150px;display:none;background-color:#e7d5d5;
-     position: absolute;top: 905px;left: 200px;">
+     position: absolute;top: 825px;left: 200px;">
      <dt>CANCERS ARE SELF-AWARE</dt>
           <dd>Water signs are in tune with their emotions, which sometimes <br>
               makes people think Cancers are whiny. The reality is that <br>
@@ -360,7 +321,7 @@ z-index: -1
               ~emotionally intelligent~ they are.<br>
  <br></dd></div><br>
     <div id="div3" style="width:500px;height:160px;display:none;background-color:#e7d5d5;
-     position: absolute;top: 1060px;left: 200px;">
+     position: absolute;top: 980px;left: 200px;">
      <dt>CANCERS ARE INSECURE</dt>
           <dd>Cancer is one of the four cardinal signs, which means <br>
               they are the leaders of the zodiac. Just because they’re <br>
@@ -477,7 +438,7 @@ z-index: -1
     
     <tr>
       <td><strong>Planet</strong></td>
-      <td><br><a href ="pluto.html" style="color: rgb(117, 64, 86);">Pluto</a></td>
+      <td><br><a href ="#" style="color: rgb(117, 64, 86);">Pluto</a></td>
       </tr>
       
     <tr>
@@ -488,7 +449,7 @@ z-index: -1
     <tr>
       <td><strong>
   Element</strong></td>
-      <td><br><a href ="fire.html" style="color: rgb(117, 64, 86);">Fire</a></td>
+      <td><br><a href ="#" style="color: rgb(117, 64, 86);">Fire</a></td>
       </tr>
       
     <tr>
@@ -553,7 +514,7 @@ z-index: -1
               </div>
           
           <div class="btn">
-              <button type="submit" style="color: white;" >Send</button>
+              <button type="submit">Send</button>
           </div>
           </form>
       </div>
