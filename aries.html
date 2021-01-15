@@ -8,250 +8,235 @@
     <link rel="stylesheet" href="horoscope.css">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
    <style>
-       
-.dropbtn {
-  background-color: #A37B7B;
-  color: white;
-  padding: 10px;
-  margin-left:45px;
-  margin-top: -30px;
 
-
-  font-size: 16px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #ca929e;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 5px rgb(80, 57, 70);
-}
-
-.dropbtn:hover {background-color: #ca929e}
-
-.dropbtn:active {
-  background-color:#ca929e;
-  box-shadow: 0 5px rgb(56, 33, 40);
-  transform: translateY(4px);
-}
-
-
-
-
-
-
-.dropdown {
-  position: relative;
-  color: #A37B7B;
-  display: inline-block;
-  
-  
-  
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #c09696;
-  min-width: 144px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  
-  
-  border-radius: 15px;
-  margin-left:45px;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: rgb(104, 58, 73);
-  border-radius: 15px;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color:rgb(173, 117, 117);}
-
-
-
-
-
-
-
-
-.vequara{
-
-position:absolute;
-text-size-adjust: 30px;
-margin-top: -845px;
-margin-left: 340px;
-border: 3px solid rgba(145, 93, 87, 0.747);
-   border-radius: 10px;
-    background:radial-gradient( rgba(178, 168, 184, 0.726), rgba(19, 16, 61, 0.308) 70.71%);
-}
-
-
-
-
-
-
-
-
-#match , .tabela, #todays{  
-  border: 1px solid #ddd;
-  text-align: left;
-}
-
-#match {
-  border-collapse: collapse;
-  width: 50%;
-  color: rgb(0, 0, 0);
-  margin-left: 570px;
-  margin-top: 100px;
-}
-
-#todays, .tabela {
-  padding: 5px;
-  color: rgb(0, 0, 0);
-}
-
-.tabela{
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+           
+    .dropbtn {
+      background-color: rgb(173, 117, 117) ;
+      color: white;
+      padding: 10px;
+      margin-left:45px;
+      margin-top: 45px;
+      font-size: 16px;
+      border: none;
+      
+    }
+    
+    .dropdown {
+      position: relative;
+      color: rgb(173, 117, 117);
+      display: inline-block;
+      
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #a0546d;
+      min-width: 144px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      
+      
+      margin-left:45px;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: rgb(148, 70, 96);}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color:rgb(173, 117, 117);}
+    
+    
+    
+    
+    
+    
+    
+    .vequara{
+    
+    position:absolute;
+    text-size-adjust: 30px;
+    margin-top: -445px;
+    margin-left: 340px;
+    border: 3px solid rgba(145, 93, 87, 0.747);
+       border-radius: 10px;
+        background:radial-gradient(rgba(178, 168, 184, 0.726), rgba(19, 16, 61, 0.308) 70.71%);
+    }
+    
+    
+    
+    
+    
+    
+    
+    #match , .tabela, #todays{  
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    
+    #match {
+      border-collapse: collapse;
+      width: 50%;
+      color: rgb(0, 0, 0);
+      margin-left: 570px;
+      margin-top: 340px;
+    }
+    
+    #todays, .tabela {
+      padding: 5px;
+      color: rgb(0, 0, 0);
+    }
+    
+    .tabela{
+    
+        
+      background-color:#A37B7B;
+    }
+    
+    #todays{
+        
+      background-color: #e7d5d5;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #cardTable {
+      width: 30%;
+      border-collapse: collapse;
+      border: 1px solid black;
+      margin-top: -247px;
+      margin-left: 50px;
+      color: rgb(26, 22, 22);
+      background-color: #A37B7B;
+      
+      padding-left: 10px;
+      padding-top: 20px;
+    }
+    
+     
+     
 
     
-  background-color:#A37B7B;
-}
-
-#todays{
     
-  background-color: #e7d5d5;
-}
-
-
-
-
-
-
-
-
-
-#cardTable {
-  width: 30%;
-  border-collapse: collapse;
-  border: 1px solid black;
-  margin-top: -247px;
-  margin-left: 50px;
-  color: rgb(26, 22, 22);
-  background-color: #A37B7B;
-  
-  padding-left: 10px;
-  padding-top: 20px;
-}
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(16,9,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #533131;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  height: 10%;
-  color: #ddd;
-}
-
-/* The Close Button */
-.close {
-  color: #fff9f9;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-
-
-    </style>
-</head>
-<body>
-    <header>
-
-        <div class="navbar">
-        <img src="sun.png" alt="Astrologylogo" class="logo"><span id="astro"><a href ="final.html">Astrology</a></span>
-        </div>
-  <nav>  
-
-    <ul>
-        <li><a href ="Astrology.html">Home</a></li>
-        <li><a href="Horoscope.html">Horoscope</a></li>
-        <li><a href="Astrology101.html">Astrology 101</a></li>
-        <li><a href="ChineseHoroscope.html">Chinese Horoscope</a></li>
-        <li><a href="Store.html">Store</a></li>
-        <li><a href="AboutUs.html">About us</a></li>
-        <li><a href="login.html">Log in</a></li>
-    </ul>
-</nav>
-</header>
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(16,9,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+      background-color: #533131;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      height: 10%;
+      color: #ddd;
+    }
+    
+    /* The Close Button */
+    .close {
+      color: #fff9f9;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    
+    
+        </style>
+    </head>
+    <body>
+        <header>
+    
+          <nav>  
+            <div class="logo"><a href="Astrology.html">Astrology</a></div>
+            <ul>
+                <li><a href="Astrology.html">Home</a></li>
+                <li><a href="Daily.html">Horoscope</a>
+                   
+                 </li>
+                <li><a href="Astrology101.html">Astrology 101</a>
+                    <ul>
+                        <li><a href="earth.html">Earth</a></li>
+                        <li><a href="water.html">Water</a></li>
+                        <li><a href="air.html">Air</a></li>
+                        <li><a href="fire.html">Fire</a></li>
+                    </ul>
+                </li>
+                <li><a href="tarot.html">Tarot</a>
+                    <ul>
+                        <li><a href="tarotreading.html">Tarot Reading</a></li>
+                        <li><a href="game.html">Play for fun!</a></li>
+                    </ul>
+                </li>
+                <li><a href="Store.html">Store</a>
+                    <ul>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="clothes.html">Clothes</a></li>
+                        <li><a href="jewelry.html">Jewelry</a></li>
+                        <li><a href="art.html">Art</a></li>
+                    </ul>
+                </li>
+                <li><a href="AboutUs.html">About us</a></li>
+                <li><a href="login.html">Log in</a></li>
+                <li>
+                    <div class="search-box">
+                        <input  class="search-text" type="text" name="" placeholder="Type to search">
+                        <a  class="search-button"href="#" >
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div> 
+                </li>
+            </ul>
+    </header>
 
 <main>
   
-    <h1 id="h1">Aries</h1>
+   <h1 style="position: relative;top: 20px;left: 0px;" id="h1">Aries</h1>
       <img src="images/ARIES.png" style="width:220px;height:220px;
       position:absolute; top:70px; left:20px;">
 
-   <p> <a href="AriesYesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-    <span class="arrow-highlight"> <a href="aries.html">Today</a></span>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a href="ariestomorrow.html">Tomorrow</a>
-    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a href="yesterday.html">Weekly</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-     <a href="yesterday.html">Monthly</a>
+<p style="margin-top:40px;margin-left: 470px;"> <a style="color: #ddd;"  href="AriesYesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+  <span class="arrow-highlight"> <a style="color: #ddd;"  href="aries.html">Today</a></span>
+  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a style="color: #ddd;"  href="ariestomorrow.html">Tomorrow</a>
+  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
     
     
     </p>>
 
-     <p id="h1">
+  <article style="text-align: center; color: #ddd;position: relative;top: 65px;">
          You can't do it all today, which is a fact that will become all too apparent as soon as <br>
          you get started this morning. But instead of feeling frustrated, start paring off a few<br>
           tasks and adjust your expectations. Despite the current rumors, you are not a superhero!<br>
@@ -259,6 +244,7 @@ border: 3px solid rgba(145, 93, 87, 0.747);
            and continually fall short. Climbing a smaller mountain is still climbing a mountain.<br>
         </p>
           <div class="dropdown">
+            </article>
             <button class="dropbtn">Choose your sign</button>
             <div class="dropdown-content">
               <a href="aries.html">Aries</a>
@@ -602,9 +588,67 @@ Numerology</strong></td>
 
 
 </main>
-<footer>
-<br>
-<br><br><br><br><br><br><br><br>
+<footer><div class="main-content">
+  <div class="left box">
+      <h2>About us</h2>
+      <div class="content">
+          <p style="text-align: left;color: black;"> Astrology is a pseudoscience that claims to divine information about human affairs and terrestrial events by studying the movements and relative positions of celestial objects . This website covers some of the important concepts of Astrology. </p>
+          <div class="social">
+              <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" ></i></a>
+              <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+  </div>
+  <div class="center box">
+      <h2>Address</h2>
+      <div class="content">
+          <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">New York City | New York</span>
+          </div>
+          <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Nevada | Las Vegas</span>
+          </div>
+          <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Germany | Stuttgart</span>
+          </div>
+          <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+(383)4XXXYYYY</span>
+          </div>
+          <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">abc@example.com</span>
+          </div>
+      </div>
+  </div>
+  <div class="right box">
+      <h2>Contact us</h2>
+      <div class="content">
+          <form action="#">
+              <div class="email">
+                  <div class="text">Email *</div>
+                  <input type="email" required>
+              </div>
+             <div class="msg">
+                 <div class="text">Message *</div>
+                  <textarea  id="" cols="25" rows="2" required></textarea>
+              </div>
+          
+          <div class="btn">
+              <button type="submit" style="color: white;">Send</button>
+          </div>
+          </form>
+      </div>
+  </div>
+</div>
+<div class="bottom">
+      <span class="credit">Created By <a href="#">Grupi4</a>
+          <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+      </span>
+</div>
 </footer>
-</body>
-</html>
