@@ -74,7 +74,7 @@ const projectiles = []
 const enemies = []
 
 function spawnEnemies() {
-    //setInterval(() => {
+    setInterval(() => {
         const radius = Math.random() * (30 - 4) + 4
 
         let x
@@ -97,7 +97,7 @@ function spawnEnemies() {
         y: Math.sin(angle)
     } 
         enemies.push(new Enemy(x, y, radius, color, velocity))
-    //}, 1000)
+    }, 1000)
 }
 
 function animate(){
@@ -116,11 +116,13 @@ function animate(){
                 projectile.y - enemy.y)
 
                 // objects touch
-                if(dist - enemy.radius - projectile.radius < 1) 
-                {
+            if(dist - enemy.radius - projectile.radius < 1) 
+            {
+                setTimeout(() => {
                     enemies.splice(index, 1)
                     projectiles.splice(projectileIndex, 1)
-                }
+                }, 0)
+            }
         })
     })
 }
