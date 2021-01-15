@@ -15,12 +15,35 @@ body{
     padding: 0;
     background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
     height:500px;
+<<<<<<< HEAD
     
 }
 nav{
     background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
     font-family: 'Baloo 2', cursive;
 }
+=======
+
+
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: content-box; 
+}
+body{
+    background-color: #e7d5d5;
+    height: 100%;
+    
+}
+nav{
+    background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
+    font-family: 'Baloo 2', cursive;
+}
+>>>>>>> parent of cc4cac2... Update horoscope.css
 nav::after{
     content:'';
     clear: both;
@@ -94,6 +117,7 @@ nav .logo{
 .search-box{
     background-color: #e7d5d5;
     height: 20px;
+<<<<<<< HEAD
     border-radius: 30px;
     padding: 10px; 
     margin-top: 20px;
@@ -142,7 +166,56 @@ nav .logo{
 article{
     position: relative;
     top: 30px;
+=======
+
+    border-radius: 30px;
+    padding: 10px; 
+    margin-top: 20px;
 }
+.search-box:hover>.search-text{
+    width:120px;
+    padding:0 6px;
+>>>>>>> parent of cc4cac2... Update horoscope.css
+}
+.search-button{
+    
+    color:#016464;
+    float :right;
+    width: 10px;
+    padding-top: 0;
+    border-radius: 50%;
+    background:#e7d5d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-text{
+    border:none;
+    background:none;
+    outline:none;
+    float: left;
+    padding: 0;
+    color:black;
+    font-size: 15px;
+    transition: 0.4s;
+    line-height: 20px;
+    width:0px;
+}
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -168,7 +241,7 @@ h3{
     
     color: rgb(95, 96, 139);
     margin-top: 350px;
-    margin-left: 1020px;
+    margin-left: 1040px;
 
 }
 
@@ -177,8 +250,8 @@ h3{
 
     
     color: rgb(95, 96, 139);
-    margin-top: -50px;
-    margin-left: 994px;
+    margin-top: -40px;
+    margin-left: 984px;
 
 }
 #card{
@@ -228,6 +301,7 @@ h3{
     
     
     
+<<<<<<< HEAD
   
     #match , .tabela, #todays{  
       border: 1px solid #ddd;
@@ -259,6 +333,39 @@ h3{
   
   
   
+=======
+  
+    #match , .tabela, #todays{  
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    
+    #match {
+      border-collapse: collapse;
+      width: 50%;
+      color: #ddd;
+      margin-left: 200px;
+    }
+    
+    #todays, .tabela {
+      padding: 5px;
+      color: #ddd;
+    }
+    
+    .tabela{
+    
+        
+      background-color: rgb(218, 121, 121);
+    }
+    
+    #todays{
+        
+      background-color: rgb(218, 164, 164);
+    }
+  
+  
+  
+>>>>>>> parent of cc4cac2... Update horoscope.css
 
 /* highlight */
 .arrow-highlight{
@@ -331,7 +438,11 @@ footer{
     clear: both;
     color: black;
     position: relative;
+<<<<<<< HEAD
     bottom: -430px;
+=======
+    bottom: -230px;
+>>>>>>> parent of cc4cac2... Update horoscope.css
     width: 100%;
     background: #A37B7B;
     font-family:  'Cormorant Garamond', serif;
@@ -480,7 +591,17 @@ textarea{
        margin: 5px 0 ;
    }
 }
+<<<<<<< HEAD
 
 
   
   
+=======
+
+
+  
+  
+
+  
+  
+>>>>>>> parent of cc4cac2... Update horoscope.css
