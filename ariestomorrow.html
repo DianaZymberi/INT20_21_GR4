@@ -6,7 +6,10 @@
     <title>Astrology</title>
     <link rel="shortcut icon" type="image/png" href="astrologo.png">
     <link rel="stylesheet" href="horoscope.css">
+    
+    <link rel="shortcut icon" type="image/png" href="images/astrolog.png">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 
    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -21,13 +24,18 @@ $(document).ready(function(){
 </script>
 
    <style>
+
+     
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
        
 .dropbtn {
   background-color: #A37B7B;
   color: white;
   padding: 10px;
   margin-left:45px;
-  margin-top: -30px;
+  margin-top: 45px;
 
 
   font-size: 16px;
@@ -100,7 +108,7 @@ $(document).ready(function(){
 
 position:absolute;
 text-size-adjust: 30px;
-margin-top: -700px;
+margin-top: -548px;
 margin-left: 340px;
 border: 3px solid #A37B7B;
    border-radius: 10px;
@@ -122,7 +130,7 @@ border: 3px solid #A37B7B;
   width: 50%;
   color: rgb(0, 0, 0);
   margin-left: 570px;
-  margin-top: 100px;
+  margin-top: 340px;
 }
 
 #todays, .tabela {
@@ -153,7 +161,7 @@ border: 3px solid #A37B7B;
   width: 30%;
   border-collapse: collapse;
   border: 1px solid black;
-  margin-top: -247px;
+  margin-top: -237px;
   margin-left: 50px;
   color: rgb(26, 22, 22);
   background-color: #A37B7B;
@@ -186,46 +194,75 @@ border: 3px solid #A37B7B;
 
 
 
+p,article{
 
+
+    z-index: -1
+
+}
 
     </style>
 </head>
 <body>
     <header>
 
-        <div class="navbar">
-        <img src="images/sun.png" alt="Astrologylogo" class="logo"><span id="astro"><a href ="final.html">Astrology</a></span>
-        </div>
-  <nav>  
-
-    <ul>
-        <li><a href ="Astrology.html">Home</a></li>
-        <li><a href="Horoscope.html">Horoscope</a></li>
-        <li><a href="Astrology101.html">Astrology 101</a></li>
-        <li><a href="ChineseHoroscope.html">Chinese Horoscope</a></li>
-        <li><a href="Store.html">Store</a></li>
-        <li><a href="AboutUs.html">About us</a></li>
-        <li><a href="login.html">Log in</a></li>
-    </ul>
-</nav>
+      <nav>  
+        <div class="logo"><a href="Astrology.html">Astrology</a></div>
+        <ul>
+            <li><a href="Astrology.html">Home</a></li>
+            <li><a href="Daily.html">Horoscope</a>
+               
+             </li>
+            <li><a href="Astrology101.html">Astrology 101</a>
+                <ul>
+                    <li><a href="earth.html">Earth</a></li>
+                    <li><a href="water.html">Water</a></li>
+                    <li><a href="air.html">Air</a></li>
+                    <li><a href="fire.html">Fire</a></li>
+                </ul>
+            </li>
+            <li><a href="tarot.html">Tarot</a>
+                <ul>
+                    <li><a href="tarotreading.html">Tarot Reading</a></li>
+                    <li><a href="game.html">Play for fun!</a></li>
+                </ul>
+            </li>
+            <li><a href="Store.html">Store</a>
+                <ul>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="clothes.html">Clothes</a></li>
+                    <li><a href="jewelry.html">Jewelry</a></li>
+                    <li><a href="art.html">Art</a></li>
+                </ul>
+            </li>
+            <li><a href="AboutUs.html">About us</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li>
+                <div class="search-box">
+                    <input  class="search-text" type="text" name="" placeholder="Type to search">
+                    <a  class="search-button"href="#" >
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div> 
+            </li>
+        </ul>
 </header>
 
 <main>
 
-    <h1 id="h1">Aries</h1>
+    <h1 style="position: relative;top: 40px;left: 0px;" id="h1">Aries</h1>
       <img src="images/ARIES.png" style="width:220px;height:220px;
       position:absolute; top:70px; left:20px;">
 
-   <p> <a href="AriesYesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-    <a href="aries.html">Today</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
-     <span class="arrow-highlight"> <a href="ariestomorrow.html">Tomorrow</a></span>
-    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a href="yesterday.html">Weekly</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-     <a href="yesterday.html">Monthly</a>
+   <p style="margin-left:470px;"><br><br><br> <a style="color: #ddd;" href="AriesYesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+    <a style="color: #ddd;" href="aries.html">Today</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+     <span class="arrow-highlight"> <a style="color: #ddd;" href="ariestomorrow.html">Tomorrow</a></span>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
     
     
     </p>>
 
-     <p id="h1">
+     <article style="text-align: center; color: #ddd;position: relative;top: 50px;">
 
 
         One of the best ways to remind yourself that you're the commander in chief of your life is by<br>
@@ -233,7 +270,7 @@ border: 3px solid #A37B7B;
          of organizing closets and scrubbing the refrigerator, stop and think about it. What better way is<br>
           there to feel powerful than by improving your living situation in such a way that every day moving<br>
            forward you can see the influence you have?<br>
-        </p>
+     </article>
           <div class="dropdown">
             <button class="dropbtn">Choose your sign</button>
             <div class="dropdown-content">
@@ -261,17 +298,17 @@ border: 3px solid #A37B7B;
 
 
 
-    Balance is hard to find, but the Temperance card is clear:<br>
-    You're finding it in your own life. Now, keep that moderation going.<br>
-    All of life is a balancing act and you're well on your way to reaching<br>
+    Balance is hard to find, but the Temperance card is clear:
+    You're finding it in your own life. Now, keep that moderation going.
+    All of life is a balancing act and you're well on your way to reaching
     inner peace. Nurture it.<br><br>
 
-    If you're feeling calmer just looking at this card, imagine what it'd be <br>
-    like to bring that calm to the rest of your life. With the fire and water<br>
-    elements juggled on both sides, Temperance is a true depiction of balance.<br>
-    She enjoys all the sensations that life has to offer, on both ends of the<br>
-    spectrum: good and bad, happy and sad, and so forth. Through her hands<br>
-    the elements combine to create perfect harmony. They ask you to seek this<br>
+    If you're feeling calmer just looking at this card, imagine what it'd be 
+    like to bring that calm to the rest of your life. With the fire and water
+    elements juggled on both sides, Temperance is a true depiction of balance.
+    She enjoys all the sensations that life has to offer, on both ends of the
+    spectrum: good and bad, happy and sad, and so forth. Through her hands
+    the elements combine to create perfect harmony. They ask you to seek this
     in your own life.<br>
     
     
@@ -281,7 +318,7 @@ border: 3px solid #A37B7B;
 
 
 
-<h2 id="quote" style="margin-top: -747px;"  >QUOTE OF TOMORROW</h2>
+<h2 id="quote" style="margin-top: -602px;"  >QUOTE OF TOMORROW</h2>
       
 <p class = "vequara" style = "text-align: center;position:absolute; color: rgb(255, 255, 255);"> <br><br>
 
@@ -296,11 +333,11 @@ border: 3px solid #A37B7B;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br></p>
 
   
-    <h1 style="color: #ddd;position: absolute;top: 540px;left: 240px;">Interesting facts about Aries</h1>
+    <h1 style="color: #ddd;position: absolute;top: 640px;left: 240px;">Interesting facts about Aries</h1>
 
-    <button class="button" style="position: absolute;top: 606px;left: 200px;background-color:#A37B7B;font-size: 20px;">Click to fade in boxes</button><br><br>
+    <button class="button" style="position: absolute;top: 686px;left: 250px;background-color:#A37B7B;font-size: 20px;">Click to fade in boxes</button><br><br>
     <div id="div1" style="width:500px;height:150px;display:none;background-color:#e7d5d5;
-    position: absolute;top: 670px;left: 200px;">
+    position: absolute;top: 750px;left: 200px;">
           <dt>ARIES MAY COME OFF BOSSY</dt>
           <dd>Aries like things to happen in their own way. <br>
               They even try to make it possible with frequent efforts.<br>  
@@ -309,7 +346,7 @@ border: 3px solid #A37B7B;
                 They will try to rule wherever they will get a chance.<br> 
                  <br></dd></div><br>
     <div id="div2" style="width:500px;height:180px;display:none;background-color:#e7d5d5;
-     position: absolute;top: 825px;left: 200px;"><dt>ARIES HAVE QUICK TEMPERS</dt>
+     position: absolute;top: 905px;left: 200px;"><dt>ARIES HAVE QUICK TEMPERS</dt>
           <dd>We all know Aries are moody people. <br>
                They go through emotional ups and down more often than others. <br>
                 Aries are not emotionally weak, they are in fact strong  <br>
@@ -318,7 +355,7 @@ border: 3px solid #A37B7B;
                  were before. They may become fill in the rage one second  <br>
                  before and become calm and peaceful the moment after. <br> <br></dd></div><br>
     <div id="div3" style="width:500px;height:210px;display:none;background-color:#e7d5d5;
-     position: absolute;top: 1010px;left: 200px;"><dt>ARIES ARE TALKATIVE</dt>
+     position: absolute;top: 1090px;left: 200px;"><dt>ARIES ARE TALKATIVE</dt>
           <dd>Aries are very friendly people who keep on talking about everything. <br>
                You will find your conversation interesting with them as they will  <br>
                always come up with the chat of your interest. They are chatterboxes. <br>
@@ -396,7 +433,7 @@ border: 3px solid #A37B7B;
 
  -->
   
-<table id="match"> 
+<table id="match" > 
     <tr> 
         <th id="todays" colspan="3" height="30" style="text-align: center;">TOMORROW'S MATCH</th> 
     </tr> 
@@ -445,7 +482,7 @@ border: 3px solid #A37B7B;
     <tr>
       <td><strong>
   Element</strong></td>
-      <td><br><a href ="#" style="color: rgb(117, 64, 86);">Fire</a></td>
+      <td><br><a href ="fire.html" style="color: rgb(117, 64, 86);">Fire</a></td>
       </tr>
       
     <tr>
@@ -510,7 +547,7 @@ border: 3px solid #A37B7B;
               </div>
           
           <div class="btn">
-              <button type="submit">Send</button>
+              <button type="submit" style="color: white;" >Send</button>
           </div>
           </form>
       </div>
