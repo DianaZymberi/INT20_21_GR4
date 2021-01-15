@@ -20,13 +20,7 @@
             <div class="logo"><a href="Astrology.html">Astrology</a></div>
             <ul>
                 <li><a href="Astrology.html">Home</a></li>
-                <li><a href="Horoscope.html">Horoscope</a>
-                    <ul>
-                        <li><a href="#">Daily </a></li>
-                        <li><a href="#">Weekly</a></li>
-                        <li><a href="#">Monthly </a></li>
-                    </ul>
-                 </li>
+                <li><a href="Daily.html">Horoscope</a></li>
                 <li><a href="Astrology101.html">Astrology 101</a>
                     <ul>
                         <li><a href="earth.html">Earth</a></li>
@@ -98,7 +92,7 @@
             var myImg = document.getElementById("math");
             var currWidth = myImg.clientWidth;
             if(currWidth == 600){
-                alert("You’re fully zoomed in!");
+                alert("You are fully zoomed in!");
             } else{
             myImg.style.width = (currWidth + 10) + "px";
             } 
@@ -120,6 +114,14 @@
             $("#btn2").click(function(){
             $("ol").append("<li>Hellooo</li>");
          });
+            var maxval = Number.MAX_VALUE;
+            var minval = Number.MIN_VALUE;
+            var num = new Number(152.5673);
+            console.log("The largest number in javascript is:" + maxval );
+            console.log("The smallest number in javascript: " + minval );
+            console.log("Number 152.5673 to fixed is : " + num.toFixed()); 
+            console.log("Number 152.5673 to exponential is : " + num.toExponential()); 
+            console.log("Number 152.5673 to precision is : " + num.toFixed()); 
 });
     </script>
 <span class="teksti">Pres Arow Keys to move : </span>
