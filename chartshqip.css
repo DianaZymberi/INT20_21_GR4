@@ -166,7 +166,7 @@ td:first-child{
 }
 .planets{
     position: absolute;
-    bottom:50px;
+    bottom:70px;
     left: 25%;
     font-family: 'Cormorant Garamond', serif;
     font-size: large;
@@ -181,13 +181,17 @@ td:first-child{
 }
 #english{
     position: relative;
-    left:43%;
-    font-family: 'Baloo 2', cursive;
-    font-size: 20px;
-    background-color:  rgba(255, 255, 255, 0.74);
-    padding:5px;
-    margin-top:20px;
-    margin-bottom:20px;
+    left:40%;
+    width: 200px;
+    height: 50px;
+    margin: 15px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: black;
+    border: none;
+    font-weight: 600;
+    background-color: rosybrown;
+    cursor: pointer;
 }
 footer{
     clear: both;
@@ -197,7 +201,7 @@ footer{
     width: 100%;
     background: #A37B7B;
     font-family:  'Cormorant Garamond', serif;
-    margin-top: 50px;
+
 }
 
 .main-content{
