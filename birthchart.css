@@ -139,6 +139,7 @@ nav .logo{
     width:500px;
     height:500px;
     left:200px;
+    z-index: -1;
 }
 .features, th, td {
     border-collapse: collapse;
