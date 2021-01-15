@@ -72,7 +72,7 @@ function dragDrop() {
 }
 //sessionStorage
 function storedata(){
-  var inputEmail=document.getElementById("email");
+  var inputEmail=document.getElementById("useremail");
   sessionStorage.setItem("email",inputEmail.value);
   var inputMessage=document.getElementById("message");
   sessionStorage.setItem("message",inputMessage.value);
@@ -108,7 +108,7 @@ function validate(){
   }
   return true;
 }
-
+//validate Email
 function validateEmail(){
   var useremail=document.getElementById('useremail').value;
   var emailRGEX=/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i;
