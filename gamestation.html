@@ -114,7 +114,7 @@
         };
         $(document).ready(function(){
             $("#btn1").click(function(){
-            $(".shto").append(" Dardan.");
+            $(".shto").append(".Dardan.");
         });
 
             $("#btn2").click(function(){
@@ -122,7 +122,8 @@
          });
 });
     </script>
-<div class="left">
+<span class="teksti">Pres Arow Keys to move : </span>
+<div class="goleft">
     <p class="tekst"> Four Operator-Calculator :</p>
     <form class="form1" onclick="return false" >
         <input type="text" id="n1"/>
@@ -138,23 +139,23 @@
     </form>
     <p class="tekst" >Click the button to search for the letters "chart" in a string</p>
 
-        <button type="submit" onclick="match()" class="myfbtn" >Find some charts</button>
+        <button onclick="match()" class="myfbtn" >Find some charts</button>
         <p id="demo" ></p>
         
     <p class="tekst">Search for Sleep and Astrology</p>
 
-        <button type="submit" id="execute" onclick="execute()">Find us</button>
+        <button id="execute" onclick="execute()">Find us</button>
         <p id="exec"></p>
 
 </div>
 <img src="images/mathjpg.jpg" alt="Math" id="math">
-<div class="right">
-    <button type="button" onclick="zoomin()"><img src="https://img.icons8.com/cute-clipart/22/000000/zoom-in.png"/> Zoom In</button>
-    <button type="button" onclick="zoomout()"><img src="https://img.icons8.com/cute-clipart/22/000000/zoom-out.png"/> Zoom Out</button>
+<div class="goright">
+    <button class="zoom" onclick="zoomin()"><img src="https://img.icons8.com/cute-clipart/22/000000/zoom-in.png"/> Zoom In</button>
+    <button class="zoom" onclick="zoomout()"><img src="https://img.icons8.com/cute-clipart/22/000000/zoom-out.png"/> Zoom Out</button>
 </div>
 
 
-<div class="middle">
+<div class="gomiddle">
     <br><br><br>
     <p class="shto">Say HELLO</div>
     <ol>
@@ -168,79 +169,100 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-<!--             <footer>
-                <div class="main-content">
-                    <div class="left box">
-                        <h2>About us</h2>
-                        <div class="content">
-                            <p> Astrology is a pseudoscience that claims to divine information about human affairs and terrestrial events by studying the movements and relative positions of celestial objects . This website covers some of the important concepts of Astrology. </p>
-                            <div class="social">
-                                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" ></i></a>
-                                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="center box">
-                        <h2>Address</h2>
-                        <div class="content">
-                            <div class="place">
-                                <span class="fas fa-map-marker-alt"></span>
-                                <span class="text">New York | New York City </span>
-                            </div>
-                            <div class="place">
-                                <span class="fas fa-map-marker-alt"></span>
-                                <span class="text">Nevada | Las Vegas</span>
-                            </div>
-                            <div class="place">
-                                <span class="fas fa-map-marker-alt"></span>
-                                
-                                <span class="text">Germany | Stuttgart</span>
-                            </div>
-                            <div class="phone">
-                                <span class="fas fa-phone-alt"></span>
-                                <span class="text">+(383)4XXXYYYY</span>
-                            </div>
-                            <div class="email">
-                                <span class="fas fa-envelope"></span>
-                                <span class="text"><a href="mailto:toaddress@email.com">abc@example.com</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right box">
-                        <h2>Contact us</h2>
-                        <div class="content">
-                            <form action="#">
-                                <div class="email">
-                                    <div class="text">Email *</div>
-                                    <input type="email" required>
-                                </div>
-                               <div class="msg">
-                                   <div class="text">Message *</div>
-                                    <textarea  id="" cols="25" rows="2" required></textarea>
-                                </div>
-                            
-                            <div class="btn">
-                                <button type="submit">Send</button>
-                            </div>
-                            </form>
-                        </div>
-                    </div>
+<img src="images/emoji.png" alt="emoji" class="smile">
+<script>
+let circle = document.querySelector('.smile');
+let moveBy = 30;
+ 
+window.addEventListener('load', () => {
+    circle.style.position = 'absolute';
+    circle.style.left =50+'px';
+    circle.style.top = 100+'px';
+});
+ 
+ 
+window.addEventListener('keyup', (e) => {
+    switch (e.key) {
+        case 'ArrowLeft':
+            circle.style.left = parseInt(circle.style.left) - moveBy + 'px';
+            break;
+        case 'ArrowRight':
+            circle.style.left = parseInt(circle.style.left) + moveBy + 'px';
+            break;
+        case 'ArrowUp':
+            circle.style.top = parseInt(circle.style.top) - moveBy + 'px';
+            break;
+        case 'ArrowDown':
+            circle.style.top = parseInt(circle.style.top) + moveBy + 'px';
+            break;
+    }
+});
+</script>
+<br>
+<footer>
+    <div class="main-content">
+        <div class="left box">
+            <h2>About us</h2>
+            <div class="content">
+                <p> Astrology is a pseudoscience that claims to divine information about human affairs and terrestrial events by studying the movements and relative positions of celestial objects . This website covers some of the important concepts of Astrology. </p>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" ></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
-                <div class="bottom">
-                        <span class="credit">Created By <a href="#">Grupi4</a>
-                            <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
-                        </span>
+            </div>
+        </div>
+        <div class="center box">
+            <h2>Address</h2>
+            <div class="content">
+                <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">New York | New York City </span>
                 </div>
-            </footer> -->
-</body>
+                <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Nevada | Las Vegas</span>
+                </div>
+                <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Germany | Stuttgart</span>
+                </div>
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+(383)4XXXYYYY</span>
+                </div>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text"><a href="mailto:toaddress@email.com">abc@example.com</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="right box">
+            <h2>Contact us</h2>
+            <div class="content">
+                <form action="#" onsubmit="return validateEmail();">
+                    <div class="email">
+                        <div class="text" name="email">Email *</div>
+                        <input id="useremail" required>
+                    </div>
+                   <div class="msg">
+                       <div class="text"name="message">Message *</div>
+                        <textarea  id="message" cols="25" rows="2" required></textarea>
+                    </div>
+                
+                <div class="btn">
+                    <button type="submit" onclick="storedata();">Send</button>
+                </div>
+                <div><h2 id='result'></h2></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+            <span class="credit">Created By <a href="#">Grupi4</a>
+                <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+            </span>
+    </div>
+</footer>
 </html>

@@ -116,13 +116,14 @@ nav .logo{
     line-height: 20px;
     width:0px;
 }
-.left{
+.goleft{
+    clear:left;
     position: relative;
     left:200px;
     float: left;
     width: 50%;
 }
-.right{
+.goright{
     position: relative;
     float: right;
     top:55px;
@@ -142,6 +143,13 @@ nav .logo{
     font-size:20px;
     font-family:'Baloo 2', cursive;
     margin-top:50px;
+    color:white;
+}
+.teksti{
+    float:left;
+    font-size:18px;
+    font-family:'Baloo 2', cursive;
+    padding-left: 10px;
     color:white;
 }
 .shto, ol li{
@@ -165,7 +173,7 @@ nav .logo{
     font-family:'Baloo 2', cursive;
     color:white;
 }
-button[type="submit"]{
+#execute,.myfbtn{
     width: 200px;
     height: 50px;
     margin: 15px;
@@ -177,10 +185,8 @@ button[type="submit"]{
     background-color: rosybrown;
     cursor: pointer;
 }
-button[type="submit"]:hover{
-    background-color: rosybrown;
-}
-button[type="button"] ,#btn1,#btn2{
+
+.zoom ,#btn1,#btn2{
     width: 150px;
     height: 30px;
     border-radius: 4px;
@@ -195,11 +201,16 @@ ol li ,#btn1,.shto{
 
     margin-left:220px;
 }
-
-.middle{
+#btn1,#btn2{
+    margin-bottom: 50px;
+}
+.gomiddle{
     clear: both;
 }
-
+.smile{
+    height: 100px;
+    width: 100px;
+}
 footer{
     clear: both;
     color: black;
@@ -208,7 +219,6 @@ footer{
     width: 100%;
     background: #A37B7B;
     font-family:  'Cormorant Garamond', serif;
-    margin-top: 50px;
 }
 
 .main-content{
@@ -236,8 +246,6 @@ footer{
     width: 100%;
     background:#1a1a1a;
 }
-
-
 .left .content .social{
    margin:20px 0 0 0 ;
 }
@@ -249,7 +257,7 @@ footer{
    color:white;
    height: 40px;
    width: 40px;
-   background: #1a1a1a;
+   background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
    line-height: 40px;
    text-align: center; 
    border-radius: 5px;
@@ -258,7 +266,7 @@ footer{
 }
 
 .left .content .social a i:hover{
-    background: #cccaca;
+    opacity: .8;
 }
 .center .content .fas{
     font-size: 23px;
@@ -314,7 +322,7 @@ textarea{
    width: 100%;
    border:none;
    outline: none;
-   background: #111111;
+   background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
    font-size:17px;
    color: white;
    font-weight: 600;
@@ -322,7 +330,7 @@ textarea{
    transition: .3s;
 }
 .right form .btn button:hover{
-   background: #cccaca;
+   opacity: .8;
 }
 .bottom{
    text-align: center;
@@ -352,4 +360,3 @@ textarea{
        margin: 5px 0 ;
    }
 }
-
