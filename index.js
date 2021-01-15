@@ -5,6 +5,8 @@ canvas.width = innerWidth
 canvas.height = innerHeight
 
 const scoreEl = document.querySelector('#scoreEl')
+const startGameBtn = document.querySelector('#startGameBtn')
+const modalEl = document.querySelector('#modalEl')
 
 class Player {
     constructor(x, y, radius, color){
@@ -238,11 +240,13 @@ addEventListener('click', (event) => {
         x: Math.cos(angle) * 5,
         y: Math.sin(angle) * 5
     }
-    console.log(angle)
     projectiles.push(
         new Projectile(canvas.width / 2, canvas.height / 2, 5, 'white', velocity)
     )
 })
 
-animate()
-spawnEnemies()
+startGameBtn.addEventListener('click', () =>{
+    animate()
+    spawnEnemies()
+    modalEl.style.display = 'none'
+})
