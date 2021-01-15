@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Birthchart</title>
+        <link rel="shortcut icon" type="image/png" href="images/astrolog.png">
         <meta charset="windows-1252">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="gamestation.css">
@@ -31,8 +32,8 @@
                 </li>
                 <li><a href="tarot.html">Tarot</a>
                     <ul>
-                        <li><a href="tarotreading.html">Tarot Reading</a></li>
-                        <li><a href="game.html">Play for fun!</a></li>
+                        <li><a href="tarotreading.html">Reading</a></li>
+                        <li><a href="game.html">Play!</a></li>
                     </ul>
                 </li>
                 <li><a href="Store.html">Store</a>
@@ -121,7 +122,17 @@
             console.log("The smallest number in javascript: " + minval );
             console.log("Number 152.5673 to fixed is : " + num.toFixed()); 
             console.log("Number 152.5673 to exponential is : " + num.toExponential()); 
-            console.log("Number 152.5673 to precision is : " + num.toFixed()); 
+            console.log("Number 152.5673 to precision is : " + num.toPrecision()); 
+            console.log("Number 152.5673 to String is : " + num.toString());
+            var astros = ["Chinese Astrology", "Medical Astrology", "Egyptian Astrology", "Astrocartography","Natal Astrology","Horary Astrology","Relationship Astrology"];
+            var i = 0;
+            var text = "";
+            while (astros[i]) {
+                text += astros[i] + "<br>";
+                 i++; 
+                 console.log("Astro with index :" + i + " " +astros[i]);
+            }
+               
 });
     </script>
 <span class="teksti">Pres Arow Keys to move : </span>
