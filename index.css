@@ -1,0 +1,11 @@
+body{
+    margin:0;
+}
+
+.score{
+    position: fixed;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:white;
+}
