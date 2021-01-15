@@ -123,6 +123,7 @@ nav .logo{
     float: left;
     width: 50%;
     margin-bottom: 100px;
+    z-index: -1;
 }
 .goright{
     position: relative;
@@ -139,6 +140,7 @@ nav .logo{
     width:450px;
     height:450px;
     border-radius:15px;
+    z-index: -1;
 }
 .tekst{
     font-size:20px;
