@@ -4,6 +4,8 @@ const c = canvas.getContext('2d')
 canvas.width = innerWidth
 canvas.height = innerHeight
 
+const scoreEl = document.querySelector('#scoreEl')
+
 class Player {
     constructor(x, y, radius, color){
         this.x = x
@@ -134,6 +136,7 @@ function spawnEnemies() {
 
 
 let animationId
+let score = 0
 function animate(){
     animationId = requestAnimationFrame(animate)
     c.fillStyle = 'rgba(0, 0, 0, 0.1)'
@@ -182,6 +185,10 @@ function animate(){
                 // when projectiles touch enemy
             if(dist - enemy.radius - projectile.radius < 1) 
             {
+                // increase our score
+                score += 100
+                scoreEl.innerHTML = score
+
                 // create explosions
                 for (let i=0; i< enemy.radius * 2; i++){
                     particles.push(
