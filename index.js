@@ -185,9 +185,6 @@ function animate(){
                 // when projectiles touch enemy
             if(dist - enemy.radius - projectile.radius < 1) 
             {
-                // increase our score
-                score += 100
-                scoreEl.innerHTML = score
 
                 // create explosions
                 for (let i=0; i< enemy.radius * 2; i++){
@@ -205,6 +202,10 @@ function animate(){
                     )
                 }
                 if(enemy.radius - 10 > 5){
+                    // increase our score
+                    score += 50
+                    scoreEl.innerHTML = score
+
                     gsap.to(enemy,{
                         radius: enemy.radius - 10
                     })
@@ -213,6 +214,10 @@ function animate(){
                     }, 0)
                 }
                 else{
+                    // remove from scene altogether
+                    score += 100
+                    scoreEl.innerHTML = score
+
                     setTimeout(() => {
                     enemies.splice(index, 1)
                     projectiles.splice(projectileIndex, 1)
