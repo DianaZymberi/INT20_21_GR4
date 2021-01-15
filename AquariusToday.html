@@ -7,8 +7,25 @@
     <link rel="shortcut icon" type="image/png" href="astrologo.png">
     <link rel="stylesheet" href="horoscope.css">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-   <style>
+  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
+  });
+});
+</script>
+  
+  
+  <style>
        
+ 
+       @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
 
 
@@ -16,8 +33,8 @@
   background-color: #A37B7B;
   color: white;
   padding: 10px;
-  margin-left:45px;
-  margin-top: -30px;
+  margin-left:-945px;
+  margin-top:-600px;
 
 
   font-size: 16px;
@@ -90,7 +107,7 @@
 
 position:absolute;
 text-size-adjust: 30px;
-margin-top: -757px;
+margin-top: -534px;
 margin-left: 340px;
 border: 3px solid #A37B7B;
    border-radius: 10px;
@@ -112,7 +129,7 @@ border: 3px solid #A37B7B;
   width: 50%;
   color: rgb(0, 0, 0);
   margin-left: 570px;
-  margin-top: 100px;
+  margin-top: 340px;
 }
 
 #todays, .tabela {
@@ -215,21 +232,47 @@ border: 3px solid #A37B7B;
 <body>
     <header>
 
-        <div class="navbar">
-        <img src="sun.png" alt="Astrologylogo" class="logo"><span id="astro"><a href ="final.html">Astrology</a></span>
-        </div>
-  <nav>  
 
-    <ul>
-        <li><a href ="Astrology.html">Home</a></li>
-        <li><a href="Horoscope.html">Horoscope</a></li>
-        <li><a href="Astrology101.html">Astrology 101</a></li>
-        <li><a href="ChineseHoroscope.html">Chinese Horoscope</a></li>
-        <li><a href="Store.html">Store</a></li>
-        <li><a href="AboutUs.html">About us</a></li>
-        <li><a href="login.html">Log in</a></li>
-    </ul>
-</nav>
+      <nav>  
+        <div class="logo"><a href="Astrology.html">Astrology</a></div>
+        <ul>
+            <li><a href="Astrology.html">Home</a></li>
+            <li><a href="Daily.html">Horoscope</a>
+               
+             </li>
+            <li><a href="Astrology101.html">Astrology 101</a>
+                <ul>
+                    <li><a href="earth.html">Earth</a></li>
+                    <li><a href="water.html">Water</a></li>
+                    <li><a href="air.html">Air</a></li>
+                    <li><a href="fire.html">Fire</a></li>
+                </ul>
+            </li>
+            <li><a href="tarot.html">Tarot</a>
+                <ul>
+                    <li><a href="tarotreading.html">Tarot Reading</a></li>
+                    <li><a href="game.html">Play for fun!</a></li>
+                </ul>
+            </li>
+            <li><a href="Store.html">Store</a>
+                <ul>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="clothes.html">Clothes</a></li>
+                    <li><a href="jewelry.html">Jewelry</a></li>
+                    <li><a href="art.html">Art</a></li>
+                </ul>
+            </li>
+            <li><a href="AboutUs.html">About us</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li>
+                <div class="search-box">
+                    <input  class="search-text" type="text" name="" placeholder="Type to search">
+                    <a  class="search-button"href="#" >
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div> 
+            </li>
+        </ul>
 </header>
 
 <main>
@@ -238,20 +281,18 @@ border: 3px solid #A37B7B;
 
 
 
-    <h1 id="h1">Aquarius</h1>
+    <h1 style="position: relative;top: 40px;left: 0px;" id="h1">Aquarius</h1>
       <img src="images/AQUARIUS.png" style="width:220px;height:220px;
       position:absolute; top:70px; left:20px;">
 
-   <p> <a href="yesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-    <span class="arrow-highlight"> <a href="yesterday.html">Today</a></span>
-    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a href="AquariusTomorrow.html">Tomorrow</a>
-    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a href="yesterday.html">Weekly</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-     <a href="yesterday.html">Monthly</a>
+   <p style="margin: auto;"> <a style="color: #ddd;"  href="AriesYesterday.html">Yesterday</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+    <span class="arrow-highlight"> <a style="color: #ddd;"  href="ariestodayay.html">Today</a></span>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a style="color: #ddd;"  href="AquariusTomorrow.html">Tomorrow</a>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
     
     
-    </p>>
-
-     <p id="h1">
+    </p> <article style="text-align: center; color: #ddd;position: relative;top: 65px;">
+   
 
 
         This day could unfold in some unpredictable directions, but not knowing exactly what's going to happen<br>
@@ -294,18 +335,18 @@ border: 3px solid #A37B7B;
 
 <p id="card">
 
-If you've been wondering whether the universe can be fair, now is the time to <br>
-start believing that you'll get the outcome that you deserve. Is that positive<br>
-or negative? Only you know the answer. The Justice card, however, signifies that<br>
-whatever you've got going on will be solved with whatever fairness exists out in<br>
-the cosmos. That doesn't always mean you'll get the outcome you want.<br>
+If you've been wondering whether the universe can be fair, now is the time to 
+start believing that you'll get the outcome that you deserve. Is that positive
+or negative? Only you know the answer. The Justice card, however, signifies that
+whatever you've got going on will be solved with whatever fairness exists out in
+the cosmos. That doesn't always mean you'll get the outcome you want.
 But it does mean that order will soon be restored.<br><br>
 
-In her right hand, Justice holds a scale with a heart on it (emotion).<br>
-While in her left, her scale holds a skull (logic). She walks across a sword,<br>
-blindfolded. This represents the calm, rational mind that she needs in order to <br>
-make decisions clearly—without catering too heavily to her heart or her head.<br>
-If one scale were to tip, it would throw off balance. If you're to judge and be <br>
+In her right hand, Justice holds a scale with a heart on it (emotion).
+While in her left, her scale holds a skull (logic). She walks across a sword,
+blindfolded. This represents the calm, rational mind that she needs in order to 
+make decisions clearly—without catering too heavily to her heart or her head.
+If one scale were to tip, it would throw off balance. If you're to judge and be 
 judged fairly, you must focus on all aspects of the situation before making a decision.<br>
 
 
@@ -316,7 +357,7 @@ judged fairly, you must focus on all aspects of the situation before making a de
 
 
 
-<h2 id="quote" style="margin-top: -804px;"  >QUOTE IF THE DAY</h2>
+<h2 id="quote" style="margin-top: -594px;"  >QUOTE IF THE DAY</h2>
       
 <p class = "vequara" style = "text-align: center;position:absolute; color: rgb(255, 255, 255);"> <br><br>
 
@@ -578,12 +619,12 @@ judged fairly, you must focus on all aspects of the situation before making a de
     </tr>
     <tr>
       <td><strong>Astrological Correspondence</strong></td>
-      <td><br><a href ="#" style="color: rgb(117, 64, 86);">Libra</a></td>
+      <td><br><a href ="LibraToday.html" style="color: rgb(117, 64, 86);">Libra</a></td>
     </tr>
     
     <tr>
       <td><strong>Planet</strong></td>
-      <td><br><a href ="#" style="color: rgb(117, 64, 86);">Venus</a></td>
+      <td><br><a href ="Venus.html" style="color: rgb(117, 64, 86);">Venus</a></td>
       </tr>
       
     <tr>
