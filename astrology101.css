@@ -60,6 +60,14 @@ nav ul ul li{
     display: list-item;
     border-bottom: 1px solid rgb(119, 119, 119);
 }
+
+nav ul ul li a {
+    color:black;
+    position: relative;
+    left:5px;
+    bottom:7px;
+
+}
 .logo a {
     color:white;
     text-decoration: none;

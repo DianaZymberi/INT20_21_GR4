@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <style>
     @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
@@ -22,13 +23,7 @@
 <div class="logo"><a href="Astrology.html">Astrology</a></div>
 <ul>
     <li><a href="Astrology.html">Home</a></li>
-    <li><a href="Horoscope.html">Horoscope</a>
-        <ul>
-            <li><a href="#">Daily </a></li>
-            <li><a href="#">Weekly</a></li>
-            <li><a href="#">Monthly </a></li>
-        </ul>
-     </li>
+    <li><a href="Daily.html">Horoscope</a> </li>
     <li><a href="Astrology101.html">Astrology 101</a>
         <ul>
             <li><a href="earth.html">Toka</a></li>
@@ -144,20 +139,56 @@
         }
         
         </style>
+         <style>
+            #btn-pos {
+                font-size: 1.5em;
+                color: #696969;
+                border-radius: 5px;
+                background-color: F1F1F1;
+                font-family: Alegreya Sans SC;
+            }
+        </style>
+         <script>
+           $(document).ready(function () {
+               $("#flip").click(function () {
+                   $("#panel").slideToggle("slow");
+               });
+           });
+           $(document).ready(function () {
+               $("button").click(function () {
+                   $("#animateee").animate({
+                       left: '250px',
+                       height: '+=40px',
+                       width: '+=130px'
+                   });
+               });
+           });
+   
+       </script>
+       <style>
+    #panel,
+   #flip {
+       width: 100%;
+       padding: 5px 0px;
+       text-align: center;
+       background-color:rosybrown;
+       border: solid 1px white;
+       color: black;
+       cursor: pointer;
+   }
+
+   #panel {
+       padding: 50px 0px;
+       display: none;
+   }
+   </style>
+        <div id="flip">I dare you!</div>
+        <div id="panel">I dare you to find us!</div>
          <h2 id="cord"><i>Find which Zodiac Store is near you!</i></h2>
          <section class="coordinates">
              <div id="div-btn"> <button id="btn-pos" onclick="getLocation()">Your Position!</button>
                  <p id="pos"></p>
              </div>
-             <style>
-                 #btn-pos {
-                     font-size: 1.5em;
-                     color: #696969;
-                     border-radius: 5px;
-                     background-color: F1F1F1;
-                     font-family: Alegreya Sans SC;
-                 }
-             </style>
              <div id="map">
                  <iframe id="google_map" width="425" height="350" frameborder="0" style="border:0"
                      src="https://maps.google.com?output=embed">
