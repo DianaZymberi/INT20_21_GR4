@@ -146,6 +146,15 @@ table, th, td {
       height:25px;
       background:rgb(247, 234, 246);
   }
+  .multiplec{
+    font-family: 'Baloo 2',cursive;  
+    font-size:15px;
+    color:white;
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 2px solid rgb(116, 148, 158);
+    margin-bottom:50px;
+  }
 footer{
     clear: both;
     color: black;
