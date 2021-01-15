@@ -91,7 +91,9 @@ function store(){
 //validate input
 function validate(){
   var yourname = document.getElementById('yourname').value;
+  var country = document.getElementById('country').value;
   var nameRGEX = /^[a-z]+(([',. -][a-z ])?[a-z]*)*$/ig;
+  var countryRGEX = /^[a-z]+(([',. -][a-z ])?[a-z]*)*$/ig;
   var nameResult = nameRGEX.test(yourname);
   if(nameResult == false)
   {
