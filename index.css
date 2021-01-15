@@ -1,5 +1,6 @@
 body{
     margin:0;
+    overflow:hidden;
 }
 
 .score{
@@ -8,4 +9,41 @@ body{
     -ms-user-select: none;
     user-select: none;
     color:white;
+}
+
+.container{
+    position:fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-white{
+    position: fixed;
+    height: 100px;
+    width: 200px;
+    left: 600px;
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    user-select: none;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+p{
+    color: #938b8b;
+    margin-top: -20px;
+}
+
+button{
+    background-color: rgb(41, 25, 255);
+    color:white;
+    width:100%;
 }
