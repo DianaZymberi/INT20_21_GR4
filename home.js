@@ -31,7 +31,7 @@ $(document).ready(function () {
     );
  });
  //drag and drop element
- const fill = document.querySelector('.fill');
+const fill = document.querySelector('.fill');
 const empties = document.querySelectorAll('.empty');
 
 fill.addEventListener('dragstart', dragStart);
@@ -91,9 +91,7 @@ function store(){
 //validate input
 function validate(){
   var yourname = document.getElementById('yourname').value;
-  var country = document.getElementById('country').value;
   var nameRGEX = /^[a-z]+(([',. -][a-z ])?[a-z]*)*$/ig;
-  var countryRGEX = /^[a-z]+(([',. -][a-z ])?[a-z]*)*$/ig;
   var nameResult = nameRGEX.test(yourname);
   if(nameResult == false)
   {
