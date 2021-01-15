@@ -23,12 +23,7 @@
         <div class="logo"><a href="Astrology.html">Astrology</a></div>
         <ul>
             <li><a href="Astrology.html">Home</a></li>
-            <li><a href="Horoscope.html">Horoscope</a>
-                <ul>
-                    <li><a href="#">Daily </a></li>
-                    <li><a href="#">Weekly</a></li>
-                </ul>
-             </li>
+            <li><a href="Daily.html">Horoscope</a></li>
             <li><a href="Astrology101.html">Astrology 101</a>
                 <ul>
                     <li><a href="earth.html">Earth</a></li>
@@ -117,24 +112,30 @@
             <ul style="list-style-type: none;">
             <li><a href="gamestation.html">Math Station</a></li>
             <li><a href="theHouses.html">The Houses</a></li>
+            <li><a href="stars.html">Events</a></li>
+            <li><a href="game.html">Rock Paper Scissors</a></li>
            </ul>
-            <div class="fill" draggable="true" ></div> 
+            <div class="empty">
+                <div class="fill" draggable="true"></div>
+            </div>
        </div>
     </div>
 </div>
 </header>
 
 <section class="section1">
-    <h2>Find the missing card and bring it back to its deck .</h2>
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
-    <div class="box4"></div>
-    <div class="box5"></div>
-    <div class="empty"></div>
-    <div class="empty"></div>
+    <h2>Find The Magician and bring it back to its deck .</h2>
+    <div class="box1 " ></div>
+    <div class="box2 " ></div>
+    <div class="box3 " ></div>
+    <div class="box4 " ></div>
+    <div class="box5 " ></div>
+    <div class="empty" ></div>
+    <div class="empty" ></div>
     <h3>Hint:Quick links</h3>   
+
 </section>
+
 <div class="birthchart">
 
     <h2 style="font-family: 'Cormorant Garamond'" >Birth Chart Calculator</h2>
@@ -149,8 +150,9 @@
         <label for="time">Time of Birth:</label>
         <input type="time" id="time" required><br>
         <label for="country">Place of Birth</label>
-        <input  type="text" id="country" list="country" placeholder="Albania" required/> <br>
-        <datalist>
+        <input  type="text"  list="country" placeholder="Albania" required/> <br>
+        <datalist id="country">
+            <label for="">
             <option>A</option>
             <option>Albania</option>
             <option>Afghanistan</option>
@@ -302,7 +304,7 @@
             <option>Z</option>
             <option>Zambia</option>
             <option>Zimbabwe</option>
-        
+            </label>
         </datalist><br>
         <input type="submit" value="Create your Birthchart" onclick="store();" style="width:100%;margin-top:20px;font-size:15px;color:white;border:none; background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);cursor: pointer;">
     </form>
@@ -407,7 +409,7 @@
         <div class="right box">
             <h2>Contact us</h2>
             <div class="content">
-                <form action="#" onsubmit="return validateEmail();">
+                <form  onsubmit="return validateEmail();">
                     <div class="email">
                         <div class="text" name="email">Email *</div>
                         <input id="useremail" required>

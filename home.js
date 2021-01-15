@@ -31,7 +31,7 @@ $(document).ready(function () {
     );
  });
  //drag and drop element
- const fill = document.querySelector('.fill');
+const fill = document.querySelector('.fill');
 const empties = document.querySelectorAll('.empty');
 
 fill.addEventListener('dragstart', dragStart);

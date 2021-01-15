@@ -32,6 +32,13 @@ nav ul li{
     font-size: 15px;
     padding:8px 12px;
 }
+nav ul ul li a {
+    color:black;
+    position: relative;
+    left:5px;
+    bottom:7px;
+
+}
 nav ul li a:hover{
     border-radius: 5px;
     color:#b4afb8 ; 
