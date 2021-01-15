@@ -5,13 +5,10 @@
 }
 body{
     background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
-    background-attachment: fixed;
 }
 nav{
-    background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
     font-family: 'Baloo 2', cursive;
 }
-
 nav::after{
     content:'';
     clear: both;
@@ -27,7 +24,8 @@ nav ul li{
     float: left;
     background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
     margin : 0 5px;
-} nav ul li a {
+}
+ nav ul li a {
     color:white;
     text-decoration: none;
     text-transform: uppercase;
@@ -45,7 +43,6 @@ nav ul ul {
     top:90px;
     visibility: hidden;
     transition: top .3s;
-
 }
 nav ul li:hover>ul{
     top:70px;
@@ -62,6 +59,13 @@ nav ul ul li{
     display: list-item;
     border-bottom: 1px solid rgb(119, 119, 119);
 }
+nav ul ul li a {
+    color:black;
+    position: relative;
+    left:5px;
+    bottom:7px;
+
+}
 .logo a {
     color:white;
     text-decoration: none;
@@ -70,6 +74,7 @@ nav ul ul li{
 nav .logo{
     float: left;
     font-size: 27px;
+    
     line-height: 70px;
     padding-left:60px;
     
@@ -216,4 +221,166 @@ article{
   column-count: 3;
   column-gap: 40px;
   column-rule: 1px solid lightblue;
+}
+
+.audio{
+    margin-left: 100px;
+    padding-left: 360px;
+}
+
+audio{
+margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+footer{
+    clear: both;
+    color: black;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: #A37B7B;
+    font-family:  'Cormorant Garamond', serif;
+}
+
+.main-content{
+   display: flex;
+}
+
+.main-content .box{
+    flex-basis: 50%;
+    padding:10px 20px;
+}
+.box h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content{
+   margin: 20px 0 0 0 ;
+   position: relative;
+}
+.box .content::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background:#1a1a1a;
+}
+
+.left .content .social{
+   margin:20px 0 0 0 ;
+}
+.left .content .social a{
+   margin:0 2px;
+}
+
+.left .content .social a i{
+   color:white;
+   height: 40px;
+   width: 40px;
+   background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
+   line-height: 40px;
+   text-align: center; 
+   border-radius: 5px;
+   transition: .3s;
+   cursor: pointer;
+}
+
+.left .content .social a i:hover{
+    opacity: .8;
+}
+.center .content .fas{
+    font-size: 23px;
+    background:1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align:center;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+.center .content .fas:hover{
+   background: #FFF7F7;
+}
+.center .center .text{
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.right form .text{
+    font-size: 17px;
+    margin-bottom: 2px;
+    color:#0e0e0e;
+}
+.right form .msg{
+    margin-top: 10px;
+}
+.right form .email input{
+    width: 97%;
+    height:20px;
+}
+.right form input , .right form textarea{
+    width: 100%;
+    font-size: 17px;
+    background: white;
+    padding-left: 10px;
+    border:1px solid #222222;
+}
+.right form input{
+height: 35px;
+}
+.right form .btn{
+   margin-top: 10px;
+}
+textarea{
+    resize: vertical;
+    font-family: 'Baloo 2', cursive;
+    margin-top:5px;
+}
+.right form .btn button{
+   height: 40px;
+   width: 100%;
+   border:none;
+   outline: none;
+   background-image:url(https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png);
+   font-size:17px;
+   color: white;
+   font-weight: 600;
+   cursor: pointer;
+   transition: .3s;
+}
+.right form .btn button:hover{
+   opacity: .8;
+}
+.bottom{
+   text-align: center;
+   padding:10px;
+   background: #e7d5d5;
+}
+.bottom span{
+   color:#252121;
+}
+.bottom a{
+   color:#080808;
+   text-decoration: none;
+}
+.bottom a:hover{
+   text-decoration: underline;
+}
+@media screen and (max-width:900px){
+   footer{
+       position: relative;
+       bottom: 0px;
+   }  
+   .main-content{
+       flex-wrap: wrap;
+       flex-direction: column;
+   }
+   .main-content .box{
+       margin: 5px 0 ;
+   }
 }
