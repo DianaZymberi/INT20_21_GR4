@@ -16,17 +16,23 @@ body{
 }
 
 h1{
-  font-family: 'Baloo 2', cursive;
-  color: rgb(255, 255, 255);
-  font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #display{
   width: 40vw;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   min-height: 70vh;
   margin: 0 auto;
-  background-color: #e7d5d5;
   text-align: center;
   padding: 1rem;
 }
