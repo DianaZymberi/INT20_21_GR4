@@ -19,46 +19,47 @@
 </head>
 
 <body>
-
-    <nav>
-        <div class="logo"><a href="Astrology.html">Astrology</a></div>
-        <ul>
-            <li><a href="Astrology.html">Home</a></li>
-            <li><a href="Daily.html">Horoscope</a></li>
-            <li><a href="Astrology101.html">Astrology 101</a>
-                <ul>
-                    <li><a href="earth.html">Earth</a></li>
-                    <li><a href="water.html">Water</a></li>
-                    <li><a href="air.html">Air</a></li>
-                    <li><a href="fire.html">Fire</a></li>
-                </ul>
-            </li>
-            <li><a href="tarot.html">Tarot</a>
-                <ul>
-                    <li><a href="tarotreading.html">Reading</a></li>
-                    <li><a href="game.html">Play!</a></li>
-                </ul>
-            </li>
-            <li><a href="Store.html">Store</a>
-                <ul>
-                    <li><a href="books.html">Books</a></li>
-                    <li><a href="clothes.html">Clothes</a></li>
-                    <li><a href="jewelry.html">Jewelry</a></li>
-                    <li><a href="art.html">Art</a></li>
-                </ul>
-            </li>
-            <li><a href="AboutUs.html">About us</a></li>
-            <li><a href="login.html">Log in</a></li>
-            <li>
-                <div class="search-box">
-                    <input class="search-text" type="text" name="" placeholder="Type to search">
-                    <a class="search-button" href="#">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <div class="logo"><a href="Astrology.html">Astrology</a></div>
+            <ul>
+                <li><a href="Astrology.html">Home</a></li>
+                <li><a href="Daily.html">Horoscope</a></li>
+                <li><a href="Astrology101.html">Astrology 101</a>
+                    <ul>
+                        <li><a href="earth.html">Earth</a></li>
+                        <li><a href="water.html">Water</a></li>
+                        <li><a href="air.html">Air</a></li>
+                        <li><a href="fire.html">Fire</a></li>
+                    </ul>
+                </li>
+                <li><a href="tarot.html">Tarot</a>
+                    <ul>
+                        <li><a href="tarotreading.html">Reading</a></li>
+                        <li><a href="game.html">Play!</a></li>
+                    </ul>
+                </li>
+                <li><a href="Store.html">Store</a>
+                    <ul>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="clothes.html">Clothes</a></li>
+                        <li><a href="jewelry.html">Jewelry</a></li>
+                        <li><a href="art.html">Art</a></li>
+                    </ul>
+                </li>
+                <li><a href="AboutUs.html">About us</a></li>
+                <li><a href="login.html">Log in</a></li>
+                <li>
+                    <div class="search-box">
+                        <input class="search-text" type="text" name="" placeholder="Type to search">
+                        <a class="search-button" href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="hello"></div>
 
@@ -180,76 +181,7 @@
         </div>
     </div>
     </section>
-    <footer>
-        <div class="main-content">
-            <div class="left box">
-                <h2>About us</h2>
-                <div class="content">
-                    <p> Astrology is a pseudoscience that claims to divine information about human affairs and terrestrial
-                        events by studying the movements and relative positions of celestial objects . This website covers
-                        some of the important concepts of Astrology. </p>
-                    <div class="social">
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="center box">
-                <h2>Address</h2>
-                <div class="content">
-                    <div class="place">
-                        <span class="fas fa-map-marker-alt"></span>
-                        <span class="text">New York | New York City </span>
-                    </div>
-                    <div class="place">
-                        <span class="fas fa-map-marker-alt"></span>
-                        <span class="text">Nevada | Las Vegas</span>
-                    </div>
-                    <div class="place">
-                        <span class="fas fa-map-marker-alt"></span>
-                        <span class="text">Germany | Stuttgart</span>
-                    </div>
-                    <div class="phone">
-                        <span class="fas fa-phone-alt"></span>
-                        <span class="text">+(383)4XXXYYYY</span>
-                    </div>
-                    <div class="email">
-                        <span class="fas fa-envelope"></span>
-                        <span class="text"><a href="mailto:toaddress@email.com">abc@example.com</a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="right box">
-                <h2>Contact us</h2>
-                <div class="content">
-                    <form onsubmit="return validateEmail();">
-                        <div class="email">
-                            <div class="text" name="email">Email *</div>
-                            <input id="useremail" required>
-                        </div>
-                        <div class="msg">
-                            <div class="text" name="message">Message *</div>
-                            <textarea id="message" cols="25" rows="2" required></textarea>
-                        </div>
-    
-                        <div class="btn">
-                            <button type="submit" onclick="storedata();">Send</button>
-                        </div>
-                        <div>
-                            <h2 id='result'></h2>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="bottom">
-            <span class="credit">Created By <a href="#">Grupi4</a>
-                <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
-            </span>
-        </div>
-    </footer>
+
 </body>
 
 </html>
