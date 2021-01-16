@@ -209,7 +209,7 @@ margin: auto;
     object-fit: cover;
 }
 
-.container .box .content{
+.container .box .contents{
     position: absolute;
     top: 0;
     left: 0;
@@ -221,7 +221,7 @@ margin: auto;
     align-items: flex-end;
 }
 
-.container .box .content h2{
+.container .box .contents h2{
     color: #fff;
     transition: 0.3s;
     text-transform: uppercase;
@@ -230,12 +230,12 @@ margin: auto;
     transform: translateY(200px);
 }
 
-.container .box:hover .content h2{
+.container .box:hover .contents h2{
     transform: translateY(0);
     transition-delay: 0.6s;
 }
 
-.container .box .content p{
+.container .box .contents p{
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 8px #000000;
     transform: translateY(200px);
@@ -254,7 +254,7 @@ margin: auto;
     );
 }
 
-.container .box:hover .content p{
+.container .box:hover .contents p{
     transform: translateY(0);
     transition-delay: 0.7s;
 }
@@ -283,13 +283,13 @@ margin: auto;
         text-transform: uppercase;
     }
     .box .content{
-       margin: 20px 0 0 0 ;
+       margin: 0px 0 0 0 ;
        position: relative;
     }
     .box .content::before{
         content: '';
         position: absolute;
-        top: -10px;
+        top: 0px;
         height: 2px;
         width: 100%;
         background:#1a1a1a;
