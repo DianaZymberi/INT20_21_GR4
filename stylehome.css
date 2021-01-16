@@ -304,7 +304,7 @@ i{
  .section1 a:hover{
      color:rgb(49, 9, 47);
  }
- .box1,.box2,.box3,.box4,.box5{
+ .box1,.box2,.box3,.box4{
     margin: 5px;
     float:left;
     width: 170px;
@@ -329,10 +329,7 @@ i{
     background:url(https://i.pinimg.com/564x/d2/91/bd/d291bd481f864c1b96cf699e90c0f477.jpg) no-repeat center;
     background-size: contain;
 }
-.box5{
-    background:url(https://i.pinimg.com/564x/50/1b/ef/501bef33435482b48611bd3de74bc1ab.jpg) no-repeat center;
-    background-size: contain;
-} .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.empty:hover,.fill:hover{
+ .box1:hover,.box2:hover,.box3:hover,.box4:hover,.empty:hover,.fill:hover{
     transform: skew(1deg);
 }
 
